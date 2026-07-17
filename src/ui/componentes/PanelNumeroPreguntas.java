@@ -7,14 +7,13 @@ import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
+import util.Constantes;
+
 public class PanelNumeroPreguntas extends JPanel {
 
-    private JRadioButton r5;
-    private JRadioButton r10;
-    private JRadioButton r25;
-    private JRadioButton r50;
-    private JRadioButton r100;
-    private JRadioButton rTodas;
+    private JRadioButton[] opciones;
+
+    private JRadioButton todas;
 
     public PanelNumeroPreguntas() {
 
@@ -24,40 +23,60 @@ public class PanelNumeroPreguntas extends JPanel {
                 BorderFactory.createEtchedBorder(),
                 "Número de preguntas"));
 
-        r5 = new JRadioButton("5");
-        r10 = new JRadioButton("10");
-        r25 = new JRadioButton("25");
-        r50 = new JRadioButton("50", true);
-        r100 = new JRadioButton("100");
-        rTodas = new JRadioButton("Todas");
+        crearOpciones();
+
+    }
+
+    private void crearOpciones() {
+
+        opciones = new JRadioButton[
+                Constantes.OPCIONES_NUMERO_PREGUNTAS.length];
 
         ButtonGroup grupo = new ButtonGroup();
 
-        grupo.add(r5);
-        grupo.add(r10);
-        grupo.add(r25);
-        grupo.add(r50);
-        grupo.add(r100);
-        grupo.add(rTodas);
+        for(int i = 0; i < Constantes.OPCIONES_NUMERO_PREGUNTAS.length; i++) {
 
-        add(r5);
-        add(r10);
-        add(r25);
-        add(r50);
-        add(r100);
-        add(rTodas);
+            int numero = Constantes.OPCIONES_NUMERO_PREGUNTAS[i];
 
+            opciones[i] = new JRadioButton(
+                    String.valueOf(numero));
+
+            if(numero == 50) {
+                opciones[i].setSelected(true);
+            }
+
+            grupo.add(opciones[i]);
+
+            add(opciones[i]);
+
+        }
+
+        todas = new JRadioButton("Todas");
+
+        grupo.add(todas);
+
+        add(todas);
     }
 
     public int getNumeroPreguntas() {
 
-        if (r5.isSelected()) return 5;
-        if (r10.isSelected()) return 10;
-        if (r25.isSelected()) return 25;
-        if (r50.isSelected()) return 50;
-        if (r100.isSelected()) return 100;
+        for(JRadioButton opcion : opciones) {
 
-        return -1; // Todas
+            if(opcion.isSelected()) {
+
+                return Integer.parseInt(opcion.getText());
+
+            }
+
+        }
+
+        return -1;
+
+    }
+
+    public boolean isTodasSeleccionada() {
+
+        return todas.isSelected();
 
     }
 

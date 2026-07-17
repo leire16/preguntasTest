@@ -8,8 +8,10 @@ import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 import model.TipoTest;
+import util.Constantes;
 
 public class MenuPrincipal extends JPanel {
 
@@ -22,7 +24,9 @@ public class MenuPrincipal extends JPanel {
         gbc.insets = new Insets(15, 15, 15, 15);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        JLabel titulo = new JLabel("OPE TRAINER");
+       JLabel titulo = new JLabel(
+        Constantes.TITULO_APP,
+        SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 28));
 
         JButton btnTemas = new JButton("📚 Test por temas");

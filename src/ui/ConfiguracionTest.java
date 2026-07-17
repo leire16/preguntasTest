@@ -47,12 +47,12 @@ public class ConfiguracionTest extends JPanel {
         centro.setLayout(new BoxLayout(centro, BoxLayout.Y_AXIS));
 
         lblTitulo = new JLabel("CONFIGURACIÓN DEL TEST", SwingConstants.CENTER);
-        lblTitulo.setFont(lblTitulo.getFont().deriveFont(26f));
         lblTitulo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        lblTitulo.setFont(lblTitulo.getFont().deriveFont(26f));
 
         lblModo = new JLabel();
-        lblModo.setFont(lblModo.getFont().deriveFont(18f));
         lblModo.setAlignmentX(Component.CENTER_ALIGNMENT);
+        lblModo.setFont(lblModo.getFont().deriveFont(18f));
 
         panelTemas = new PanelTemas();
         panelNumeroPreguntas = new PanelNumeroPreguntas();
@@ -85,8 +85,8 @@ public class ConfiguracionTest extends JPanel {
 
             System.out.println(configuracion);
 
-            // Más adelante:
-            // ventana.iniciarTest(configuracion);
+            // Próximamente:
+            // ventana.mostrarExamen(configuracion);
 
         });
 
@@ -94,9 +94,6 @@ public class ConfiguracionTest extends JPanel {
 
     }
 
-    /**
-     * Recoge toda la configuración elegida por el usuario.
-     */
     private Configuracion obtenerConfiguracion() {
 
         Configuracion configuracion = new Configuracion();
@@ -104,11 +101,20 @@ public class ConfiguracionTest extends JPanel {
         configuracion.setTipoTest(tipoTest);
 
         if (tipoTest == TipoTest.TEMAS) {
-            configuracion.setTemas(panelTemas.getTemasSeleccionados());
+
+            if (panelTemas.hayTemasSeleccionados()) {
+
+                configuracion.setTemas(panelTemas.getTemasSeleccionados());
+
+            } else {
+
+                configuracion.setTemas(panelTemas.getTodosLosTemas());
+
+            }
+
         }
 
-        configuracion.setNumeroPreguntas(
-                panelNumeroPreguntas.getNumeroPreguntas());
+        configuracion.setNumeroPreguntas(panelNumeroPreguntas.getNumeroPreguntas());
 
         return configuracion;
 

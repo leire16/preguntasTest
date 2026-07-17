@@ -13,13 +13,13 @@ public class PanelBotones extends JPanel {
 
     public PanelBotones() {
 
-        setLayout(new FlowLayout(FlowLayout.CENTER, 30, 10));
+        setLayout(new FlowLayout(FlowLayout.CENTER, 30, 15));
 
         btnVolver = new JButton("Volver");
         btnComenzar = new JButton("Comenzar");
 
-        btnVolver.setPreferredSize(new Dimension(140, 35));
-        btnComenzar.setPreferredSize(new Dimension(140, 35));
+        btnVolver.setPreferredSize(new Dimension(160, 40));
+        btnComenzar.setPreferredSize(new Dimension(160, 40));
 
         add(btnVolver);
         add(btnComenzar);
