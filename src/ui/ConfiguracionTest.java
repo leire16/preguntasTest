@@ -1,51 +1,147 @@
 package ui;
 
 import java.awt.BorderLayout;
-import java.awt.Font;
+import java.awt.Component;
 
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+import model.Configuracion;
 import model.TipoTest;
+import ui.componentes.PanelBotones;
+import ui.componentes.PanelNumeroPreguntas;
+import ui.componentes.PanelTemas;
 
 public class ConfiguracionTest extends JPanel {
 
+    private VentanaPrincipal ventana;
+
+    private JLabel lblTitulo;
     private JLabel lblModo;
+
+    private PanelTemas panelTemas;
+    private PanelNumeroPreguntas panelNumeroPreguntas;
+    private PanelBotones panelBotones;
+
+    private TipoTest tipoTest;
 
     public ConfiguracionTest(VentanaPrincipal ventana) {
 
-        setLayout(new BorderLayout(10, 10));
+        this.ventana = ventana;
 
-        JLabel titulo = new JLabel("CONFIGURACIÓN DEL TEST", SwingConstants.CENTER);
-        titulo.setFont(new Font("Arial", Font.BOLD, 24));
+        setLayout(new BorderLayout(15, 15));
+        setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        add(titulo, BorderLayout.NORTH);
+        crearCentro();
+        crearBotones();
 
-        lblModo = new JLabel("", SwingConstants.CENTER);
-        lblModo.setFont(new Font("Arial", Font.PLAIN, 20));
+    }
 
-        add(lblModo, BorderLayout.CENTER);
+    private void crearCentro() {
+
+        JPanel centro = new JPanel();
+        centro.setLayout(new BoxLayout(centro, BoxLayout.Y_AXIS));
+
+        lblTitulo = new JLabel("CONFIGURACIÓN DEL TEST", SwingConstants.CENTER);
+        lblTitulo.setFont(lblTitulo.getFont().deriveFont(26f));
+        lblTitulo.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        lblModo = new JLabel();
+        lblModo.setFont(lblModo.getFont().deriveFont(18f));
+        lblModo.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+        panelTemas = new PanelTemas();
+        panelNumeroPreguntas = new PanelNumeroPreguntas();
+
+        centro.add(lblTitulo);
+        centro.add(Box.createVerticalStrut(15));
+
+        centro.add(lblModo);
+        centro.add(Box.createVerticalStrut(25));
+
+        centro.add(panelTemas);
+        centro.add(Box.createVerticalStrut(20));
+
+        centro.add(panelNumeroPreguntas);
+
+        add(centro, BorderLayout.CENTER);
+
+    }
+
+    private void crearBotones() {
+
+        panelBotones = new PanelBotones();
+
+        panelBotones.getBtnVolver().addActionListener(e ->
+                ventana.mostrarMenu());
+
+        panelBotones.getBtnComenzar().addActionListener(e -> {
+
+            Configuracion configuracion = obtenerConfiguracion();
+
+            System.out.println(configuracion);
+
+            // Más adelante:
+            // ventana.iniciarTest(configuracion);
+
+        });
+
+        add(panelBotones, BorderLayout.SOUTH);
+
+    }
+
+    /**
+     * Recoge toda la configuración elegida por el usuario.
+     */
+    private Configuracion obtenerConfiguracion() {
+
+        Configuracion configuracion = new Configuracion();
+
+        configuracion.setTipoTest(tipoTest);
+
+        if (tipoTest == TipoTest.TEMAS) {
+            configuracion.setTemas(panelTemas.getTemasSeleccionados());
+        }
+
+        configuracion.setNumeroPreguntas(
+                panelNumeroPreguntas.getNumeroPreguntas());
+
+        return configuracion;
 
     }
 
     public void setTipoTest(TipoTest tipo) {
 
+        this.tipoTest = tipo;
+
         switch (tipo) {
 
             case TEMAS:
+
                 lblModo.setText("Modo: Test por temas");
+                panelTemas.setVisible(true);
                 break;
 
             case COMPLETO:
-                lblModo.setText("Modo: Todas las preguntas");
+
+                lblModo.setText("Modo: Test completo");
+                panelTemas.setVisible(false);
                 break;
 
             case FALLADAS:
+
                 lblModo.setText("Modo: Preguntas falladas");
+                panelTemas.setVisible(false);
                 break;
 
         }
+
+        revalidate();
+        repaint();
 
     }
 
