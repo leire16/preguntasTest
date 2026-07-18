@@ -15,7 +15,7 @@ public class GeneradorTexto {
         try {
 
             // PDF de entrada
-            File pdf = new File("docs/200_Galdera-sorta_TEMARIO_COMUN_cas_1_.pdf");
+            File pdf = new File("docs/200 Galdera-sorta_TEMARIO COMUN_cas(1).pdf");
 
             if (!pdf.exists()) {
                 System.out.println("No se encuentra el PDF.");
