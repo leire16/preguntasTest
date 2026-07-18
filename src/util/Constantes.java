@@ -10,7 +10,7 @@ public final class Constantes {
     // CONFIGURACIÓN GENERAL
     // ------------------------
 
-    public static final int TOTAL_TEMAS = 20;
+    public static final int TOTAL_TEMAS = 21;
     public static final int TODAS_LAS_PREGUNTAS = -1;
     public static final int TOTAL_PREGUNTAS_BD = 500;
     public static final String TITULO_APP = "OPE Trainer";
@@ -67,8 +67,9 @@ public final class Constantes {
 
         "Arquitectura de computadores",
 
-        "Repaso / Miscelánea de informática"
+        "Repaso / Miscelánea de informática",
 
+        "Preguntas Comunes",
     };
 
 }

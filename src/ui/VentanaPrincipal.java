@@ -24,7 +24,7 @@ public class VentanaPrincipal extends JFrame {
 
     // Más adelante
     private PantallaExamen pantallaExamen;
-    // private PantallaResultado pantallaResultado;
+    private PantallaResultados pantallaResultados;
 
     public VentanaPrincipal() {
 
@@ -53,13 +53,15 @@ public class VentanaPrincipal extends JFrame {
         menuPrincipal = new MenuPrincipal(this);
         configuracionTest = new ConfiguracionTest(this);
         pantallaExamen = new PantallaExamen(this);
+        pantallaResultados = new PantallaResultados(this);
 
     }
 
     private void registrarPantallas() {
         contenedor.add(menuPrincipal, MENU);
         contenedor.add(configuracionTest, CONFIGURACION);
-        contenedor.add(pantallaExamen, "EXAMEN");
+        contenedor.add(pantallaExamen, EXAMEN);
+        contenedor.add(pantallaResultados, RESULTADOS);
 
     }
 
