@@ -83,7 +83,10 @@ public class Temas {
 
                         new Tema(20,
                                         "Repaso / Miscelánea de informática",
-                                        481, 500)
+                                        481, 500),
+                        new Tema(21,
+                                        "Preguntas comunes",
+                                        501, 700)
 
         );
 

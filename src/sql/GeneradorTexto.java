@@ -15,7 +15,7 @@ public class GeneradorTexto {
         try {
 
             // PDF de entrada
-            File pdf = new File("docs/TEC SUPERIOR INFORMATICA_cas.pdf");
+            File pdf = new File("docs/200_Galdera-sorta_TEMARIO_COMUN_cas_1_.pdf");
 
             if (!pdf.exists()) {
                 System.out.println("No se encuentra el PDF.");
@@ -33,7 +33,7 @@ public class GeneradorTexto {
             documento.close();
 
             // Guardar el texto en un archivo
-            Path salida = Path.of("docs/texto_extraido.txt");
+            Path salida = Path.of("docs/texto_extraido_tema21_raw.txt");
             Files.writeString(salida, texto);
 
             System.out.println("--------------------------------");
