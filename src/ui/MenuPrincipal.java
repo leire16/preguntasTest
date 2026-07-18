@@ -29,9 +29,9 @@ public class MenuPrincipal extends JPanel {
         SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 28));
 
-        JButton btnTemas = new JButton("📚 Test por temas");
-        JButton btnCompleto = new JButton("🌍 Test completo");
-        JButton btnFalladas = new JButton("❌ Preguntas falladas");
+        JButton btnTemas = new JButton("📚 " + TipoTest.TEMAS.getDescripcion());
+        JButton btnCompleto = new JButton("🌍 " + TipoTest.COMPLETO.getDescripcion());
+        JButton btnFalladas = new JButton("❌ " + TipoTest.FALLADAS.getDescripcion());
 
         btnTemas.addActionListener(e ->
                 ventana.mostrarConfiguracion(TipoTest.TEMAS));

@@ -85,8 +85,7 @@ public class ConfiguracionTest extends JPanel {
 
             System.out.println(configuracion);
 
-            // Próximamente:
-            // ventana.mostrarExamen(configuracion);
+            ventana.mostrarExamen(configuracion);
 
         });
 
@@ -124,27 +123,9 @@ public class ConfiguracionTest extends JPanel {
 
         this.tipoTest = tipo;
 
-        switch (tipo) {
+        lblModo.setText("Modo: " + tipo.getDescripcion());
 
-            case TEMAS:
-
-                lblModo.setText("Modo: Test por temas");
-                panelTemas.setVisible(true);
-                break;
-
-            case COMPLETO:
-
-                lblModo.setText("Modo: Test completo");
-                panelTemas.setVisible(false);
-                break;
-
-            case FALLADAS:
-
-                lblModo.setText("Modo: Preguntas falladas");
-                panelTemas.setVisible(false);
-                break;
-
-        }
+        panelTemas.setVisible(tipo == TipoTest.TEMAS);
 
         revalidate();
         repaint();

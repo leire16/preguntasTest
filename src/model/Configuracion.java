@@ -2,6 +2,8 @@ package model;
 
 import java.util.List;
 
+import util.Constantes;
+
 public class Configuracion {
 
     private TipoTest tipoTest;
@@ -39,6 +41,22 @@ public class Configuracion {
 
     public void setNumeroPreguntas(int numeroPreguntas) {
         this.numeroPreguntas = numeroPreguntas;
+    }
+
+    public int getNumeroPreguntasReales() {
+
+        if (numeroPreguntas != Constantes.TODAS_LAS_PREGUNTAS) {
+            return numeroPreguntas;
+        }
+
+        // Si son todas habrá que calcularlo
+        return calcularTotalPreguntas();
+    }
+
+    private int calcularTotalPreguntas() {
+
+        return Constantes.TOTAL_PREGUNTAS_BD;
+
     }
 
     @Override

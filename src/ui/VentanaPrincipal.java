@@ -5,6 +5,7 @@ import java.awt.CardLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import model.Configuracion;
 import model.TipoTest;
 import util.Constantes;
 
@@ -22,7 +23,7 @@ public class VentanaPrincipal extends JFrame {
     private ConfiguracionTest configuracionTest;
 
     // Más adelante
-    // private PantallaExamen pantallaExamen;
+    private PantallaExamen pantallaExamen;
     // private PantallaResultado pantallaResultado;
 
     public VentanaPrincipal() {
@@ -42,7 +43,6 @@ public class VentanaPrincipal extends JFrame {
         mostrarMenu();
 
         setVisible(true);
-
     }
 
     private void inicializarComponentes() {
@@ -52,13 +52,14 @@ public class VentanaPrincipal extends JFrame {
 
         menuPrincipal = new MenuPrincipal(this);
         configuracionTest = new ConfiguracionTest(this);
+        pantallaExamen = new PantallaExamen(this);
 
     }
 
     private void registrarPantallas() {
-
         contenedor.add(menuPrincipal, MENU);
         contenedor.add(configuracionTest, CONFIGURACION);
+        contenedor.add(pantallaExamen, "EXAMEN");
 
     }
 
@@ -76,9 +77,11 @@ public class VentanaPrincipal extends JFrame {
 
     }
 
-    public void mostrarExamen() {
+    public void mostrarExamen(Configuracion configuracion) {
 
-        cardLayout.show(contenedor, EXAMEN);
+        pantallaExamen.iniciarExamen(configuracion);
+
+        cardLayout.show(contenedor, "EXAMEN");
 
     }
 
