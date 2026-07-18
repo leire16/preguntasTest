@@ -4,15 +4,15 @@ public class Respuesta {
 
     private String letra;
     private String texto;
-    private boolean esCorrecta;
+    private boolean correcta;
 
     public Respuesta() {
     }
 
-    public Respuesta(String letra, String texto, boolean esCorrecta) {
+    public Respuesta(String letra, String texto, boolean correcta) {
         this.letra = letra;
         this.texto = texto;
-        this.esCorrecta = esCorrecta;
+        this.correcta = correcta;
     }
 
     public String getLetra() {
@@ -31,12 +31,12 @@ public class Respuesta {
         this.texto = texto;
     }
 
-    public boolean isEsCorrecta() {
-        return esCorrecta;
+    public boolean isCorrecta() {
+        return correcta;
     }
 
-    public void setEsCorrecta(boolean esCorrecta) {
-        this.esCorrecta = esCorrecta;
+    public void setCorrecta(boolean correcta) {
+        this.correcta = correcta;
     }
 
 }
