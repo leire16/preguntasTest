@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ImportadorBD {
 
-    private static final String JSON = "docs/preguntas.json";
+    private static final String JSON = "docs/preguntas2.json";
 
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class ImportadorBD {
 
         try {
 
-            DriverManager.getConnection(Constantes.RUTA_BD);
+            conn = DriverManager.getConnection(Constantes.RUTA_BD);
 
             ObjectMapper mapper = new ObjectMapper();
 
@@ -177,7 +177,7 @@ public class ImportadorBD {
         psEstado.close();
 
         System.out.printf(
-                "\rImportando pregunta %3d / 500",
+                "\rImportando pregunta %3d / 700",
                 pregunta.getNumeroOriginal());
     }
 

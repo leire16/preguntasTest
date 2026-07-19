@@ -24,6 +24,4 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 comandos para ejecutar generadorJSON
 
-javac -cp "lib/*" -d bin src\model\*.java src\sql\*.java
-
 java -cp "bin;lib/*" sql.GeneradorJSON

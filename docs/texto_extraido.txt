@@ -67,8 +67,6 @@ d) Aplicación, presentación, sesión, transporte, red, conexión o enlace, fí
 que recibe de la capa de red en tramas que pueden ser transmitidas por la capa física? 
 a) Transporte. 
 b) Sesión. 
-                           
- 
 c) Red. 
 d) Conexión o enlace. 
   
@@ -101,8 +99,6 @@ implica que:
 a) El protocolo define los servicios que una capa ofrece a la capa superior mediante su interfaz. 
 b) El servicio es la implementación concreta de las reglas de comunicación entre entidades 
 homólogas. 
-                           
- 
 c) La interfaz especifica cómo accede la capa superior a los servicios de la capa inferior, 
 mientras que el protocolo define las reglas de comunicación entre entidades de la misma 
 capa. 
@@ -202,8 +198,6 @@ d) Estrella.
 a) Par trenzado UTP de categoría 5. 
 b) Par trenzado STP especial. 
 c) Fibra óptica monomodo. 
-                           
- 
 d) Fibra óptica multimodo. 
   
 28.- ¿En qué variante de la norma IEEE 802.11 se usa MIMO (Multiple-Input Multiple-
@@ -270,8 +264,6 @@ a) Los datos HTTP van directamente en la parte de datos de la trama Ethernet, si
 adicionales. 
 b) Los datos HTTP van dentro de un segmento TCP, que a su vez va dentro de un datagrama 
 IP, que a su vez va dentro de la trama Ethernet. 
-                           
- 
 c) Los datos HTTP van dentro de un datagrama UDP, que a su vez va dentro de un datagrama 
 IP, que a su vez va dentro de la trama Ethernet. 
 d) Los datos HTTP van dentro de un datagrama IP, que a su vez va dentro de un segmento 
@@ -409,8 +401,6 @@ campo de tipo de protocolo de la trama MAC.
 c) VLAN de nivel 3 por direcciones de subred: en este caso son los paquetes y no las 
 estaciones finales quienes pertenecen a una VLAN u otra en función de su cabecera de 
 nivel 3. 
-                           
- 
 d) VLAN de niveles superiores: los miembros de la LAN se diferencian por el puerto al que 
 están conectados al conmutador o medio físico que constituye la red. 
   
@@ -547,8 +537,6 @@ interfaces, enviando el paquete a la más cercana según el routing?
 a) Unicast. 
 b) Multicast. 
 c) Anycast. 
-                           
- 
 d) Broadcast. 
   
 72.- En el algoritmo de Dijkstra utilizado en protocolos de estado de enlace, el objetivo es: 
@@ -682,8 +670,6 @@ d) Una restricción CHECK.
 predicado? 
 a) Producto cartesiano (×). 
 b) Proyección (π). 
-                           
- 
 c) Unión (∪). 
 d) Selección (σ). 
   
@@ -786,8 +772,6 @@ dispositivo, necesita una máquina con al menos 1TB de memoria para poder funcio
 c) La portabilidad de aplicaciones web basadas en SQL Server a SAP HANA es sencilla, 
 precisando en muchos casos únicamente la actualización de la librería ODBC/JDBC de 
 SQL Server a SAP HANA. 
-                           
- 
 d) SAP HANA incluye un servidor propio de aplicaciones, SAP HANA XS, que utiliza 
 Server-side JavaScript (XSJS) como lenguaje principal. 
   
@@ -820,8 +804,6 @@ d) JDBC.
   
 106.- ¿Cuál es el tipo de sistema gestor base de datos nativo de SAP S/4HANA? 
 a) Documental, in-memory. 
-                           
- 
 b) Documental, out-memory. 
 c) Relacional, in-memory. 
 d) Relacional, out-memory. 
@@ -853,8 +835,6 @@ d) Soporta almacenamiento orientado a columnas.
 111.- ¿Cuál es el propósito principal de SAP Vora dentro del ecosistema de análisis de datos 
 en SAP S/4HANA? 
 a) Sustituir a SAP HANA como base de datos in-memory principal. 
-                           
- 
 b) Actuar como repositorio de datos maestros central para S/4HANA. 
 c) Proporcionar capacidades de análisis sobre big data integrándose con Hadoop y Spark. 
 d) Servir como motor de transacciones OLTP para procesos críticos. 
@@ -984,8 +964,6 @@ d) En SCRUM no existe el rol Tester.
 a) El Equipo Scrum (Scrum Team). 
 b) El Gestor de Entregas (Delivery Manager). 
 c) El Líder del Proyecto (Scrum Master). 
-                           
- 
 d) El Propietario del Producto (Product Owner). 
   
 129.- En SCRUM, ¿Qué muestra un gráfico BurnDown? 
@@ -1017,8 +995,6 @@ reunión diaria de Scrum?
 a) ¿Qué conseguí ayer?. 
 b) ¿Qué voy a hacer hoy?. 
 c) ¿Hay algún impedimento en mi camino?. 
-                           
- 
 d) ¿Cómo podemos mejorar el producto?. 
   
 134.- ¿Cuál de las siguientes actividades de SCRUM tiene como objetivo permitir que el 
@@ -1122,8 +1098,6 @@ proveer, cómo deberá reaccionar a entradas particulares y cómo deberá compor
 en situaciones específicas? 
 a) Requisitos funcionales. 
 b) Requisitos NO funcionales. 
-                           
- 
 c) Requisitos externos. 
 d) Requisitos de la organización. 
   
@@ -1225,8 +1199,6 @@ d) Integración.
 a) Una descripción detallada del código fuente a usar en el sistema. 
 b) Un conjunto de programas fuente en el lenguaje de programación elegido. 
 c) Una especificación precisa y completa de lo que debe hacer el sistema. 
-                           
- 
 d) Un documento que describe el procedimiento de integración. 
   
 160.- En el contexto de las fases del ciclo de vida del software, ¿qué documento suele tener 
@@ -1258,8 +1230,6 @@ d) Pruebas de humo.
 164.- ¿Qué técnica de diseño reduce el acoplamiento y aumenta la cohesión? 
 a) Ley de Demeter. 
 b) Variables globales. 
-                           
- 
 c) Dependencias circulares. 
 d) Herencia múltiple. 
   
@@ -1291,8 +1261,6 @@ d) Un número que determina lo complejo que es entender el código del programa.
 a) Estado. 
 b) Requisitos. 
 c) Alcance. 
-                           
- 
 d) Riesgos. 
   
 170.- El método de estimación que se basa en la opinión de un grupo de cinco o seis expertos 
@@ -1325,8 +1293,6 @@ d) IRP. Índice de rendimiento de la programación.
   
 174.- Indica las 5 fases en las que se divide un proyecto en el ciclo de vida: 
 a) Licitación, Planificación, Ejecución, Monitorización y Control, Cierre. 
-                           
- 
 b) Inicio, Planificación, Monitorización y Control, Ejecución, Cierre. 
 c) Análisis, Planificación, Evaluación, Ejecución, Cierre. 
 d) Análisis, Planificación, Monitorización y Control, Ejecución, Cierre. 
@@ -1393,8 +1359,6 @@ d) Es la fase donde se ejecutan el análisis, diseño y codificación de la apli
 183.- En la gestión de proyectos, ¿en qué fase se llevan a cabo las tareas planificadas para 
 completar los entregables? 
 a) Inicialización. 
-                           
- 
 b) Planificación. 
 c) Seguimiento y control. 
 d) Ejecución. 
@@ -1461,8 +1425,6 @@ proyecto?
 a) Brainstorming. 
 b) Método MoSCoW. 
 c) Método DELPHI. 
-                           
- 
 d) Método DAFO. 
   
 193.- En ITIL la unidad organizativa que tiene recursos y medios propios y es responsable 
@@ -1530,8 +1492,6 @@ d) Una oferta de un proveedor de servicios de TI.
 201.- En el marco de ITIL, ¿qué principio rector/director se ocupa principalmente de 
 comprender quién es el consumidor del servicio y cuál es su necesidad? 
 a) Mantener la sencillez y la practicidad. 
-                           
- 
 b) Centrarse en el valor. 
 c) Progresar de forma iterativa con retroalimentación. 
 d) Optimizar y automatizar. 
@@ -1739,8 +1699,6 @@ d) Datos externos a la organización que se integran con los operacionales.
 226.- ¿Qué es un cubo OLAP? 
 a) Una base de datos multi-dimensional, orientada a la realización efectiva de transacciones 
 ACID. 
-                           
- 
 b) Una base de datos multi-dimensional, adecuada para el análisis instantáneo de grandes 
 cantidades de datos. 
 c) Una superposición de tablas bidimensionales en un SGBD relacional. 
@@ -1774,8 +1732,6 @@ para extraer datos, identificar información útil y conocimientos posteriores e
 de patrones, se denomina: 
 a) Minería de datos. 
 b) Big Data. 
-                           
- 
 c) Business Intelligence. 
 d) Todas las demás respuestas son correctas. 
   
@@ -1809,8 +1765,6 @@ a) Un conjunto de datos etiquetados que le indican la respuesta correcta.
 b) La identificación de patrones repetitivos en datos históricos sin interacción con el entorno. 
 c) La interacción con un entorno, recibiendo recompensas mayores o menores según sus 
 acciones. 
-                           
- 
 d) La combinación de varias reglas de asociación predefinidas. 
   
 235.- ¿Cuál de las siguientes afirmaciones describe correctamente la relación entre Deep 
@@ -1846,8 +1800,6 @@ b) Es el análisis de datos disponibles en la web para extraer conocimiento úti
 contenido, estructura y patrones de uso. 
 c) Es la creación de sitios web utilizando lenguajes de programación como HTML, CSS y 
 JavaScript. 
-                           
- 
 d) Es el análisis de patrones de navegación y comportamiento de usuarios en sitios web para 
 mejorar servicios o recomendaciones. 
   
@@ -1954,8 +1906,6 @@ realizar todas las comprobaciones previas relativas a la identidad u otras
 circunstancias del titular es considerada una infracción: 
 a) Grave. 
 b) Muy grave. 
-                           
- 
 c) El hecho indicado no constituye una infracción. 
 d) Leve. 
   
@@ -1989,8 +1939,6 @@ b) Se contempla, pero solo para sitios web oficiales de los gobiernos de los est
 c) Considera la autenticación de sitios web utilizando certificados cualificados, que incluyan 
 la identificación del sitio web, además de la identificación del proveedor de servicios de 
 confianza. 
-                           
- 
 d) Recomienda la autenticación de sitios web utilizando certificados auto-firmados. 
   
 255.- ¿Cuál de estas opciones NO corresponde a un requisito de los certificados cualificados 
@@ -2025,8 +1973,6 @@ cualificados deben conservar la información relativa a los servicios prestados?
 a) Cinco años. 
 b) Diez años. 
 c) Quince años. 
-                           
- 
 d) Veinte años. 
   
 259.- Según la Ley 6/2020, ¿qué plazo máximo tiene la Administración para dictar y 
@@ -2244,8 +2190,6 @@ respecto a los datos personales de las personas empleadas de una empresa?
 a) Solo debe recabar los datos estrictamente necesarios para la relación laboral y garantizar su 
 confidencialidad. 
 b) Puede tratar libremente todos los datos que considere relevantes para la gestión interna. 
-                           
- 
 c) Solo está obligado a recabar datos sobre salud, pero no sobre desempeño laboral. 
 d) No tiene ninguna obligación específica mientras los datos se utilicen dentro de la empresa. 
   
@@ -2312,8 +2256,6 @@ d) La detección y corrección de problemas en el software.
 289.- Según el ENS, en la organización e implantación del proceso de seguridad el 
 Responsable del Servicio debe determinar: 
 a) Los requisitos de la información tratada. 
-                           
- 
 b) Los requisitos de los servicios prestados. 
 c) Las decisiones para satisfacer los requisitos de seguridad. 
 d) La forma de implementar la seguridad en el sistema. 
@@ -2349,8 +2291,6 @@ Anexo II podrán ser sustituidas por otras compensatorias. ¿Qué condición exi
 expresamente el precepto para que dicha sustitución sea válida? 
 a) Que las medidas alternativas estén aprobadas previamente por el CCN (Centro de 
 Criptlogía Nacional) mediante instrucción técnica. 
-                           
- 
 b) Que se justifique documentalmente que la protección aportada es, al menos, equivalente, y 
 que satisfacen los principios básicos y requisitos mínimos. 
 c) Que sean objeto de una auditoría extraordinaria por un organismo externo acreditado. 
@@ -2423,8 +2363,6 @@ personales, ¿qué obligación específica recae sobre la persona responsable o 
 del tratamiento además del cumplimiento del ENS? 
 a) Notificar obligatoriamente al CCN (Centro Criptológico Nacional) la existencia del 
 tratamiento antes de su puesta en marcha. 
-                           
- 
 b) Realizar un análisis de riesgos conforme al artículo 24 del RGPD y, en su caso, una 
 evaluación de impacto según el artículo 35 del mismo reglamento. 
 c) Obtener la certificación de conformidad con el ENS antes de iniciar cualquier tratamiento 
@@ -2638,8 +2576,6 @@ d) La clave privada del receptor.
 a) Garantizar la confidencialidad del mensaje. 
 b) Evitar la modificación del mensaje en tránsito. 
 c) Impedir que el emisor niegue haber enviado el mensaje. 
-                           
- 
 d) Acelerar el proceso de cifrado. 
   
 325.- ¿Qué entidad dentro de una PKI es responsable de emitir certificados digitales? 
@@ -2671,8 +2607,6 @@ d) Autorización.
 a) Confidencialidad mediante cifrado. 
 b) Integridad y autenticación del paquete. 
 c) Traducción de direcciones IP. 
-                           
- 
 d) Compresión de datos. 
   
 330.- ¿Cuál es el propósito del intercambio de claves Diffie-Hellman? 
@@ -2704,8 +2638,6 @@ requisitos que deben cumplir las políticas de seguridad de una organización?
 a) Aplicación del principio de defensa en profundidad. 
 b) Configuración robusta ante fallos. 
 c) Cumplimiento de las exigencias del entorno legal. 
-                           
- 
 d) Asignación de los máximos privilegios. 
   
 335.- El nivel RAID 6 proporciona: 
@@ -2738,8 +2670,6 @@ d) Integridad, autenticación y privacidad.
 339.- ¿Cuál de los siguientes no es un principio fundamental de la seguridad de la 
 información? 
 a) Continuidad. 
-                           
- 
 b) Disponibilidad. 
 c) Integridad. 
 d) Confidencialidad. 
@@ -2871,8 +2801,6 @@ a) SOA se basa en el principio de homogeneización de la semántica propia de la
 b) SOA persigue la obtención de un mapa de sistemas de información desacoplado, escalable 
 y ágil. 
 c) SOA persigue la independencia del negocio respecto de la tecnología. 
-                           
- 
 d) SOA busca una orientación a eventos de negocio, que disparan la orquestación de los 
 servicios  
 mediante mensajería preferentemente síncrona. 
@@ -2909,8 +2837,6 @@ d) Identificar nuevos servicios, nuevas composiciones o nuevas versiones de los 
 en materia de seguridad en el intercambio de información en el mapa de sistemas se 
 definen desde: 
 a) La gobernanza. 
-                           
- 
 b) Las políticas. 
 c) Los estándares. 
 d) El catálogo de servicios. 
@@ -2944,8 +2870,6 @@ d) Eureka.
 a) POST. 
 b) PUT. 
 c) REMOVE. 
-                           
- 
 d) PATCH. 
   
 367.- En el área de microservicios, se usan comúnmente APIs REST. ¿Qué significa REST? 
@@ -2978,8 +2902,6 @@ d) Fuerte acoplamiento entre los servicios.
 371.- ¿Qué significa que los microservicios están débilmente acoplados? 
 a) Que cada microservicio contiene su propia lógica de negocio y se despliega conjuntamente 
 con el resto. 
-                           
- 
 b) Que cada microservicio puede estar desarrollado usando una tecnología diferente. 
 c) Que cada equipo de desarrollo es responsable de todo el ciclo completo de un 
 microservicio. 
@@ -3014,8 +2936,6 @@ d) La elección entre comunicación síncrona y asíncrona depende de los requis
 arquitectura de microservicios? 
 a) Portabilidad entre entornos de desarrollo, pruebas y producción. 
 b) Aislamiento de dependencias entre microservicios. 
-                           
- 
 c) Despliegue rápido e independiente de cada microservicio. 
 d) Eliminación completa de la necesidad de orquestación. 
   
@@ -3086,8 +3006,6 @@ a) Una nube comunitaria puede ser administrada por la organización u organizaci
 constituyentes o por terceras partes. 
 b) Una nube híbrida -formada por la unión de dos o más nubes- NO permite portar datos o 
 aplicaciones entre las nubes que la conforman. 
-                           
- 
 c) La infraestructura de una nube privada es gestionada íntegramente por una organización. 
 d) Una nube comunitaria es la forma menos habitual de despliegue de computación en la nube, 
 siendo el NIST el único que suele recoger este modelo de despliegue. 
@@ -3121,8 +3039,6 @@ aunque no de toda la infraestructura subyacente?
 a) SaaS. 
 b) PaaS. 
 c) IaaS. 
-                           
- 
 d) AaaS. 
   
 388.- Si quisiera utilizar servicios interactivos o de tiempo real ¿cuál sería la técnica de 
@@ -3155,8 +3071,6 @@ d) Una herramienta para definir y ejecutar aplicaciones multi-contenedor.
   
 392.- Los proveedores cloud ofrecen soluciones orientadas a: 
 a) Conectividad (servicios de red). 
-                           
- 
 b) Procesamiento de información (cómputo). 
 c) Almacenamiento de información. 
 d) a), b), y c) son correctas. 
@@ -3224,8 +3138,6 @@ d) Independencia del proveedor, al poder migrar fácilmente de un proveedor clou
 401.- ¿Cuál de las siguientes afirmaciones sobre microservicios es correcta? 
 a) Los microservicios requieren necesariamente el uso de máquinas virtuales dedicadas para 
 cada servicio. 
-                           
- 
 b) Los microservicios permiten escalar servicios de forma independiente. 
 c) Todos los microservicios deben compartir la misma base de datos. 
 d) Los microservicios eliminan la necesidad de monitoreo y gestión de fallos. 
@@ -3293,8 +3205,6 @@ d) Prevención.
   
 410.- Uno de los siguientes NO es un tipo de sistema anti-intrusión. ¿Cuál? 
 a) SIDS. 
-                           
- 
 b) NIDS. 
 c) HIDS. 
 d) IPS. 
@@ -3360,8 +3270,6 @@ d) Rootkit.
 419.- En la seguridad de redes, ¿qué función cumple un firewall? 
 a) Filtrar tráfico según reglas de seguridad. 
 b) Monitorizar cambios en archivos del sistema. 
-                           
- 
 c) Proteger únicamente las contraseñas de usuarios. 
 d) Encriptar la información de la red. 
   
@@ -3429,8 +3337,6 @@ d) Cross-Site Scripting.
 428.- Dentro del Big Data, ¿cuál de los siguientes rasgos NO está incluido en lo que se conoce 
 como las tres uves? 
 a) Velocidad. 
-                           
- 
 b) Virtualización. 
 c) Variedad. 
 d) Volumen. 
@@ -3464,8 +3370,6 @@ en un data warehouse.
 a) La aproximación MOLAP emplea una base de datos relacional para almacenar los hechos. 
 b) La aproximación HOLAP emplea únicamente una base de datos multidimensional para 
 almacenar la información. 
-                           
- 
 c) La aproximación HOLAP es más ineficiente que la aproximación MOLAP en cuanto al 
 espacio utilizado. 
 d) La aproximación ROLAP utiliza menos espacio de almacenamiento que la aproximación 
@@ -3533,8 +3437,6 @@ d) YARN.
 441.- ¿Cuál de los siguientes NO es un nivel del Índice de Madurez de los Modelos de 
 Negocio de los Big Data? 
 a) Monitorización empresarial. 
-                           
- 
 b) Metamorfosis empresarial. 
 c) Digitalización empresarial. 
 d) Monetización de los datos. 
@@ -3566,8 +3468,6 @@ d) Consulta interactiva SQL sobre datos estructurados.
 446.- La federación de datos se basa en la idea de que: 
 a) El almacenamiento es el nuevo ETC. 
 b) La consulta es el nuevo ETC. 
-                           
- 
 c) El ETL desaparece. 
 d) Todo debe estar en un único servidor. 
   
@@ -3643,13 +3543,10 @@ PREGUNTAS: 451-475
 451.- Según el diagrama E/R anterior, ¿cuál de las siguientes afirmaciones es correcta?  
 a) En la entidad Cita, la columna doctor es clave foránea, la columna paciente es clave 
 primaria y la columna id es clave foránea. 
- 
 b) En la entidad Cita, la columna doctor es clave foránea, la columna paciente es clave foránea 
 y la columna id es clave foránea. 
- 
 c) En la entidad Cita, la columna doctor es clave foránea, la columna paciente es clave foránea 
 y la columna id es clave primaria. 
- 
 d) En la entidad Cita, la columna doctor es clave primaria, la columna paciente es clave 
 primaria y la columna id es clave foránea. 
  
@@ -3657,13 +3554,10 @@ primaria y la columna id es clave foránea.
 452.- Según el diagrama E/R anterior, ¿cuál de las siguientes afirmaciones es correcta?  
 a) Hay una relación 1:N entre Doctor y Cita. También hay una relación 1:N entre Cita y 
 Paciente. 
- 
 b) Hay una relación 1:N entre Doctor y Cita. También hay una relación 1:N entre Paciente y 
 Cita. 
- 
 c) Hay una relación 1:1 entre Doctor y Cita. También hay una relación 1:1 entre Cita y 
 Paciente. 
- 
 d) Hay una relación N:M entre Doctor y Cita. También hay una relación N:M entre Cita y 
 Paciente 
  
@@ -3676,7 +3570,6 @@ a) A que la página a la que ha intentado acceder la persona usuaria no existe.
 b) El error con código de estado 500 no existe en el protocolo HTTP.  
 c) Es un problema con el navegador de la persona usuaria, borrando las cookies y volviendo 
 a intentar la petición probablemente se solucione. 
- 
 d) Es un error interno en la parte del servidor.  
  
  
@@ -3716,19 +3609,14 @@ a) Backlog del sprint: es una lista priorizada de características, mejoras y co
 errores que definen los requisitos del producto. La gestiona el Product Owner. Backlog del 
 producto: contiene un subconjunto de elementos del backlog del sprint. Lo gestiona el 
 Equipo de Desarrollo. 
- 
 b) Backlog del producto: es una lista priorizada de características, mejoras y correcciones de 
 errores que definen los requisitos del producto. La gestiona el Product Owner. Backlog del 
 sprint: contiene un subconjunto de elementos del backlog del producto. Lo gestiona el 
 Equipo de Desarrollo. 
- 
 c) Backlog del sprint: es una lista priorizada de características, mejoras y correcciones de 
 errores que definen los requisitos del producto. La gestiona el Equipo de Desarrollo. 
 Backlog del producto: contiene un subconjunto de elementos del backlog del sprint. Lo 
 gestiona el Product Owner. 
- 
-                           
- 
 d) Backlog del producto: es una lista priorizada de características, mejoras y correcciones de 
 errores que definen los requisitos del producto. La gestiona el Equipo de Desarrollo. 
 Backlog del sprint: contiene un subconjunto de elementos del backlog del producto. Lo 
@@ -3741,13 +3629,10 @@ preguntas clave debe responder cada miembro del equipo?
  
 a) ¿Cuándo terminarás tu tarea o proyecto? ¿Cuántas horas trabajaste ayer? ¿Cuál es el estado 
 general del proyecto? 
- 
 b) ¿Qué hiciste desde la última reunión diaria? ¿Qué planeas hacer hasta la próxima reunión 
 diaria? ¿Hay algún impedimento o bloqueo que te impida cumplir con tu trabajo? 
- 
 c) ¿Cuándo terminarás tu tarea o proyecto? ¿Cuántas horas trabajaste ayer? ¿Hay algún 
 impedimento o bloqueo que te impida cumplir con tu trabajo? 
- 
 d) ¿Qué hiciste desde la última reunión diaria? ¿Cuántas horas trabajaste ayer? ¿Cuál es el 
 estado general del proyecto? 
  
@@ -3844,8 +3729,6 @@ representa como:
  
 a) Herencia  
 b) Asociación (línea simple)  
-                           
- 
 c) “extends”.  
 d) “include”.  
    
@@ -3854,11 +3737,9 @@ sistema OsaNet?
  
 a) El caso de uso “Actualizar historial del paciente” siempre ejecuta “Validar identidad del 
 doctor”. 
- 
 b) El caso de uso “Consultar disponibilidad” se ejecuta siempre dentro de “Programar cita”.  
 c) El caso de uso “Programar cita” ejecuta “Solicitar confirmación al doctor” solo si la nueva 
 cita modifica otra ya existente. 
- 
 d) El caso de uso “Registrar paciente” siempre llama a “Crear tarjeta sanitaria”.  
    
 470.- Para validar que OsaNet funciona tras introducir nuevas funcionalidades en la 
@@ -3883,8 +3764,6 @@ fecha anterior al día actual. ¿Qué tipo de prueba es?
 a) Caja blanca.  
 b) Caja negra.  
 c) Integración.  
-                           
- 
 d) Estática.  
    
 473.- ¿Qué tipo de cobertura utilizar para comprobar que todas las rutas del método 
@@ -3913,7 +3792,6 @@ a) Duplicar las clases DoctorPrimaria y DoctorEspecialista sin relación entre e
 b) Añadir todos los atributos en una única clase Doctor y dejar algunos vacíos según el tipo.  
 c) Crear una clase base Doctor y derivar de ella DoctorPrimaria y DoctorEspecialista mediante 
 herencia 
- 
 d) Crear una relación N:M entre Doctor y TipoDoctor.  
   
  
@@ -4105,8 +3983,6 @@ el/la cliente posee una pareja de claves pública-privada correcta. Así se da p
 la identidad del/la cliente. 
 b) Validación mediante envío de certificado digital. El/la cliente envía su certificado, el 
 servidor comprueba que es válido. Así se da por comprobada la identidad del/la cliente. 
-                           
- 
 c) Validación mediante envío de certificado digital y firma. El servidor envía un texto 
 aleatorio (un "reto") al cliente, que lo devuelve firmado con su clave pública. Se valida la 
 firma, lo que indica que el/la cliente posee una pareja de claves pública-privada correcta. 
@@ -4145,8 +4021,6 @@ cifrado).
 b) El/la usuario/a firmante calcula el resumen digital del documento y lo cifra con su clave 
 privada. El resultado es un documento completamente cifrado que solo puede ser leído por 
 quien tenga la clave pública del firmante. 
-                           
- 
 c) El/la usuario/a firmante utiliza la clave pública de la AC para firmar el resumen digital del 
 documento, garantizando así la autenticidad del firmante. 
 d) El/la usuario/a firmante cifra el documento completo con la clave pública de la AC y añade 
@@ -4181,8 +4055,6 @@ sanitaria?
 a) Reduce el consumo de ancho de banda al comprimir los datos. 
 b) Permite autenticar al servidor y proteger la confidencialidad de la comunicación. 
 c) Evita la necesidad de utilizar certificados digitales. 
-                           
- 
 d) Garantiza que los usuarios estén autenticados en todos los casos. 
   
 491.- En el contexto de usar los servicios de nuestra PKI para conseguir que la 
@@ -4217,8 +4089,6 @@ mismo certificado sin renovación?
 a) Aumenta el rendimiento del sistema. 
 b) Se reduce la latencia de las comunicaciones. 
 c) Se incrementa el riesgo si la clave privada es comprometida durante largos periodos. 
-                           
- 
 d) Se evita la necesidad de confiar en la AC. 
   
 495.- Señala la afirmación FALSA si decidiéramos implementar un sistema federado sobre 
@@ -4271,8 +4141,1306 @@ c) Apache Pig.
 d) Support Vector Machines. 
   
   
+PREGUNTAS BATERÍA COMÚN 
+Categorías A, B y C1 
+ 
+501.- De acuerdo con las normas generales de ordenación de las profesiones 
+sanitarias, para poder ejercer una profesión sanitaria será requisito 
+imprescindible: 
   
-  
-  
+a) La colegiación, cuando una ley estatal establezca esta obligación para el ejercicio 
+de una profesión titulada o algunas actividades propias de ésta. 
+b) La inexistencia de inhabilitación o suspensión para el ejercicio profesional por 
+sentencia judicial, aunque no sea firme, durante el periodo de tiempo que fije ésta; 
+por resolución sancionadora impuesta por un colegio profesional sanitario, cuando 
+una ley estatal establezca para este ejercicio la obligación de pertenecer al colegio 
+profesional respectivo durante el periodo de tiempo que fije ésta; o por resolución 
+administrativa sancionadora firme, durante el periodo de tiempo que fije ésta, 
+cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública. 
+c) Tener suscrito y vigente un seguro de responsabilidad, un aval u otra garantía 
+financiera, ya sean de protección personal o colectiva, que cubra las 
+indemnizaciones que se puedan derivar de la responsabilidad profesional por un 
+eventual daño a las personas, causado con ocasión de la prestación de tal asistencia 
+o servicios, cuando se ejerza la profesión en el ámbito de la asistencia sanitaria 
+pública. 
+d) Todo lo anterior. 
   
  
+ 
+502.- Según lo establecido en la normativa vigente sobre ordenación de las 
+profesiones sanitarias, para poder ejercer una profesión sanitaria: 
+ 
+  
+a) Se ha de tener suscrito y vigente un seguro de responsabilidad que cubra las 
+indemnizaciones que se puedan derivar de la responsabilidad profesional por un 
+eventual daño a las personas causado con ocasión de la prestación de tal asistencia 
+o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria 
+privada, no siendo suficiente un aval u otra garantía financiera de protección 
+colectiva. 
+b) Se ha de tener suscrito y vigente un seguro de responsabilidad, un aval u otra 
+garantía financiera, sean de protección personal o colectiva, que cubra las 
+indemnizaciones que se puedan derivar de la responsabilidad profesional por un 
+eventual daño a las personas causado con ocasión de la prestación de tal asistencia 
+o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria 
+privada. 
+c) Se ha de tener suscrito y vigente un seguro de responsabilidad, un aval u otra 
+garantía financiera, sean de protección personal o colectiva, que cubra las 
+indemnizaciones que se puedan derivar de la responsabilidad profesional por un 
+eventual daño a las personas causado con ocasión de la prestación de tal asistencia 
+o servicios cuando se ejerza la profesión en el ámbito de la asistencia sanitaria 
+pública. 
+d) Todas las opciones son falsas. 
+  
+ 
+ 
+503.- Según la normativa vigente, el órgano encargado del Registro Estatal de 
+Profesionales Sanitarios podrá (indíquese la que sea correcta): 
+  
+a) Consultar los datos de carácter personal de la población profesional sanitaria 
+contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) 
+y del Número de Identidad de Extranjero (NIE) competencia del Ministerio del 
+Interior, para contrastar la veracidad de la información que consta en el registro. 
+b) Consultar los datos de carácter personal de la población profesional sanitaria 
+contenidos en los archivos y ficheros del Documento Nacional de Identidad (DNI) 
+y del Número de Identidad de Extranjero (NIE) competencia del Ministerio del 
+Interior, para contrastar la veracidad de la información que consta en el registro, 
+pero solo si la persona titular no se ha opuesto explícitamente. 
+c) Consultar los datos de carácter personal de los profesionales sanitarios contenidos 
+en los archivos y ficheros del Documento Nacional de Identidad (DNI) y del 
+Número de Identidad de Extranjero (NIE) competencia del Ministerio del Interior, 
+para contrastar la veracidad de la información que consta en el registro, pero solo si 
+el titular de los datos da su consentimiento expreso. 
+d) Solo podrá consultar los datos de carácter personal de la población profesional 
+sanitaria contenidos en los archivos y ficheros del Documento Nacional de 
+Identidad (DNI) y del Número de Identidad de Extranjero (NIE) en el curso de una 
+investigación sobre una infracción administrativa. 
+ 
+ 
+ 
+ 
+ 
+ 
+504.- En el marco de la ordenación de las profesiones sanitarias, las personas 
+pacientes: 
+  
+a) Tienen derecho a la libre elección del personal facultativo que debe atenderles, tanto 
+si su ejercicio profesional se desarrolla en el sistema público como en el ámbito 
+privado. 
+b) Tienen derecho a la libre elección del personal facultativo que debe atenderles, pero 
+solo si su ejercicio profesional se desarrolla en el sistema público. 
+c) Tienen derecho a la libre elección del personal facultativo que debe atenderles, pero 
+solo si su ejercicio profesional se desarrolla en el ámbito privado. 
+d) Ninguna de las anteriores es correcta. 
+                                                                    
+ 
+   
+ 
+505.- Según la normativa de ordenación de las profesiones sanitarias, el personal 
+profesional y las personas responsables de los centros sanitarios facilitarán a 
+sus pacientes el ejercicio del derecho a conocer: 
+  
+a) El nombre, la titulación, la especialidad y la hoja de servicios del personal sanitario 
+que les atiende, así como la categoría y función de dicho personal, si así estuvieran 
+definidas en su centro o institución. 
+b) El nombre, la titulación y la especialidad del personal sanitario que les atiende y su 
+categoría, pero no su función en su centro o institución. 
+c) El nombre, la titulación y la especialidad del personal sanitario que les atiende, así 
+como la categoría y función de dicho personal, si así estuvieran definidas en su 
+centro o institución. 
+d) El nombre, la titulación y la especialidad del personal sanitario que les atiende, pero 
+no su categoría y función en su centro o institución. 
+ 
+ 
+ 
+ 
+506.- De acuerdo con las normas generales de ordenación de las profesiones 
+sanitarias, el ejercicio del derecho del personal profesional sanitario a la 
+renuncia a la atención a una persona paciente queda condicionado a que 
+(señálese la respuesta incorrecta): 
+  
+a) Su renuncia no conlleve desatención de la persona paciente. 
+b) La renuncia se ejerza de acuerdo con procedimientos regulares. 
+c) Quede constancia, aunque no sea formal, de la renuncia. 
+d) La renuncia se ejerza de acuerdo con procedimientos establecidos y explícitos. 
+  
+ 
+ 
+507.- Los centros sanitarios revisarán que el personal sanitario de su plantilla 
+cumple los requisitos necesarios para ejercer la profesión conforme a lo 
+previsto en la Ley 44/2003, de 21 de noviembre, de ordenación de las 
+profesiones sanitarias y en las demás normas aplicables: 
+  
+a) Cada cinco años como mínimo. 
+b) Cada tres años como mínimo. 
+c) Cada dos años como mínimo. 
+d) Cada cuatro años como mínimo. 
+  
+ 
+ 
+                                                                    
+ 
+   
+ 
+508.- Según dispone la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, cuando una actuación sanitaria se realice por un equipo de profesionales (señálese la respuesta incorrecta):
+a) Se articulará, preferentemente, de forma jerarquizada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.
+b) Se articulará de forma jerarquizada o colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.
+c) Se articulará de forma preferentemente colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.
+d) Ninguna de las anteriores es correcta.
+
+509.- De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, diga cuál de los siguientes principios generales de la relación entre las personas que ejercen profesiones sanitarias y las personas atendidas no es tal:
+a) El personal profesional tiene el deber de hacer un uso racional de los recursos diagnósticos y terapéuticos a su cargo, tomando en consideración, entre otros, los costes de sus decisiones y evitando la sobreutilización, la infrautilización y la inadecuada utilización de los mismos.
+b) El personal profesional tiene el deber de prestar una atención sanitaria técnica y profesional adecuada a las necesidades de salud de las personas que atiende, de acuerdo con el estado de desarrollo de los conocimientos científicos de cada momento y con los niveles de calidad y seguridad que se establecen en esta ley y el resto de normas legales y deontológicas aplicables.
+c) El personal profesional tiene el deber de proporcionar a las personas pacientes información precisa sobre su formación profesional, la forma en que han actualizado sus conocimientos y las demandas de responsabilidad que hayan podido derivar en responsabilidades administrativas.
+d) El personal profesional tiene el deber de respetar la personalidad, dignidad e intimidad de las personas a su cuidado y debe respetar su participación en las tomas de decisiones que les afecten. En todo caso, deben ofrecer una información suficiente y adecuada para que puedan ejercer su derecho al consentimiento sobre dichas decisiones.
+
+510.- De acuerdo con la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, los centros sanitarios acreditados para desarrollar programas de formación continuada:
+a) Deberán contar con jefaturas de estudios, con la coordinación docente y con el personal tutor de la formación que resulten adecuados en función de las actividades a desarrollar, así como con una figura de defensoría del alumnado.
+b) Deberán contar una comisión de docencia, así como con jefaturas de estudios, coordinación docente y personal tutor de la formación que resulten adecuados en función de las actividades a desarrollar.
+c) Deberán contar una comisión de docencia y con una figura de defensoría del alumnado, así como con jefaturas de estudios, coordinación docente y personal tutor de la formación que resulten adecuados en función de las actividades a desarrollar.
+d) Todas las anteriores son incorrectas.
+
+511.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, sus disposiciones se aplicarán a:
+a) A los servicios sanitarios de financiación pública y a los privados, en los mismos términos.
+b) A los servicios sanitarios de financiación pública. También a los privados en lo que se refiere al control de las actividades de salud pública y en materia de garantías de información, seguridad y calidad.
+c) A los servicios sanitarios de financiación pública y a los privados concertados.
+d) Únicamente a los servicios sanitarios de financiación pública.
+
+512.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la ciudadanía tendrá los siguientes derechos en el conjunto del Sistema Nacional de Salud:
+a) A recibir asistencia sanitaria en su comunidad autónoma de residencia.
+b) A recibir el reembolso de los gastos derivados de la asistencia en la sanidad privada cuando se trate de servicios recogidos en el catálogo de prestaciones del Sistema Nacional de Salud.
+c) A recibir el reembolso de los gastos derivados de la asistencia sanitaria del catálogo de prestaciones del Sistema Nacional de Salud que pudiera requerir del servicio de salud de la comunidad autónoma en la que se encuentre desplazado/a.
+d) Ninguna de las respuestas anteriores es correcta.
+
+513.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la cartera común de servicios del Sistema Nacional de Salud se articula en torno a las siguientes modalidades:
+a) Cartera común básica de servicios asistenciales, cartera común suplementaria y cartera común de servicios accesorios.
+b) Cartera común básica nacional de servicios asistenciales y cartera común autonómica de servicios asistenciales.
+c) Cartera común nacional básica de servicios asistenciales, cartera común suplementaria autonómica y cartera común de servicios accesorios autonómicos.
+d) Cartera común nacional y autonómica básica de servicios asistenciales, cartera común nacional y autonómica suplementaria y cartera común nacional y autonómica de servicios accesorios.
+
+514.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la cartera común básica de servicios asistenciales del Sistema Nacional de Salud comprende:
+a) Todas las actividades asistenciales de prevención, diagnóstico, tratamiento y rehabilitación que se realicen en centros sanitarios o sociosanitarios, así como el transporte sanitario urgente, la prestación farmacéutica y la prestación ortoprotésica, cubiertos de forma completa por financiación pública.
+b) Todas las actividades asistenciales de prevención, diagnóstico, tratamiento y rehabilitación que se realicen en centros sanitarios o sociosanitarios, así como el transporte sanitario urgente y la prestación farmacéutica, cubiertos de forma completa por financiación pública.
+c) Todas las actividades asistenciales de prevención, diagnóstico, tratamiento y rehabilitación que se realicen en centros sanitarios o sociosanitarios, así como el transporte sanitario urgente, y la prestación ortoprotésica, cubiertos de forma completa por financiación pública.
+d) Todas las actividades asistenciales de prevención, diagnóstico, tratamiento y rehabilitación que se realicen en centros sanitarios o sociosanitarios, así como el transporte sanitario urgente, cubiertos de forma completa por financiación pública.
+  
+ 
+ 
+                                                                    
+ 
+   
+ 
+515.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la cartera común suplementaria del Sistema Nacional de Salud incluirá las siguientes prestaciones:
+a) Únicamente la prestación farmacéutica.
+b) Únicamente la prestación ortoprotésica.
+c) Únicamente la prestación farmacéutica y la prestación ortoprotésica.
+d) La prestación farmacéutica, la prestación ortoprotésica y la prestación con productos dietéticos.
+
+516.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la prestación de atención primaria no comprenderá:
+a) La atención a la salud bucodental.
+b) La atención paliativa a personas enfermas terminales.
+c) La rehabilitation básica.
+d) Ninguna de las respuestas anteriores es correcta.
+
+517.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, para la elaboración del contenido de la cartera común de servicios del Sistema Nacional de Salud:
+a) Es preceptivo el informe favorable de la Red Española de Agencias de Evaluación de Tecnologías Sanitarias y Prestaciones del Sistema Nacional de Salud, en relación con la eficacia, eficiencia, efectividad, seguridad y utilidad terapéuticas, así como las ventajas y alternativas asistenciales, el cuidado de grupos menos protegidos o de riesgo y las necesidades sociales, así como su impacto económico y organizativo.
+b) Se contará con la participación de la Red Española de Agencias de Evaluación de Tecnologías Sanitarias y Prestaciones del Sistema Nacional de Salud, en la evaluación de la eficacia, eficiencia, efectividad, seguridad y utilidad terapéuticas, así como las ventajas y alternativas asistenciales, el cuidado de grupos menos protegidos o de riesgo y las necesidades sociales, así como su impacto económico y organizativo.
+c) Es preceptivo el informe favorable de las sociedades científicas implicadas, en relación con la eficacia, eficiencia, efectividad, seguridad y utilidad terapéuticas, así como las ventajas y alternativas asistenciales, el cuidado de grupos menos protegidos o de riesgo y las necesidades sociales, así como su impacto económico y organizativo.
+d) Se contará con la participación de las sociedades científicas implicadas, en la evaluación de la eficacia, eficiencia, efectividad, seguridad y utilidad terapéuticas, así como las ventajas y alternativas asistenciales, el cuidado de grupos menos protegidos o de riesgo y las necesidades sociales, así como su impacto económico y organizativo.
+
+518.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la exclusión de una técnica, tecnología o procedimiento actualmente incluido en la cartera de servicios se llevará a cabo cuando:
+a) Se evidencie su falta de eficacia, efectividad o eficiencia, o que el balance entre beneficio y riesgo sea significativamente desfavorable.
+b) Requiera una formación para la que no exista la especialidad médica correspondiente.
+c) Hayan cambiado las condiciones económicas de su implantación.
+d) Todas las respuestas anteriores son correctas.
+
+519.- A los efectos de la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la competencia profesional es:
+a) La acreditación de formación continuada a lo largo del desempeño de su carrera profesional.
+b) La competencia acreditada por el título correspondiente acreditativo de la adquisición de conocimientos requeridos para el desempeño del puesto designado.
+c) La aptitud del personal profesional sanitario para integrar y aplicar los conocimientos, habilidades y actitudes asociados a las buenas prácticas de su profesión para resolver los problemas que se le plantean.
+d) La superación del proceso selectivo oficial convocado por la autoridad competente para la adquisición del vínculo estatutario con los servicios sanitarios.
+
+520.- Según dispone la Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, la declaración de actuaciones coordinadas en salud pública y en seguridad alimentaria deberán encuadrarse en alguno de los supuestos siguientes:
+a) Responder a situaciones de especial riesgo o alarma para la salud pública.
+b) Establecer planes preventivos para hacer frente a situaciones de especial riesgo o alarma para la salud pública.
+c) Realizar análisis epidemiológicos que permitan establecer estructuras y recursos según las previsiones en materia de salud pública y seguridad alimentaria.
+d) Las respuestas a) y b) son verdaderas y la c) es falsa.
+
+521.- Según dispone la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, la ordenación del régimen personal estatutario de los servicios de salud se rige por una serie de principios y criterios. Señale cuales no están entre los mencionados por esta ley:
+a) Sometimiento pleno a la ley y el derecho.
+b) Igualdad, mérito, capacidad y promoción en el acceso a la condición de personal estatutario.
+c) Integración en el régimen organizativo y funcional del servicio de salud y de sus centros e instituciones.
+d) Coordinación, cooperación y mutua información entre las Administraciones sanitarias públicas.
+
+522.- La condición de personal estatutario fijo se adquiere, tal y como prevé la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, por el cumplimiento de los siguientes requisitos:
+a) Incorporación a una plaza de servicio, institución o centro que corresponda en el plazo fijado en la convocatoria tras la superación de las pruebas de selección.
+b) Superación de las pruebas de selección; nombramiento conferido por el órgano competente; e incorporación a una plaza del servicio, institución o centro que corresponda en el plazo de un mes.
+c) Superación de las pruebas de selección; nombramiento conferido por el órgano competente; e incorporación, previo cumplimiento de los requisitos formales en cada caso establecidos, a una plaza del servicio, institución o centro que corresponda en el plazo determinado en la convocatoria.
+d) Superación de las pruebas de selección; nombramiento conferido por el órgano competente; e incorporación a una plaza del servicio, institución o centro que corresponda en todo caso en el plazo determinado en la convocatoria.
+
+523.- Según dice la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, en el proceso de la adquisición de la condición de personal estatutario fijo, no podrán recibir nombramiento y quedarán sin efecto las actuaciones de quienes:
+a) No acrediten que reúnen los requisitos y condiciones exigidos en la convocatoria, una vez superado el proceso selectivo.
+b) No acrediten que reúnen los requisitos y condiciones exigidos en la convocatoria, con carácter previo a la superación del proceso selectivo.
+c) No acrediten que reúnen los requisitos y condiciones exigidos en la convocatoria, una vez firmada la convocatoria.
+d) Una vez superado el proceso selectivo, automáticamente se procede al nombramiento por el órgano competente.
+
+524.- La pérdida de la condición de personal estatutario regulada en la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, se produce:
+a) Siempre en caso de pena de inhabilitación especial para empleo o cargo público, afecte o no al correspondiente nombramiento.
+b) En caso de que se adopte la pena de inhabilitación absoluta sea firme o no.
+c) En caso de que se adopte la pena de inhabilitación especial para la correspondiente profesión, siempre que esta exceda de seis años.
+d) En caso de que se adopte la pena de inhabilitación especial para la correspondiente profesión, siempre que esta exceda de tres años.
+
+525.- Conforme a la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, señale cuál de las siguientes afirmaciones no es correcta:
+a) La jubilación puede ser forzosa o voluntaria.
+b) Para que la persona interesada pueda prolongar su permanencia en servicio activo hasta cumplir los 70 años, bastará con que lo solicite voluntariamente.
+c) La jubilación forzosa se declarará al cumplir la persona interesada 65 años.
+d) Podrá optar a la jubilación voluntaria, total o parcial, el personal estatutario que reúna los requisitos establecidos en la legislación de Seguridad Social.
+
+526.- Procede la extinción de la condición de personal estatutario fijo de los servicios de salud:
+a) Cuando se produzca la pérdida de la nacionalidad.
+b) En caso de recaer sanción firme disciplinaria de separación del servicio.
+c) Siempre que se imponga una pena principal o accesoria de inhabilitación especial para empleo o cargo público o para el ejercicio de la correspondiente profesión.
+d) Todas las anteriores respuestas son correctas.
+
+527.- En materia de retribuciones, la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, prevé que:
+a) El sistema retributivo del personal estatutario se estructura en retribuciones básicas y retribuciones complementarias.
+b) La evaluación del personal estatutario a efectos de determinación de una parte de la retribuciones complementarias se establecerá a través de procedimientos fundados en los principios igualdad, objetividad y transparencia.
+c) El sistema retributivo del personal estatutario responde a los principios de cualificación técnica y profesional.
+d) Todas las respuestas son correctas.
+
+528.- De acuerdo con la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud, señale la respuesta correcta respecto a las retribuciones del personal estatutario de los servicios de salud:
+a) Las retribuciones básicas son: el sueldo asignado a cada categoría en función del título exigido para su desempeño; los trienios; y las pagas extraordinarias.
+b) Las retribuciones básicas serán iguales en todos los servicios de salud independientemente de la anualidad en la que se perciban.
+c) El personal estatutario temporal percibirá la totalidad de las retribuciones que, en el correspondiente servicio de salud, correspondan a su nombramiento, con excepción del complemento de carrera.
+d) El complemento de atención continuada está destinado a retribuir la iniciativa continuada y permanente de la persona titular del puesto.
+
+529.- La pérdida de la condición de personal estatutario de los servicios de salud se produce cuando la incapacidad permanente sea declarada:
+a) En grado de incapacidad permanente total para la profesión habitual.
+b) En grado de incapacidad absoluta para todo trabajo.
+c) En grado de gran invalidez.
+d) Todas las respuestas son correctas.
+
+530.- En el supuesto del personal estatutario de los servicios de salud:
+a) El período de localización es aquel período de tiempo en el que el personal se encuentra únicamente en situación de disponibilidad.
+b) Se considera período de descanso todo período de tiempo que no sea tiempo de trabajo.
+c) El trabajo por turnos es una forma de organización del trabajo en equipo con arreglo al ritmo rotatorio y siempre de tipo continuo.
+d) El período de localización es aquel período de tiempo en el que el personal se encuentra en situación de disponibilidad a los solos efectos de asegurar su posible localización.
+
+531.- Para el personal estatutario de los servicios de salud, el período nocturno tendrá la siguiente duración:
+a) Mínima de siete horas e incluirá necesariamente el período comprendido entre las cero y las cinco horas de cada día natural.
+b) Mínima de ocho horas e incluirá necesariamente el período comprendido entre las cero y las cinco horas de cada día natural.
+c) Mínima de ocho horas e incluirá necesariamente el período comprendido entre las doce y las cinco horas de cada día natural.
+d) Mínima de siete horas e incluirá necesariamente el período comprendido entre las doce y las cinco horas de cada día natural.
+
+532.- Según establece la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud:
+a) Resulta incompatible para el personal estatutario de los servicios de salud el ejercicio de las funciones sanitarias con cualquier otro tipo de funciones.
+b) Al personal estatutario de los servicios de salud le resulta aplicable el mismo régimen de incompatibilidades establecido para el personal funcionario.
+c) Atendiendo a lo que establezca la legislación vigente, el personal estatutario de los servicios de salud podrá compatibilizar las funciones sanitarias y docente.
+d) Para el personal licenciado sanitario el complemento específico resulta irrenunciable.
+
+533.- La Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud regula el descanso semanal. Señale la respuesta que no es correcta:
+a) El personal tendrá derecho a un período mínimo que siempre será fijo de descanso ininterrumpido con una duración media de 24 horas semanales.
+b) El período de referencia para el cálculo del período de descanso semanal será de tres meses.
+c) En el caso de que no se hubiera disfrutado del tiempo mínimo de descanso semanal en el período de tres meses se producirá una compensación a través del régimen de descansos alternativos.
+d) El período de referencia para el cálculo del período de descanso semanal será de dos meses.
+
+534.- Conforme a la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud:
+a) El personal tendrá derecho a una vacación retribuida cuya duración no será inferior en ningún caso a 30 días naturales.
+b) El personal estatutario de los servicios de salud podrá elegir sustituir el período de vacación por una compensación económica.
+c) Solo podrá ser sustituido por una compensación económica el período vacacional anual mediante la programación funcional de los centros, cuando así lo aconsejen razones organizativas.
+d) Anualmente, el personal tendrá derecho a una vacación retribuida cuya duración no será inferior a 30 días naturales, o al tiempo que proporcionalmente corresponda en función del tiempo de servicios.
+
+535.- La excedencia voluntaria solicitada por el personal estatutario de los servicios de salud por interés particular exige haber prestado servicios efectivos en cualquiera de las Administraciones públicas durante:
+a) Los cinco años inmediatamente anteriores.
+b) Los cuatro años inmediatamente anteriores.
+c) Los dos años inmediatamente anteriores.
+d) Los tres años inmediatamente anteriores.
+
+536.- La Ley 8/1997, de 26 de junio, de ordenación Sanitaria de Euskadi, establece que la Administración sanitaria vasca debe garantizar la tutela general de la salud pública a través de:
+a) Medidas preventivas.
+b) Promoción de la salud.
+c) Prestaciones sanitarias individuales.
+d) Son correctas todas las respuestas.
+
+537.- La Ley 8/1997, de 26 de junio, de ordenación Sanitaria de Euskadi, reconoce la universalidad del derecho a la protección de la salud para:
+a) Todas las personas residentes en el territorio de Euskadi, así como para las personas transeúntes.
+b) Todas las personas residentes en Euskadi o fuera de Euskadi, así como para las personas transeúntes.
+c) Solo para las personas que tengan vecindad administrativa en Euskadi.
+d) Solo para las personas de quienes pueda predicarse la condición política de vascos.
+
+538.- Señale cuál de los siguientes principios no se enuncian entre los principios informadores del sistema sanitario de Euskadi en la Ley 8/1997, de 26 de junio, de ordenación Sanitaria de Euskadi:
+a) Universalidad.
+b) Solidaridad ciudadana.
+c) Equidad.
+d) Calidad de los servicios.
+
+539.- La Ley 8/1997, de 26 de junio, de ordenación Sanitaria de Euskadi, establece respecto a las áreas de salud que:
+a) La Comunidad Autónoma del País Vasco se divide territorialmente en áreas de salud de acuerdo con la situación socio-económica de cada demarcación geográfica.
+b) En cada área de salud pueden ponerse en práctica las actuaciones esenciales que requiere la tutela general de la salud pública y exclusivamente la asistencia sanitaria primaria.
+c) En cada área de salud se garantizará una adecuada ordenación de la atención primaria y su coordinación con la atención especializada.
+d) Son correctas la a) y la c.
+
+540.- La Ley 8/1997, de 26 de junio, de ordenación Sanitaria de Euskadi prevé la creación de sistemas de información necesarios para facilitar el ejercicio adecuado de los distintos niveles de responsabilidad en el sistema. A tal fin, los datos de carácter personal relativos a la salud podrán ser recabados y tratados siempre que se cumplan los siguientes requisitos:
+a) Siempre debe constar el previo consentimiento de la persona afectada.
+b) Si no consta el previo consentimiento de la persona afectada se requiere que la actuación se encuentre debidamente autorizada y se efectúe previo procedimiento de disociación que garantice el anonimato de la información.
+c) Que conste el previo consentimiento de la persona afectada por escrito y que se funcione el anonimato de la información.
+d) Basta con que la actuación se encuentre debidamente autorizada.
+
+541.- La Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi al contemplar los derechos y deberes ciudadanos, alude a:
+a) La obligación de dejar constancia escrita de todo proceso diagnóstico o terapéutico.
+b) La obligación de dejar constancia por cualquier medio de todo proceso diagnóstico.
+c) La obligación de dejar constancia por cualquier medio de todo proceso diagnóstico o terapéutico.
+d) No existe en la Ley ninguna previsión a este respecto, de modo que será el personal facultativo el que decida si el proceso diagnóstico o terapéutico debe quedar registrado.
+
+542.- El contrato-programa, tal y como establece la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi:
+a) Es el instrumento jurídico mediante el que se articulan las relaciones entre el Gobierno Vasco y las organizaciones del ente público Osakidetza-Servicio Vasco de Salud para la provisión de servicios sanitarios.
+b) Es el instrumento jurídico mediante el que se articulan de manera directa las relaciones entre el Departamento competente en materia de sanidad y las organizaciones del ente público Osakidetza-Servicio Vasco de Salud que tiene naturaleza jurídica de concierto.
+c) Es el instrumento jurídico mediante el que se articulan de manera directa las relaciones entre el Departamento competente en materia de sanidad y las organizaciones del ente público Osakidetza-Servicio Vasco de Salud que tiene naturaleza jurídica de un convenio de carácter especial.
+d) Ninguna respuesta es correcta.
+
+543.- El consejo de administración de Osakidetza-Servicio Vasco de Salud está integrado por:
+a) La persona titular de la presidencia y por un número no superior a cinco miembros en representación de la Administración de la Comunidad Autónoma de Euskadi.
+b) La persona titular de la presidencia y por un número no superior a tres miembros en representación de la Administración de la Comunidad Autónoma de Euskadi.
+c) La persona titular de la presidencia y por cinco miembros en representación del Departamento competente en materia de sanidad.
+d) La persona titular de la presidencia, la Consejería del Departamento competente en materia de sanidad y tres miembros en representación de la Administración de la Comunidad Autónoma de Euskadi.
+
+544.- Según establece la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi:
+a) El Plan de Salud de Euskadi debe ser aprobado por el Parlamento Vasco.
+b) El Departamento competente en materia de sanidad debe elaborar semestralmente y remitir al Parlamento un informe con la evaluación de los objetivos y determinaciones del Plan de Salud de Euskadi.
+c) El Departamento competente en materia de sanidad debe elaborar anualmente y remitir al Parlamento un informe con la evaluación de los objetivos y determinaciones del Plan de Salud de Euskadi.
+d) Son correctas las respuestas a) y c.
+
+545.- A los efectos de la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi, las plantillas de personal del ente público Osakidetza-Servicio Vasco de Salud:
+a) Serán aprobadas por la Presidencia a propuesta del consejo de administración.
+b) Se denomina así al número de efectivos de carácter estructural con que cuentan tanto su organización central de administración como las organizaciones de servicios dependientes de Osakidetza-Servicio Vasco de Salud.
+c) Deberán ajustarse al número máximo de efectivos, según grupos profesionales, que anualmente aprobará su consejo de administración a propuesta del Departamento de Sanidad.
+d) Deberán ajustarse al número máximo de efectivos, según grupos de titulación, que anualmente aprobará el Departamento de Sanidad.
+
+546.- En el ámbito territorial de la Comunidad Autónoma de Euskadi, las inspecciones necesarias para asegurar el cumplimiento de lo previsto en la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi y en el resto de la legislación sanitaria corresponde:
+a) A la inspección de trabajo del País Vasco adscrita al Departamento de trabajo y empleo del Gobierno Vasco.
+b) En todos los casos a las corporaciones locales de la Comunidad Autónoma.
+c) Al Departamento competente en materia de sanidad.
+d) La inspección en materia sanitaria no es competencia de la Comunidad Autónoma de Euskadi.
+
+547.- Señale cuál de los siguientes criterios no está contemplado en la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi para la clasificación de las infracciones en leves, graves o muy graves:
+a) La cuantía de la indemnización solicitada.
+b) Los riesgos para la salud.
+c) El grado de intencionalidad.
+d) La gravedad de la alteración sanitaria y social producida.
+
+548.- Según establece la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi, en materia de sanciones señale la respuesta correcta:
+a) Las infracciones serán sancionadas exclusivamente con sanción pecuniaria o económica.
+b) En los casos de infracciones muy graves, el Gobierno Vasco podrá acordar el cierre temporal del establecimiento, instalación o servicio por un plazo máximo de cinco años.
+c) Sin perjuicio de la multa que proceda imponer, en ciertos casos, la sanción económica que se imponga podrá ser incrementada hasta el triple de la cuantía del beneficio ilícito obtenido.
+d) En los casos de infracciones muy graves, el Gobierno Vasco podrá acordar el cierre temporal del establecimiento, instalación o servicio por un plazo máximo de tres años.
+
+549.- Según la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi, las organizaciones a través de las que se procede a la provisión de servicios sanitarios con medios adscritos al ente público Osakidetza-Servicio Vasco de Salud:
+a) Realizarán su actividad bajo el principio de autonomía económico-financiera y de gestión.
+b) Se configurarán como instituciones de titularidad privada y con personalidad jurídica propia.
+c) Se crearán por ley como entidades de titularidad pública y con personalidad jurídica propia.
+d) Para realizar su actividad dependen presupuestariamente del ente público Osakidetza-Servicio Vasco de Salud.
+
+550.- Respecto al personal sujeto al régimen estatutario que establece la Ley 8/1997, de 26 de junio, de Ordenación Sanitaria de Euskadi, señale la respuesta correcta:
+a) Este vínculo estatutario se adquiere mediante el cumplimiento de los dos siguientes requisitos: superación del proceso selectivo correspondiente y nombramiento conferido por autoridad competente.
+b) Los principios que rigen el procedimiento selectivo para la adquisición del vínculo estatutario son exclusivamente el de igualdad, mérito y capacidad.
+c) Los instrumentos de clasificación del personal sujeto a este régimen estatutario son el grupo de titulación, el grupo profesional, la categoría y el puesto funcional que se desempeñe.
+d) El grupo de titulación constituye el instrumento de clasificación del personal en base al agrupamiento unitario de las aptitudes profesionales y contenido específico de las tareas propias de la prestación.
+
+551.- Corresponderá la presidencia del ente público Osakidetza-Servicio Vasco de Salud a:
+a) Quien ostente la presidencia del Gobierno (Lehendakari) de la Comunidad Autónoma del País Vasco.
+b) La Diputación General del Territorio Histórico en que esté situado el Ente.
+c) La presidencia a quien ostente la titularidad del Departamento de Sanidad y la presidencia de honor a quien ostente la presidencia del Gobierno (Lehendakari) de la Comunidad Autónoma del País Vasco.
+d) Quien ostente la titularidad del Departamento de Sanidad.
+
+552.- La función de nombrar y separar a quienes ocupen las Direcciones de División de la organización central del ente público corresponde a:
+a) El Consejo de Administración del Ente.
+b) La Dirección General del Ente.
+c) La Presidencia del Ente.
+d) Ninguno de los anteriores.
+
+553.- La composición del Consejo del ente público Osakidetza-Servicio Vasco de Salud contará, además de la persona que ejerza la Presidencia:
+a) Con cinco integrantes en representación de la Administración de la Comunidad Autónoma, que nombrará el Gobierno: una persona a propuesta de la titularidad del Departamento de Hacienda y Administración Pública, otra a propuesta de quien ostente la titularidad de Bienestar Social y las tres restantes a propuesta de la persona titular de Sanidad.
+b) Con cinco integrantes en representación de la Administración de la Comunidad Autónoma, que nombrará el Gobierno: una persona a propuesta de la titularidad del Departamento de Hacienda y Administración Pública, otra a propuesta de la persona titular de la Consejería de Presidencia y las tres restantes a propuesta de la persona titular de Sanidad.
+c) Con cinco integrantes en representación de la Administración de la Comunidad Autónoma, que nombrará el Gobierno: dos a propuesta de la persona titular del Departamento de Hacienda y Administración Pública y las tres restantes a propuesta de la persona titular de Sanidad.
+d) Ninguna de los anteriores.
+
+554.- La propuesta de Plan Estratégico del ente público Osakidetza-Servicio Vasco de Salud:
+a) Será formulada por la Dirección General del Ente.
+b) Será aprobada por la Presidencia del Ente.
+c) Será sometida a informe del Consejo de Administración del Ente.
+d) Todas las anteriores son ciertas.
+
+555.- La función de convocar, presidir, suspender y levantar las sesiones, arbitrar las deliberaciones del Consejo de Administración del ente público Osakidetza-Servicio vasco de salud y decidir los empates con su voto de calidad corresponderá a:
+a) La Dirección General.
+b) La Presidencia.
+c) La persona de mayor antigüedad del Consejo de Administración.
+d) Ninguna de las anteriores.
+
+556.- La persona titular de la Dirección General del ente público Osakidetza-Servicio Vasco de Salud:
+a) No podrá asistir a las reuniones del Consejo de Administración del Ente.
+b) Presidirá las reuniones del Consejo de Administración del Ente.
+c) Asistirá a las reuniones del Consejo de Administración del Ente con voz y voto.
+d) Asistirá a las reuniones del Consejo de Administración del Ente con voz y sin voto.
+
+557.- Corresponde a la organización central de administración y gestión corporativa del ente público Osakidetza-Servicio Vasco de Salud, en materia de gestión asistencial (señálese la respuesta incorrecta):
+a) Supervisar el cumplimiento de las políticas generales de calidad y realizar auditorías.
+b) Definir criterios generales y proponer la política de precios correspondiente a la prestación de servicios sanitarios incluida en la cobertura pública.
+c) Coordinar los recursos y, en su caso, proponer medidas de intervención sobre las listas de espera.
+d) Promover protocolos de interés general.
+
+558.- Corresponde a la organización central de administración y gestión corporativa del ente público Osakidetza-Servicio Vasco de Salud, en materia de gestión de recursos humanos (señálese la respuesta incorrecta):
+a) Supervisar, controlar y evaluar las políticas de personal del Ente.
+b) Promover acuerdos de cooperación con centros correspondientes a la sanidad privada.
+c) Dirigir el funcionamiento del registro de personal.
+d) Gestionar los procesos de selección y de provisión que el Consejo de Administración determine, por su carácter general, previsible número de aspirantes u otras circunstancias análogas, y, a tal fin, convocarlos, establecer sus bases, programas y contenidos, y designar a los tribunales calificadores de los mismos.
+
+559.- Corresponde a cada organización de servicios sanitarios del ente público Osakidetza-Servicio Vasco de Salud el ejercicio de todas las facultades de gestión and administración que se requieran para el ejercicio de la actividad de provisión de servicios sanitarios que tengan encomendada, quedando excluidas únicamente:
+a) Aquellas facultades de gestión centralizada que los estatutos sociales del ente público Osakidetza-Servicio Vasco de Salud atribuyen expresamente a la organización central del Ente Público y las competencias propias de otras instancias de acuerdo con las Leyes y Reglamentos vigentes.
+b) Aquellas facultades de gestión centralizada que los estatutos sociales del ente público Osakidetza-Servicio Vasco de Salud atribuyen expresamente a la Presidencia del Ente Público y las competencias propias de otras instancias de acuerdo con las Leyes y Reglamentos vigentes.
+c) Aquellas facultades de gestión centralizada que los estatutos sociales del ente público Osakidetza-Servicio Vasco de Salud atribuyen expresamente al Consejo de Administración del Ente Público y las competencias propias de otras instancias de acuerdo con las Leyes y Reglamentos vigentes.
+d) Ninguna de las anteriores.
+
+560.- De acuerdo con el Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, en las OSI de Tipo IV, la Dirección Gerencia asume, con el apoyo de puestos funcionales asistenciales, las funciones que corresponden a:
+a) La Dirección de Personas y la Dirección Económico-Financiera.
+b) La Dirección de Personas y la Dirección de Atención Integrada.
+c) La Dirección Médica y la Dirección de Enfermería.
+d) La Dirección de Gestión y el Consejo de Dirección.
+
+561.- De acuerdo con el Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿cuál de los siguientes NO es un órgano de dirección encargado del gobierno y gestión de las OSI de Tipo I y II?
+a) La Dirección de Personas.
+b) El Consejo Clínico Asistencial.
+c) La Dirección de Atención Integrada.
+d) La Dirección Económico-Financiera.
+
+562.- Según el Artículo 7.3 del Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿quién tiene la competencia para el nombramiento y cese de la persona titular de la Dirección Gerencia?
+a) El Consejero o la Consejera de Salud.
+b) La Dirección General del Ente Público Osakidetza.
+c) El Consejo de Administración a propuesta de Lehendakaritza.
+d) La Dirección de Personas de la propia OSI.
+
+563.- Según los Artículos 7 y 9 del Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿cuál es un requisito obligatorio para el nombramiento de los cargos de dirección de una OSI?
+a) Haber pertenecido al Consejo Clínico Asistencial durante al menos dos años.
+b) Superar un examen de oposición específico para gerencia sanitaria.
+c) Previa convocatoria pública donde se acredite titulación, capacidad y experiencia profesional.
+d) Tener la condición de personal estatutario fijo en la categoría de técnico/a superior.
+
+564.- Según el Artículo 8.m del Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿a qué dirección corresponde "orientar la gestión desde una visión integradora empoderando la atención primaria"?
+a) Dirección de Atención Integrada.
+b) Dirección Gerencia.
+c) Dirección de Enfermería.
+d) Dirección Económico-Financiera.
+
+565.- De acuerdo con el Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿con qué ámbito(s) adicional(es) debe coordinar su actividad la Dirección de Atención Integrada, además de con la atención primaria y hospitalaria?
+a) Con el ámbito de Recursos Humanos y con la Universidad.
+b) Con el ámbito comunitario y socio-sanitario.
+c) Únicamente con el sociosanitario.
+d) Con las entidades locales y las empresas privadas de gestión.
+
+566.- Según el Artículo 19.1 del Decreto 100/2018 de las organizaciones sanitarias integradas del ente público Osakidetza-Servicio Vasco de Salud, ¿quién ejerce la presidencia del Consejo Clínico Asistencial?
+a) La persona titular de la Dirección Gerencia.
+b) La persona titular de la Dirección Médica.
+c) La persona titular de la Dirección de Enfermería.
+d) La persona de mayor antigüedad en la vocalía de Atención Primaria.
+
+567.- Según el Decreto 147/2015, de 21 de julio, por el que se aprueba la Declaración sobre Derechos y Deberes de las personas en el sistema sanitario de Euskadi, son titulares de los derechos y deberes recogidos en esta Declaración:
+a) Todas las personas que accedan o utilicen las prestaciones y servicios sanitarios que se proporcionan por el sistema sanitario de Euskadi.
+b) Todas las personas nacidas en Euskadi.
+c) Todas las personas empadronadas en Euskadi.
+d) Todas las respuestas anteriores son correctas.
+
+568.- Según el Decreto 147/2015, de 21 de julio, por el que se aprueba la Declaración sobre Derechos y Deberes de las personas en el sistema sanitario de Euskadi, todos los derechos y obligaciones establecidos son exigibles:
+a) En relación a todas las acciones de carácter sanitario, incluyendo docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o privada o concertados de Euskadi. Las acciones relativas a la investigación biomédica quedan fuera de esta Declaración y se rigen por su normativa específica.
+b) En relación a todas las acciones de carácter sanitario, incluyendo docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi. Las acciones relativas a la investigación biomédica quedan fuera de esta Declaración y se rigen por su normativa específica.
+c) En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o privada o concertados de Euskadi.
+d) En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi.
+
+569.- Según el Decreto 147/2015, de 21 de julio, por el que se aprueba la Declaración sobre Derechos y Deberes de las personas en el sistema sanitario de Euskadi, los principios que informan e inspiran el conjunto de acciones de carácter sanitario que se desarrollen en el sistema sanitario de Euskadi son:
+a) El respeto a la libertad de la persona, a su dignidad y a la autonomía en las decisiones que afecten a su salud.
+b) El respeto a todo el personal profesional que integra el sistema sanitario de Euskadi.
+c) La promoción de la investigación científica en el marco del sistema sanitario de Euskadi.
+d) Todas las respuestas anteriores son correctas.
+
+570.- A los efectos de la Declaración sobre Derechos y Deberes de las personas en el sistema sanitario de Euskadi recogida en el Decreto 147/2015, de 21 de julio, se configuran las siguientes fases de la vida en las que se concretan necesidades específicas:
+a) 1. Neonatología, infancia y adolescencia. 2. Salud sexual y reproductiva, embarazo y parto. 3. Salud laboral. 4. Personas mayores y final de la vida.
+b) 1. Infancia y adolescencia. 2. Salud sexual y reproductiva. 3. Salud laboral. 4. Personas mayores.
+c) 1. Infancia. 2. Adolescencia, salud sexual y reproductiva. 3. Personas mayores. 4. Final de la vida.
+d) 1. Infancia y adolescencia. 2. Salud sexual y reproductiva. 3. Personas mayores. 4. Final de la vida.
+
+571.- Según el Decreto 147/2015, de 21 de julio, por el que se aprueba la Declaración sobre Derechos y Deberes de las personas en el sistema sanitario de Euskadi, las personas pacientes y usuarias del Sistema Sanitario de Euskadi, en relación con la asistencia sanitaria específica referida al final de la vida, tienen derecho a:
+a) Al acompañamiento de familiares y personas allegadas en los procesos con hospitalización.
+b) Al uso, con carácter general, de habitación individual.
+c) Al acompañamiento espiritual.
+d) Todas las respuestas anteriores son correctas.
+
+572.- La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, en su artículo 2 considera lícito el tratamiento de datos de personas fallecidas:
+a) Solo por personas vinculadas a la misma por razones familiares o de hecho.
+b) Solo por sus herederos.
+c) Por personas vinculadas a la misma por razones familiares o de hecho, así como por sus herederos, salvo que la persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley.
+d) Por cualquier persona que lo solicite, siempre que justifique un interés legítimo.  
+
+573.- La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales establece que el consentimiento de los menores para el tratamiento de sus datos personales será lícito:
+a) Cuando sea mayor de doce años.
+b) Cuando sea mayor de trece años.
+c) Cuando sea mayor de catorce años.
+d) El tratamiento de los datos de las personas menores de dieciséis años, fundado en el consentimiento, solo será lícito si consta el consentimiento de quienes ejercen la patria potestad o tutela, con el alcance que dichas personas determinen.
+
+574.- La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, en su artículo 9 considera categorías especiales de datos aquellos que permitan, respecto a la persona afectada, identificar:
+a) Su ideología y afiliación sindical.
+b) Su religión y orientación sexual.
+c) Sus creencias u origen racial o étnico.
+d) Todas las respuestas son correctas.
+
+575.- La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales establece que el tratamiento de datos de naturaleza penal podrá llevarse a cabo:
+a) Solo por profesionales de la abogacía y cuando tengan por objeto recoger la información facilitada por quienes les contraten para el ejercicio de sus funciones.
+b) Por cualquier persona física o jurídica, siempre que sea necesario para la prevención de un peligro real y grave para la seguridad pública.
+c) Fuera de los supuestos autorizados por la normativa de la Unión Europea o la ley estatal, solo cuando sea necesario para la prevención de un peligro real y grave para la seguridad pública, la defensa nacional o la persecución de delitos penales.
+d) Las respuestas a) y c) son correctas.
+
+576.- El Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD), define el "principio de licitud, lealtad y transparencia" en el tratamiento de datos personales como:
+a) Los datos deben ser exactos y, si fuera necesario, actualizados.
+b) Los datos serán tratados de manera lícita, leal y transparente en relación con el interesado.
+c) Los datos serán adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados.
+d) Los datos serán mantenidos de forma que se permita la identificación de los interesados durante no más tiempo del necesario.
+
+577.- El artículo 1 del Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres, añade un concepto específico al objeto de la ley que refuerza el fin último de la norma, ¿cuál es?
+a) La igualdad de oportunidades.
+b) El empoderamiento de las mujeres.
+c) Lograr una sociedad libre de violencia machista.
+d) La eliminación de roles tradicionales.
+
+578.- Según el artículo 2 del Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres, ¿a qué entidades privadas les es exigible el cumplimiento de los principios generales de esta ley durante su relación con la administración?
+a) Solo a las que tengan una plantilla superior a 250 personas.
+b) A todas las empresas con sede en Euskadi.
+c) A las que suscriban contratos o convenios, estén participadas por poderes públicos o sean beneficiarias de ayudas.
+d) Ninguna entidad privada está sujeta a los principios de la ley.
+
+579.- Según el Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres, ¿cuál de estos es un principio general de actuación de los poderes públicos vascos incorporado en la nueva redacción del artículo 3?
+a) El principio de jerarquía administrativa.
+b) La integración de la perspectiva interseccional.
+c) El principio de celeridad procesal.
+d) La centralización de recursos de acogida.
+
+580.- Según el Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres, respecto al principio de representación equilibrada, ¿en qué caso se permite excepcionalmente una presencia de mujeres superior al 60%?
+a) En ningún caso.
+b) Solo si no hay hombres capacitados en el sector.
+c) Cuando sea acorde al objetivo de corregir la histórica situación de infrarrepresentación de las mujeres.
+d) Si el órgano tiene menos de cuatro integrantes.
+
+581.- Según el Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres, ¿qué planes específicos deben someterse ahora, obligatoriamente, a una evaluación previa de impacto en función del género?
+a) Todos los planes sectoriales de urbanismo, transporte y medio ambiente.
+b) Únicamente los planes de empleo y formación pública.
+c) Las disposiciones de carácter general, los planes estratégicos y los proyectos de ley.
+d) Exclusivamente los presupuestos generales del Gobierno Vasco.
+
+582.- El Decreto Legislativo 1/2023, de 16 de marzo, por el que se aprueba el texto refundido de la Ley para la Igualdad de Mujeres y Hombres y Vidas Libres de Violencia Machista contra las Mujeres establece que el uso del lenguaje no sexista es:
+a) Una recomendación aplicable solo a campañas publicitarias.
+b) Una obligación para toda la producción normativa, administrativa y de comunicación de los poderes públicos vascos.
+c) Opcional en los documentos de uso interno administrativo.
+d) Exigible solo en el ámbito de la educación secundaria y universitaria.
+
+583.- ¿Cuál es el horizonte temporal principal establecido para la consecución de las metas e indicadores del Plan de Salud Euskadi?
+a) Año 2025.
+b) Año 2028.
+c) Año 2030.
+d) Año 2035.
+
+584.- El Plan de Salud Euskadi 2030 sitúa en el centro de su estrategia el concepto de "Salud en todas las políticas". ¿Qué significa esto?
+a) Que el Departamento de Salud gestionará los presupuestos de todas las demás consejerías.
+b) Que cualquier política pública (urbanismo, educación, empleo, etc.) debe evaluar y considerar su impacto en la salud de la población.
+c) Que se aumentará el número de médicos/as en los centros escolares y centros de trabajo.
+d) Que las leyes de salud tendrán prioridad absoluta sobre las leyes económicas.
+
+585.- Dentro de las metas de salud del Plan de Salud Euskadi 2030, ¿cuál es el objetivo prioritario respecto a la esperanza de vida?
+a) Incrementar la esperanza de vida al nacer hasta los 90 años en ambos sexos.
+b) Reducir las desigualdades socioeconómicas y geográficas en la esperanza de vida con buena salud.
+c) Equiparar la esperanza de vida de Euskadi a la media de la Unión Europea.
+d) Fomentar la investigación genética para duplicar la longevidad biológica.
+
+586.- El Plan de Salud Euskadi 2030 identifica un grupo de enfermedades crónicas sobre las que se debe realizar una intervención prioritaria integrada. ¿Cuáles son?
+a) Enfermedades raras y de origen genético exclusivamente.
+b) Enfermedades cardiovasculares, cáncer, enfermedades respiratorias crónicas y diabetes.
+c) Infecciones respiratorias agudas y alergias estacionales.
+d) Patologías traumatológicas derivadas de accidentes laborales.
+
+587.- En relación con los hábitos de vida saludables, ¿qué aspecto destaca el Plan de Salud Euskadi 2030 como factor clave para reducir la obesidad infantil?
+a) La prohibición total de la venta de azúcares en supermercados.
+b) El fomento de la actividad física diaria y el acceso a una alimentación saludable, sostenible y de cercanía en entornos escolares.
+c) La creación de una asignatura obligatoria de cocina en educación primaria.
+d) La subvención pública de gimnasios privados para menores de 16 años.
+
+588.- ¿Qué estrategia propone el Plan de Salud Euskadi 2030 para abordar el reto del envejecimiento de la población vasca?
+a) El incremento exponencial de las camas de hospitalización de agudos.
+b) Promover el envejecimiento activo, la prevención de la fragilidad y un modelo de atención integrada sociosanitaria centrado en el domicilio.
+c) Fomentar la jubilación anticipada obligatoria para reducir el estrés laboral.
+d) Externalizar el cuidado de las personas mayores hacia corporaciones privadas.
+
+589.- Respecto a la salud mental, el Plan de Salud Euskadi 2030 prioriza de forma urgente las acciones orientadas a:
+a) La medicalización rápida de los procesos de ansiedad leve.
+b) La prevención del suicidio, la detección precoz del malestar emocional en jóvenes y la reducción del estigma.
+c) El internamiento prolongado en centros psiquiátricos especializados.
+d) La eliminación de las consultas de psicología en atención primaria para evitar saturación.
+
+590.- En el ámbito de las adicciones, el Plan de Salud Euskadi 2030 incorpora una línea específica de prevención frente a:
+a) Exclusivamente las adicciones a sustancias ilegales tradicionales (heroína y cocaína).
+b) El consumo de tabaco convencional únicamente.
+c) Las adicciones comportamentales, especialmente el juego de apuestas online y el uso problemático de pantallas en menores.
+d) El consumo excesivo de café y bebidas energéticas en el ámbito laboral.
+
+591.- Para reducir las desigualdades en salud, el Plan de Salud Euskadi 2030 propone aplicar el principio de "Universalismo proporcional". ¿En qué consiste?
+a) Ofrecer los mismos servicios a toda la población por igual, sin distinción de su nivel de renta o situación.
+b) Prestar servicios sanitarios con carácter universal, pero con una intensidad y escala proporcionales a las necesidades y al nivel de vulnerabilidad de cada grupo social.
+c) Atender exclusivamente a los grupos en situación de exclusión social extrema.
+d) Cobrar tasas sanitarias proporcionales a la renta a quienes hagan un uso excesivo del sistema público.
+
+592.- Con el fin de mitigar el impacto del cambio climático en la salud humana, el Plan de Salud Euskadi 2030 prevé la puesta en marcha de:
+a) Planes de contingencia ante olas de calor extremo, control de vectores transmisores de enfermedades y mejora de la calidad del aire urbano.
+b) Subvenciones para la instalación de aire acondicionado en todos los hogares vascos.
+c) La suspensión de la actividad laboral al aire libre durante todo el periodo estival.
+d) La plantación obligatoria de árboles en los recintos hospitalarios exclusivamente.
+
+593.- En el ámbito de la salud digital, ¿qué concepto destaca el Plan de Salud Euskadi 2030 para transformar la atención personalizada?
+a) La teleasistencia robótica obligatoria en todos los domicilios.
+b) La medicina de precisión y la integración de datos genómicos.
+c) La eliminación definitiva de la historia clínica en papel en favor del PDF.
+d) La creación de una red social exclusiva para pacientes crónicos/as.
+
+594.- ¿Cómo define el Plan de Salud Euskadi 2030 el concepto de "Intersectorialidad" en la gestión de la salud?
+a) La competencia entre diferentes sectores para obtener fondos públicos.
+b) La colaboración entre departamentos del Gobierno para que la salud esté en todas las políticas.
+c) La privatización de sectores sanitarios no críticos.
+d) La creación de un único departamento que gestione salud, educación y vivienda.
+
+595.- ¿Cuál es la visión del Plan de Salud Euskadi 2030 sobre el uso de la evidencia científica en la toma de decisiones políticas?
+a) Es un elemento opcional supeditado a la oportunidad política.
+b) Es la base fundamental para el diseño, implementación y evaluación de las políticas de salud.
+c) Solo se debe aplicar en casos de alertas sanitarias internacionales.
+d) Se reserva exclusivamente para el ámbito académico, no para el legislativo.
+
+596.- Según el análisis del contexto social del documento de Diagnóstico del Pacto Vasco de Salud de Euskadi, ¿qué factor se identifica como un motor clave para que la ciudadanía del siglo XXI demande un papel más activo en su salud?
+a) El incremento exclusivo de la esperanza de vida al nacer.
+b) El acceso generalizado a la información y un mayor nivel educativo en la CAPV.
+c) La reducción drástica de las listas de espera en consultas externas.
+d) La implementación de la receta electrónica en todas las farmacias.
+
+597.- El documento de Diagnóstico del Pacto Vasco de Salud de Euskadi señala que los flujos migratorios actuales en Euskadi:
+a) No tienen impacto relevante en el perfil epidemiológico de la comunidad.
+b) Revelan patologías anteriormente poco conocidas en nuestro entorno, pero prevalentes en otras latitudes.
+c) Se limitan exclusivamente a personas en edad laboral con excelente estado de salud inicial.
+d) Han provocado la saturación irreversible de los servicios de urgencias hospitalarias.
+
+598.- ¿Cuál es uno de los principales desafíos identificados en el documento de Diagnóstico del Pacto Vasco de Salud de Euskadi respecto a la formación y relevo del personal sanitario?
+a) La excesiva oferta de plazas MIR en todas las especialidades médicas.
+b) La falta de interés de las nuevas generaciones por las profesiones biosanitarias.
+c) La necesidad de planificar el relevo ante la jubilación de cohortes numerosas de profesionales.
+d) La prohibición de la formación continua dentro del horario laboral.
+
+599.- Sobre el impacto del cambio global y climático, el documento de Diagnóstico del Pacto Vasco de Salud de Euskadi advertencia de la aparición de:
+a) Patologías ligadas exclusivamente al consumo de alimentos ultraprocesados.
+b) Nuevos vectores y virus anteriormente inexistentes en nuestro entorno, como el virus del Nilo.
+c) Una disminución natural de las enfermedades respiratorias debido al aumento de temperaturas.
+d) La erradicación total de las enfermedades infecciosas estacionales.
+
+600.- El documento de Diagnóstico del Pacto Vasco de Salud de Euskadi propone que los indicadores sanitarios para evaluar el sistema deben:
+a) Basarse exclusivamente en mediciones de actividad (número de consultas y cirugías).
+b) Ser confidenciales y accesibles únicamente para la alta dirección del Departamento de Salud.
+c) Ignorar la perspectiva de género para simplificar la toma de datos estadísticos.
+d) Reflejar resultados en salud y sostenibilidad, y no solo volumen de actividad.
+
+601.- ¿Cuál es la finalidad principal de los Valores Fundamentales del Pacto Vasco de Salud, según el Libro de Valores y principios?
+a) Ser la base para la elaboración del futuro Plan Estratégico de Osakidetza.
+b) Establecer la estructura financiera y la autonomía de gestión del sistema de salud.
+c) Ser el fundamento ético y social que soporta la actividad del Sistema Público de Salud de Euskadi.
+d) Garantizar la cobertura universal únicamente a la ciudadanía vasca empadronada.
+
+602.- ¿Cuál de los siguientes es un Valor Fundamental explícito del Pacto Vasco de Salud, además de la Universalidad y la Equidad?
+a) La Sostenibilidad del sistema.
+b) La Eficiencia en el gasto.
+c) La Corresponsabilidad.
+d) El Plurilingüismo como eje central de la atención.
+
+603.- El principio de Innovación en el Pacto Vasco de Salud se aplica a:
+a) Exclusivamente a la aplicación de nuevas tecnologías de imagen médica.
+b) La I+D+i en todas las fases y dimensiones de la salud, incluyendo la organizativa y la asistencial.
+c) La importación de modelos de éxito de otros sistemas sanitarios europeos.
+d) Digitalización de la historia clínica en Osakidetza.
+
+604.- En el marco del Pacto Vasco de Salud, dentro de los principios rectores, la "Orientación al Valor" significa que el sistema debe priorizar:
+a) Las intervenciones que generen los mejores resultados relevantes para la persona al menor coste posible.
+b) El valor de mercado de las acciones de las empresas proveedoras de tecnología.
+c) El incremento constante de las infraestructuras físicas sobre la inversión en personal.
+d) La compra masiva de medicamentos de marca sobre los genéricos.
+
+605.- ¿En qué grandes ámbitos se estructuran las Líneas Estratégicas del Pacto Vasco de Salud?
+a) Cinco Líneas Estratégicas: prevención y promoción de la salud; atención a la enfermedad; calidad, innovación y sostenibilidad; desarrollo de las y los profesionales; y Gobernanza.
+b) Seis Líneas Estratégicas: prevención y promoción de la salud; atención a la enfermedad; áreas prioritarias de salud; calidad, innovación y sostenibilidad; desarrollo de las y los profesionales; y transparencia y participación ciudadana.
+c) Seis Líneas Estratégicas: prevención y promoción de la salud; atención a la enfermedad; áreas prioritarias de salud; calidad, innovación y sostenibilidad; desarrollo de las y los profesionales; y gobernanza.
+d) Seis Líneas Estratégicas: prevención y promoción de la salud; atención sociosanitaria; áreas prioritarias de salud; calidad, innovación y sostenibilidad; desarrollo de las y los profesionales; y gobernanza.
+
+606.- ¿Cuál es el papel de la Atención Primaria y Comunitaria dentro de las Líneas Estratégicas del Pacto Vasco de Salud?
+a) Actuar como un servicio de triaje rápido para derivar todos los casos al hospital.
+b) Ser un servicio opcional para quienes no dispongan de seguro privado.
+c) Limitarse a la atención administrativa y la gestión de bajas laborales.
+d) Ser la base estratégica que cohesione y sustente todo el sistema de salud vasco.
+
+607.- El Pacto Vasco de Salud promueve un modelo de Gobernanza que se caracteriza fundamentalmente por:
+a) La centralización absoluta de las decisiones en la persona titular de la Consejería de Salud.
+b) La transparencia, la rendición de cuentas, la participación ciudadana y el liderazgo clínico descentralizado.
+c) La delegación completa de la gestión en las juntas de accionistas de las OSI.
+d) La limitación de la información pública para proteger la seguridad del sistema.
+
+608.- ¿Cuál es el objetivo principal del III Plan de Normalización del Uso del Euskera en Osakidetza?
+a) Conseguir que el 100% del personal obtenga el perfil lingüístico 4 antes de finalizar el plan.
+b) Garantizar los derechos lingüísticos de las personas usuarias y avanzar en la normalización del euskera como lengua de servicio y de trabajo en Osakidetza.
+c) Traducir exclusivamente los manuales de farmacia y la señalética exterior de los hospitales.
+d) Sustituir el castellano como lengua de comunicación interna en la sede central de Osakidetza.
+
+609.- El III Plan de Normalización del Uso del Euskera en Osakidetza establece una prioridad de actuación basada en la "atención al público". Esto significa que:
+a) Se priorizará el uso del euskera en las unidades donde exista mayor contacto directo y asistencial con las personas usuarias, especialmente en Atención Primaria y Pediatría.
+b) Se atenderá en euskera solo a aquellas personas que presenten una queja formal por escrito.
+c) El personal administrativo de los mostradores es el único obligado a dominar el euskera.
+d) Toda la comunicación telefónica externa debe realizarse ínteramente en euskera de forma obligatoria.
+
+610.- En cuanto a la capacitación lingüística de los y las profesionales, el III Plan de Normalización del Uso del Euskera en Osakidetza contempla:
+a) Sanciones económicas inmediatas para el personal que no acredite el perfil exigido en su puesto.
+b) Medidas de apoyo, formación continuada integrada en el horario laboral y liberación de personal para el aprendizaje de la lengua.
+c) La exención total del cumplimiento de perfiles lingüísticos para todo el personal interino.
+d) La obligatoriedad de realizar las sesiones clínicas exclusivamente en euskera a partir del año 2026.
+
+611.- ¿Cómo aborda el III Plan de Normalización del Uso del Euskera en Osakidetza la contratación temporal de personal?
+a) Prohíbe la contratación de cualquier profesional que no disponga del perfil lingüístico acreditado.
+b) Se valora el conocimiento del euskera como mérito puntuable de acuerdo con los criterios del plan, ponderándose de forma equilibrada según las necesidades del puesto asistencial.
+c) Excluye el euskera de los baremos de las bolsas de contratación para dar prioridad exclusiva a la experiencia médica.
+d) Exige el mismo nivel de euskera para puestos administrativos que para personal médico especialista.
+
+612.- Respecto a los sistemas de información y la historia clínica electrónica, el III Plan de Normalización del Uso del Euskera en Osakidetza promueve:
+a) La obligatoriedad de que toda la historia clínica esté escrita únicamente en euskera.
+b) Que las aplicaciones informáticas, plantillas de informes y recetas sean totalmente bilingües, permitiendo al profesional registrar y emitir documentación en la lengua elegida por el paciente.
+c) Que las herramientas digitales se mantengan exclusivamente en castellano para evitar errores informáticos.
+d) El uso de software de traducción automática sin supervisión profesional.
+
+613.- Según el III Plan de Normalización del Uso del Euskera en Osakidetza, ¿cuál es la consideración del euskera en los procesos de compras y contratación de servicios externos?
+a) Las empresas adjudicatarias de servicios de atención directa al público deben garantizar que el personal asignado tenga la capacitación lingüística necesaria para atender en las dos lenguas oficiales.
+b) No se introduce ninguna cláusula lingüística en los contratos públicos para no encarecer los costes.
+c) Se exige que el 100% de los proveedores extranjeros traduzcan sus facturas al euskera.
+d) Afecta exclusivamente a las empresas encargadas del servicio de limpieza de las OSI.
+
+614.- El III Plan de Normalización del Uso del Euskera en Osakidetza define el concepto de "Ruta de Atención Bilingüe" como:
+a) Un itinerario geográfico para el transporte sanitario urgente entre Álava, Vizcaya y Guipúzcoa.
+b) Un circuito asistencial diseñado dentro de una organización sanitaria para asegurar que un paciente reciba toda su atención (recepción, consulta, enfermería, etc.) en euskera si así lo desea.
+c) Un curso de formación online obligatorio para el personal de las Direcciones Gerencias.
+d) Un mapa interactivo disponible en la página web corporativa para localizar centros de salud bilingües.
+
+615.- ¿Cuál es la meta prioritaria definida en el Plan Oncológico Integral de Euskadi (POIE) 2025-2030?
+a) Aumentar la supervivencia de los pacientes con cáncer y mejorar su calidad de vida mediante un enfoque multidisciplinar y personalizado.
+b) Centralizar todos los tratamientos de quimioterapia en un único hospital de referencia en Vizcaya.
+c) Reducir el gasto farmacéutico en oncología en un 50% antes del año 2030.
+d) Prohibir el uso de terapias biológicas experimentales en la sanidad pública vasca.
+
+616.- El POIE 2025-2030 destaca la implantación de una herramienta clave para la detección precoz del cáncer colorrectal, ¿cuál es?
+a) La realización obligatoria de una tomografía computarizada anual a toda la población.
+b) El Programa de Cribado Poblacional mediante el test de sangre oculta en heces en los grupos de edad de riesgo.
+c) El análisis rutinario de marcadores tumorales en sangre en las revisiones de salud laboral.
+d) La derivación inmediata a colonoscopia de cualquier paciente que acuda a atención primaria.
+
+617.- En relación con el cáncer de mama, el POIE 2025-2030 prevé:
+a) Ampliar progresivamente el grupo de edad de la población diana citada en los programas de cribado mamográfico.
+b) Limitar las mamografías a aquellas mujeres con antecedentes familiares directos.
+c) Sustituir todas las mamografías físicas por ecografías portátiles de alta resolución.
+d) Derivar el cribado de mama de forma exclusiva a centros médicos privados concertados.
+
+618.- ¿Qué papel asigna el POIE 2025-2030 a la Medicina de Precisión y la Oncología Personalizada?
+a) Considera que es un campo experimental sin utilidad clínica real a corto plazo.
+b) Potenciar el uso de la secuenciación genómica y los biomarcadores para seleccionar el tratamiento más eficaz y con menores efectos secundarios para cada paciente.
+c) Limitar su uso exclusivo a los ensayos clínicos desarrollados en el ámbito universitario.
+d) Su aplicación se reserva únicamente para pacientes en edad pediátrica.
+
+619.- El POIE 2025-2030 introduce la figura del "Gestor/a de Casos" u "Onco-guía" con el objetivo fundamental de:
+a) Controlar el coste económico de los medicamentos dispensados en el servicio de farmacia hospitalaria.
+b) Coordinar las citas, acompañar al paciente a lo largo de todo el proceso asistencial y asegurar la continuidad entre atención primaria y especializada.
+c) Tramitar las bajas laborales y las pensiones de invalidez de los pacientes oncológicos.
+d) Realizar el seguimiento exclusivamente telefónico de los pacientes en cuidados paliativos.
+
+620.- Respecto a los supervivientes de cáncer, el POIE 2025-2030 establece una línea de actuación específica orientada a:
+a) El alta definitiva del sistema sanitario sin necesidad de revisiones posteriores a los 5 años.
+b) El diseño de planes de seguimiento personalizados para vigilar secuelas a largo plazo, promover hábitos saludables y facilitar la reincorporación laboral y social.
+c) La realización de análisis de sangre semanales de forma indefinida en su centro de salud.
+d) Su derivación obligatoria hacia los servicios de salud mental de forma crónica.
+
+621.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, la prevención de riesgos laborales consiste en:
+a) El conjunto de actividades o medidas adoptadas o previstas en todas las fases de la actividad de la empresa con el fin de evitar o disminuir los riesgos derivados del trabajo.
+b) La indemnización económica a los trabajadores que sufran un accidente de trabajo.
+c) La contratación obligatoria de un seguro de responsabilidad civil por parte del empresario.
+d) La realización de inspecciones periódicas por parte de la autoridad laboral exclusivamente.
+
+622.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, el empresario deberá garantizar la seguridad y salud de los trabajadores a su servicio en todos los aspectos relacionados con el trabajo. Esta obligación se concreta en:
+a) Una obligación de medios, bastando con que el empresario demuestre que ha intentado evitar el riesgo.
+b) Una obligación de seguridad de carácter general que se traduce en un deber de prevención eficaz.
+c) Una obligación de resultado que se cumple mediante el pago de un complemento salarial por peligrosidad.
+d) Un deber que queda suspendido en caso de fuerza mayor o huelga legal.
+
+623.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, ¿cuál de los siguientes NO es un principio de la acción preventiva?
+a) Evitar los riesgos.
+b) Evaluar los riesgos que no se puedan evitar.
+c) Anteponer la protección individual a la colectiva.
+d) Planificar la prevención.
+
+624.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, la evaluación de los riesgos laborales deberá ser actualizada cuando:
+a) Cambien las condiciones de trabajo y, en todo caso, cuando se detecten daños en la salud de los trabajadores.
+b) Lo solicite la mitad más uno de la plantilla de la empresa.
+c) Se produzca un cambio en la dirección de la empresa o en su accionariado.
+d) Se cumpla un año desde la última evaluación, con carácter obligatorio e inflexible.
+
+625.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, los Delegados de Prevención son:
+a) Los representantes de los trabajadores con funciones específicas en materia de prevención de riesgos en el trabajo.
+b) Los técnicos de prevención contratados por el empresario para formar el Servicio de Prevención.
+c) Los inspectores de trabajo designados para supervisar el cumplimiento de la normativa en la empresa.
+d) Los médicos de empresa encargados de la vigilancia de la salud.
+
+626.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, el Comité de Seguridad y Salud es:
+a) Un órgano de gestión exclusivo del empresario para la toma de decisiones preventivas.
+b) El órgano paritario y colegiado de participación destinado a la consulta regular y periódica de las actuaciones de la empresa en materia de prevención de riesgos.
+c) El tribunal encargado de sancionar a los trabajadores que incumplan las normas de seguridad.
+d) Una comisión formada exclusivamente por los técnicos del Servicio de Prevención Ajeno.
+
+627.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, el Comité de Seguridad y Salud se constituirá en todas las empresas o centros de trabajo que cuenten con:
+a) 10 o más trabajadores.
+b) 25 o más trabajadores.
+c) 50 o más trabajadores.
+d) 100 o más trabajadores.
+
+628.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, el empresario deberá garantizar a los trabajadores a su servicio la vigilancia periódica de su estado de salud en función de los riesgos inherentes al trabajo. Esta vigilancia:
+a) Es obligatoria en todos los casos para el trabajador, sin excepciones.
+b) Sólo podrá llevarse a cabo cuando el trabajador preste su consentimiento, salvo en los supuestos en que sea imprescindible para evaluar los efectos de las condiciones de trabajo o para verificar si el estado de salud del trabajador puede constituir un peligro para él mismo o para otras personas.
+c) Se realizará siempre fuera de la jornada de trabajo y correrá a cargo del propio trabajador.
+d) Consiste exclusivamente en la realización de un análisis de sangre anual.
+
+629.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, cuando el empresario no asuma directamente la actividad preventiva ni recurra a la constitución de un servicio de prevención propio, deberá:
+a) Delegar la prevención en el trabajador de mayor antigüedad de la empresa.
+b) Concertar la actividad preventiva con uno o varios servicios de prevención ajenos.
+c) Solicitar la asistencia permanente de la Inspección de Trabajo.
+d) Eximir a la empresa de cualquier responsabilidad preventiva mediante una declaración jurada.
+
+630.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, el coste de las medidas relativas a la seguridad y la salud en el trabajo:
+a) Deberá ser compartido al 50% entre el empresario y los trabajadores.
+b) Podrá ser repercutido en la nómina de los trabajadores en concepto de cuota preventiva.
+c) No deberá implicar financiación alguna para los trabajadores.
+d) Será financiado íntegramente por el Ministerio de Trabajo a través de subvenciones.
+
+631.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, la formación que reciba el trabajador en materia preventiva:
+a) Deberá centrarse específicamente en el puesto de trabajo o función desempeñada y realizarse, siempre que sea posible, dentro de la jornada de trabajo.
+b) Deberá ser abonada por el propio trabajador mediante un sistema de créditos oficiales.
+c) Consiste en un curso teórico de carácter general aplicable a cualquier sector industrial.
+d) Se realizará obligatoriamente durante el periodo de vacaciones anuales.
+
+632.- Según la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, en caso de riesgo grave e inminente para la seguridad y salud de los trabajadores, el trabajador tiene derecho a:
+a) Continuar con su actividad utilizando equipos de protección individual duplicados.
+b) Interrumpir su actividad y, si fuera necesario, abandonar de inmediato el lugar de trabajo, sin que por ello pueda sufrir perjuicio alguno salvo mala fe o negligencia grave.
+c) Denunciar al empresario ante el juzgado de guardia antes de abandonar el puesto de trabajo.
+d) Solicitar un complemento salarial extraordinario por riesgo inminente.
+
+633.- Según el Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención, el Plan de prevención de riesgos laborales es:
+a) El documento contable donde se reflejan las inversiones preventivas de la empresa.
+b) El instrumento a través del cual se integra la actividad preventiva en el sistema general de gestión de la empresa, estableciendo su política de prevención.
+c) El manual de instrucciones de la maquinaria pesada utilizada en el centro de trabajo.
+d) El registro de los accidentes de trabajo ocurridos durante el año natural.
+
+634.- Según el Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención, la integración de la prevención en la empresa implica que:
+a) La prevención es responsabilidad exclusiva del Director del Servicio de Prevención.
+b) Debe atribuirse a todos los niveles jerárquicos de la empresa la obligación de incluir la prevención en cualquier actividad que realicen u ordenen.
+c) Se debe crear un departamento de prevención en cada sección o línea de producción de la empresa.
+d) Todos los trabajadores de la empresa deben poseer la titulación de Técnico Superior en Prevención.
+
+635.- Según el Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención, los servicios de prevención deberán contar con los medios humanos y materiales necesarios para garantizar el cumplimiento de sus funciones. Entre las especialidades o disciplinas preventivas se encuentran:
+a) Medicina del Trabajo, Seguridad en el Trabajo, Higiene Industrial, y Ergonomía y Psicosociología Aplicada.
+b) Traumatología Laboral, Ingeniería Industrial, Derecho Laboral y Psicología de la Motivación.
+c) Medicina Preventiva, Arquitectura Técnica, Sociología del Consumo y Economía de la Empresa.
+d) Enfermería del Trabajo, Dirección de Recursos Humanos, Auditoría de Cuentas y Vigilancia Jurídica.
+
+636.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, el principio de igualdad de trato entre mujeres y hombres supone:
+a) La prohibición de cualquier discriminación directa o indirecta por razón de sexo, y, especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil.
+b) La equiparación absoluta de las plantillas al 50% de hombres y 50% de mujeres en todas las categorías profesionales de forma obligatoria.
+c) El establecimiento de salarios superiores para las mujeres con el fin de corregir la brecha salarial histórica.
+d) La jubilación anticipada voluntaria para las mujeres con hijos a cargo.
+
+637.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, se considera discriminación directa por razón de sexo:
+a) La situación en que una disposición, criterio o práctica aparentemente neutros pone a personas de un sexo en desventaja particular con respecto a personas del otro.
+b) La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada de manera menos favorable que otra en situación comparable por razón de sexo.
+c) El establecimiento de medidas de acción positiva en favor de las mujeres en los procesos selectivos.
+d) El otorgamiento de licencias por paternidad con una duración inferior a las de maternidad.
+
+638.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, constituye discriminación indirecta por razón de sexo:
+a) El acoso sexual y el acoso por razón de sexo en el ámbito laboral.
+b) El trato desfavorable a las mujeres relacionado con el embarazo o la maternidad.
+c) La situación en que una disposición, criterio o práctica aparentemente neutros pone a personas de un sexo en desventaja particular con respecto a personas del otro sexo, salvo que dicha disposición, criterio o práctica puedan justificarse objetivamente con una finalidad legítima y los medios para alcanzar dicha finalidad sean adecuados y necesarios.
+d) La agresión física o verbal motivada por prejuicios de género.
+
+639.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, las medidas de acción positiva son:
+a) Sanciones administrativas impuestas a las empresas que incumplan la normativa de igualdad.
+b) Medidas específicas en favor de las mujeres para corregir situaciones patentes de desigualdad de hecho en relación con los hombres, que deben ser razonables y proporcionadas en relación con el fin perseguido.
+c) Bonificaciones fiscales destinadas a las mujeres autónomas.
+d) Campañas de publicidad institucionales para fomentar el voto femenino.
+
+640.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, los planes de igualdad de las empresas son:
+a) Un conjunto ordenado de medidas, adoptadas después de realizar un diagnóstico de situación, tendentes a alcanzar en la empresa la igualdad de trato y de oportunidades entre mujeres y hombres y a eliminar la discriminación por razón de sexo.
+b) Un manual de buenas prácticas que la empresa puede aplicar de forma totalmente voluntaria sin necesidad de diagnóstico previo.
+c) Un registro detallado de las retribuciones de los directivos de la empresa.
+d) Las circulares informativas sobre conciliación emitidas por el departamento de recursos humanos.
+
+641.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, las empresas están obligadas a elaborar y aplicar un plan de igualdad cuando tengan una plantilla de:
+a) 50 o más trabajadores.
+b) 100 o más trabajadores.
+c) 150 o más trabajadores.
+d) 250 o más trabajadores.
+
+642.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, el acoso por razón de sexo es:
+a) Cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.
+b) Cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo.
+c) La asignación de tareas inferiores a una trabajadora tras su reincorporación de una baja por maternidad.
+d) La denegación de un ascenso a un trabajador por el hecho de haber solicitado una reducción de jornada por cuidado de hijos.
+
+643.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, el acoso sexual se define como:
+a) Cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad.
+b) Cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.
+c) La brecha salarial persistente entre hombres y mujeres en un mismo sector.
+d) La agresión física motivada por la orientación sexual de la víctima.
+
+644.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, en el ámbito del empleo público, las Administraciones públicas deberán:
+a) Elaborar y aplicar un Plan de Igualdad en cada Ministerio, Consejería u organismo público, y evaluar periódicamente su cumplimiento.
+b) Reservar el 60% de las plazas de los tribunales de oposición de forma exclusiva para mujeres.
+c) Conceder un permiso retribuido de 6 meses por nacimiento de hijo para las empleadas públicas y de 3 meses para los empleados públicos.
+d) Suprimir las pruebas físicas en todos los procesos selectivos de los cuerpos de seguridad.
+
+645.- Según la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, el principio de presencia equilibrada implica que:
+a) Las plantillas globales de las empresas deben contar exactamente con el mismo número de hombres y mujeres.
+b) En los órganos colegiados y comités de selección, ningún sexo supere el 60% ni sea inferior al 40%, siempre que el número de miembros lo permita.
+c) El 50% de los puestos de alta dirección de las empresas del Ibex 35 sean ocupados por mujeres antes del año 2030.
+d) Se prohíbe la formación de tribunales compuestos exclusivamente por profesionales de un mismo sexo.
+
+646.- Según el Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (EBEP), el personal empleado público se clasifica en:
+a) Personal funcionario de carrera, personal funcionario interino, personal laboral (fijo, por tiempo indefinido o temporal) y personal eventual.
+b) Personal estatutario fijo, personal estatutario temporal, personal funcionario y personal de oficios.
+c) Funcionarios del Estado, Funcionarios de las Comunidades Autónomas y Funcionarios de la Administración Local.
+d) Directivos profesionales, Técnicos Superiores, Administrativos y Personal de Servicios Generales.
+
+647.- Según el EBEP, son funcionarios de carrera quienes:
+a) En virtud de nombramiento legal, están vinculados a una Administración Pública por una relación estatutaria regulada por el Derecho Administrativo para el desempeño de servicios profesionales retribuidos de carácter permanente.
+b) En virtud de un contrato de trabajo escrito, prestan servicios retribuidos por las Administraciones Públicas de carácter indefinido o temporal.
+c) Desempeñan funciones de carácter no permanente retribuidas con cargo a los créditos presupuestarios asignados para funciones de confianza o asesoramiento especial.
+d) Acceden a la función pública mediante un proceso de selección urgente por razones de necesidad.
+
+648.- Según el EBEP, son funcionarios interinos quienes, por razones expresamente justificadas de necesidad y urgencia, son nombrados como tales para el desempeño de funciones propias de funcionarios de carrera, cuando se dé alguna de las siguientes circunstancias:
+a) La existencia de plazas vacantes cuando no sea posible su cobertura por funcionarios de carrera; la sustitución transitoria de los titulares; la ejecución de programas de carácter temporal; o el exceso o acumulación de tareas.
+b) La realización de trabajos de asesoramiento político y de confianza directa de la autoridad que los nombra.
+c) La cobertura de puestos directivos que requieran una alta especialización técnica ajena a la función pública.
+d) La contratación para obras o servicios determinados cuya duración sea inferior a seis meses.
+
+649.- Según el EBEP, el personal eventual es aquel que:
+a) Desempeña funciones propias de funcionarios de carrera en régimen de interinidad prolongada.
+b) En virtud de nombramiento y con carácter no permanente, realiza sólo funciones expresamente calificadas como de confianza o asesoramiento especial, siendo retribuido con cargo a los créditos presupuestarios consignados para este fin.
+c) Está sujeto a un contrato laboral de duración determinada de acuerdo con la legislación laboral común.
+d) Accede a su puesto mediante superación de una oposición libre y bolsa de empleo abierta.  
+
+650.- Según el EBEP, los procesos de selección de los empleados públicos garantizarán el cumplimiento de los principios constitucionales de:
+a) Publicidad, celeridad, economía y eficacia organizativa.
+b) Igualdad, mérito, capacidad y publicidad.
+c) Confianza, libre designación, antigüedad y competencia.
+d) Transparencia, descentralización, estabilidad y flexibilidad de las pruebas.  
+
+651.- Según el EBEP, los sistemas selectivos para el acceso a la condición de funcionario de carrera serán:
+a) La libre designación y el concurso de traslados exclusivamente.
+b) La oposición y el concurso-oposición, que incluirán en todo caso pruebas de carácter práctico. El concurso sólo podrá aplicarse con carácter excepcional cuando una ley así lo prevea.
+c) La entrevista personal y la valoración del currículum vitae por un comité de expertos independientes.
+d) Una prueba psicotécnica eliminatoria y un periodo de prácticas tuteladas de dos años de duración.
+
+652.- Según el EBEP, los funcionarios de carrera se agrupan en Cuerpos, Escalas, Especialidades u otros sistemas que incorporen sus competencias de acuerdo con la titulación exigida para el acceso. Los cuerpos y escalas se clasifican en los siguientes grupos:
+a) Grupo A (dividido en Subgrupos A1 y A2), Grupo B y Grupo C (dividido en Subgrupos C1 y C2).
+b) Grupo Superior, Grupo Medio, Grupo Administrativo y Grupo Auxiliar.
+c) Grupo I, Grupo II, Grupo III, Grupo IV y Grupo V de personal laboral de la administración.
+d) Categoría Especial, Categoría Primera, Categoría Segunda y Categoría Tercera.
+
+653.- Según el EBEP, para el acceso a los cuerpos o escalas del Grupo A se exigirá estar en posesión del título de:
+a) Graduado en Educación Secundaria Obligatoria.
+b) Bachiller o Técnico Superior.
+c) Grado Universitario o equivalente. En los supuestos en que la ley exija otro título universitario de Grado, será este el que se tenga en cuenta.
+d) Técnico de Formación Profesional de Grado Medio.
+
+654.- Según el EBEP, para el acceso a los cuerpos o escalas del Grupo B se exigirá estar en posesión del título de:
+a) Doctor o Licenciado Universitario.
+b) Técnico Superior en Formación Profesional.
+c) Bachiller o equivalente.
+d) Graduado Escolar o Certificado de Escolaridad.
+
+655.- Según el EBEP, para el acceso a los cuerpos o escalas del Grupo C se exigirá:
+a) Estar en posesión del título de Graduado en Educación Secundaria Obligatoria para el Subgrupo C2, y de Bachiller o Técnico para el Subgrupo C1.
+b) Poseer un Grado Universitario de tres años de duración para el subgrupo C1 y de dos años para el C2.
+c) Acreditar una experiencia laboral previa de al menos cinco años en funciones similares.
+d) Estar inscrito como demandante de empleo con una antigüedad mínima de un año.
+
+656.- Según el EBEP, la condición de funcionario de carrera se pierde por alguna de las siguientes causas:
+a) La renuncia; la pérdida de la nacionalidad; la jubilación total; la sanción disciplinaria de separación del servicio; o la pena principal o accesoria de inhabilitación absoluta o especial.
+b) La acumulación de tres faltas de asistencia injustificadas durante un periodo de seis meses.
+c) La obtención de una evaluación del desempeño desfavorable durante dos años consecutivos.
+d) El matrimonio o la formalización de una pareja de hecho con un ciudadano extranjero.
+
+657.- Según el EBEP, las retribuciones de los funcionarios públicos se clasifican en:
+a) Retribuciones fijas, retribuciones variables y retribuciones extraordinarias.
+b) Retribuciones básicas y retribuciones complementarias.
+c) Salario base, plus de peligrosidad y pagas de beneficios.
+d) Retribuciones directas, retribuciones indirectas y salario en especie.
+
+658.- Según el EBEP, las retribuciones básicas son aquellas que retribuyen al funcionario según la adscripción de su cuerpo o escala a un determinado Subgrupo o Grupo de clasificación profesional y por su antigüedad. Estas retribuciones son:
+a) El complemento de destino y el complemento específico.
+b) El sueldo, los trienios y las pagas extraordinarias (que se percibirán dos veces al año).
+c) El complemento de productividad y las gratificaciones por servicios extraordinarios.
+d) El salario base y el plus de convenio sectorial correspondiente.
+
+659.- Según el EBEP, las retribuciones complementarias son aquellas que retribuyen las características de los puestos de trabajo, la carrera profesional o el desempeño del funcionario. Entre ellas se encuentran:
+a) El sueldo base y la antigüedad acumulada por trienios.
+b) El complemento de destino, el complemento específico, el complemento de productividad y las gratificaciones por servicios extraordinarios.
+c) Las pagas extraordinarias de junio y diciembre únicamente.
+d) Las dietas por kilometraje y los gastos de representación debidamente justificados.  
+
+660.- Según el EBEP, las faltas disciplinarias de los empleados públicos pueden ser:
+a) Leves, graves y muy graves.
+b) Simples, complejas y flagrantes.
+c) Administrativas, laborales y penales.
+d) Menores, mayores y absolutas.  
+
+661.- Según el EBEP, constituye una falta disciplinaria muy grave:
+a) El incumplimiento injustificado de la jornada de trabajo que no suponga abandono del servicio.
+b) El retraso reiterado en el cumplimiento de las tareas encomendadas por los superiores.
+c) El incumplimiento del deber de fidelidad a la Constitución o al Estatuto de Autonomía en el ejercicio de la función pública, o toda actuación que suponga discriminación por razón de sexo, raza, religión u otra condición.
+d) La falta de atención y respeto a los ciudadanos de carácter ocasional.
+
+662.- Según el EBEP, las sanciones que pueden imponerse por la comisión de faltas disciplinarias son:
+a) Multa económica de hasta tres meses de salario y amonestación verbal privada.
+b) Separación del servicio (en el caso de funcionarios); despido disciplinario (en el caso de personal laboral); suspensión de funciones o de empleo y sueldo; traslado forzoso; o demérito.
+c) Pérdida definitiva de la condición de ciudadano del territorio donde se cometió la falta.
+d) Inhabilitación permanente para el ejercicio de cualquier profesión en el sector privado.
+
+663.- Según el EBEP, el plazo de prescripción de las faltas muy graves es de:
+a) Un año.
+b) Dos años.
+c) Tres años.
+d) Cinco años.
+
+664.- Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, son interesados en el procedimiento administrativo quienes:
+a) Lo promuevan como titulares de derechos o intereses legítimos individuales o colectivos; o los que tengan derechos que puedan resultar afectados por la decisión que en él se adopte.
+b) Sean funcionarios del órgano administrativo encargado de tramitar el expediente correspondiente.
+c) Actúen de forma exclusiva como testigos o peritos dentro de la fase de instrucción del procedimiento.
+d) Sean ciudadanos mayores de edad empadronados en el municipio donde se tramita la solicitud.
+
+665.- Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, están obligados a relacionarse a través de medios electrónicos con las Administraciones Públicas para la realización de cualquier trámite de un procedimiento administrativo, al menos, los siguientes sujetos:
+a) Las personas jurídicas; las entidades sin personalidad jurídica; quienes ejerzan una actividad profesional que requiera colegiación obligatoria; y quienes representen a un interesado obligado.
+b) Todos los ciudadanos mayores de 18 años con acceso a conexión de internet de alta velocidad.
+c) Únicamente los funcionarios públicos en el ejercicio de sus funciones particulares.
+d) Las empresas extranjeras que no dispongan de sede física o sucursal en territorio nacional.
+
+666.- Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, los actos de las Administraciones Públicas sujetos al Derecho Administrativo se presumirán:
+a) Nulos de pleno derecho hasta que no se demuestre la legalidad de su contenido por el órgano competente.
+b) Válidos y producirán efectos desde la fecha en que se dicten, salvo que en ellos se disponga otra cosa.
+c) Suspendidos de forma automática en caso de que un interesado presente una reclamación verbal.
+d) Sometidos a visado previo del Ministerio de Justicia antes de su notificación oficial.
+
+667.- Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, un acto administrativo es anulable cuando:
+a) Sea constitutivo de infracción penal o se dicte como consecuencia de esta.
+b) Incurra en cualquier infracción del ordenamiento jurídico, incluso la desviación de poder.
+c) Sea dictado por un órgano manifiestamente incompetente por razón de la materia o del territorio.
+d) Tenga un contenido imposible o carezca totalmente de los requisitos formales indispensables.
+
+668.- Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, contra las resoluciones y actos de trámite cualificados, los interesados podrán interponer los siguientes recursos de alzada y potestativo de reposición. El recurso de alzada se interpondrá ante:
+a) El mismo órgano que dictó el acto objeto de impugnación.
+b) El órgano superior jerárquico de aquel que dictó el acto administrativo.
+c) El Juzgado de lo Contcontentioso-Administrativo de la capital de la provincia.
+d) El Defensor del Pueblo o la comisión estatal de reclamaciones públicas.
+
+669.- Según la Ley 5/2015, de 25 de junio, de Derecho Civil Vasco, la vecindad civil vasca se adquiere por:
+a) El nacimiento en el territorio de la Comunidad Autónoma del País Vasco únicamente.
+b) El empadronamiento en cualquier municipio de Euskadi durante un periodo ininterrumpido de dos años, siempre que el interesado no manifieste su voluntad en contrario.
+c) La acreditación de la condición política de vasco de acuerdo con las normas del Estatuto de Autonomía.
+d) La posesión de la vecindad civil común o de cualquier otra vecindad civil foral conforme a las reglas del Código Civil.
+
+670.- Según la Ley 5/2015, de 25 de junio, de Derecho Civil Vasco, la troncalidad es un principio del derecho civil que rige en:
+a) Todo el territorio de la Comunidad Autónoma de Euskadi sin excepciones.
+b) El territorio histórico de Bizkaia, y en los municipios alaveses de Aramaio y Llodio, y protege el carácter familiar de los bienes raíces.
+c) La provincia de Gipuzkoa exclusivamente para los bienes muebles.
+d) Los contratos de arrendamiento rústico celebrados en el territorio histórico de Álava.
+
+671.- Según la Ley 5/2015, de 25 de junio, de Derecho Civil Vasco, el testamento "hil buruko" o testamento en peligro inminente de muerte se otorga:
+a) Ante un notario de guardia y dos testigos instrumentales mayores de edad.
+b) Ante tres testigos, sin necesidad de presencia de notario, debiendo ser adverado y protocolizado posteriormente.
+c) Mediante una grabación de audio o vídeo certificada por un facultativo médico.
+d) Por escrito manuscrito y firmado exclusivamente por el propio testador sin intermediarios.
+
+672.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, el personal incluido en su ámbito de aplicación:
+a) Podrá ejercer cualquier actividad privada de forma libre, siempre que sea fuera de su horario de trabajo.
+b) No podrá compatibilizar sus actividades con el desempeño de un segundo puesto de trabajo o actividad en el sector público, salvo en los supuestos previstos en la propia ley.
+c) Estará obligado a trabajar en régimen de dedicación exclusiva sin derecho a percibir complemento retributivo alguno por ello.
+d) Necesitará autorización expresa del Gobierno de la Nación para contraer matrimonio.
+
+673.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, la autorización de compatibilidad para un segundo puesto en el sector público:
+a) Exige que el segundo puesto sea de carácter honorífico y no retribuido.
+b) Requiere que se trate de una actividad docente universitaria, sanitaria o de investigación en los supuestos tasados, y que no impida el fiel cumplimiento de los deberes del puesto principal.
+c) Se concede de forma automática mediante la mera comunicación previa del interesado al jefe de personal.
+d) Queda prohibida de forma absoluta para el personal estatutario de los servicios de salud.
+
+674.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, el ejercicio de actividades privadas compatibles por parte del personal empleado público:
+a) No requerirá de reconocimiento o autorización alguna si la actividad se realiza los fines de semana.
+b) Requerirá el previo reconocimiento de compatibilidad, y no podrá ejercerse en asuntos en los que el interesado esté interviniendo o haya intervenido en los dos últimos años por razón de su cargo público.
+c) Da derecho a la percepción de una indemnización por renuncia al complemento específico de exclusividad.
+d) Puede realizarse de forma libre siempre que no coincida con el horario de atención al público de la administración.
+
+675.- En atención a lo previsto en el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, en todos los centros de atención primaria ha de ponerse en marcha un procedimiento para que, en la medida de las posibilidades, se propongan servicios en euskera a las personas pacientes que hayan registrado esta lengua como preferente y que aún reciban los citados servicios en castellano. Señale a qué servicios se refiere el citado Plan:
+a) Medicina familiar, pediatría, enfermería y salud mental.
+b) Pediatría, medicina familiar y salud mental.
+c) Medicina familiar, pediatría, enfermería y matrona.
+d) Todas las anteriores respuestas son correctas.
+
+676.- Conforme al III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028:
+a) En los casos de los mensajes SMS que se envían a los teléfonos móviles de personas trabajadoras o candidatas, estarán escritos en las dos lenguas oficiales, primero en castellano y luego en euskera.
+b) Los escritos individualizados de respuesta a solicitudes y reclamaciones de las personas trabajadoras deberán redactarse en las dos lenguas oficiales.
+c) Osakidetza ha de garantizar que la información y los servicios ofrecidos tanto al personal empleado como a personas candidatas a través de las tecnologías de la comunicación estén en las dos lenguas oficiales, con el fin de que cada persona haga uso de la lengua de su preferencia.
+d) Las informaciones y comunicaciones no personalizadas dirigidas al personal deberán redactarse en las dos lenguas oficiales y se dará prioridad al castellano.
+
+677.- Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿de qué porcentaje de los fallecimientos en Euskadi fue responsable el cáncer en el año 2023?
+a) 22,3%
+b) Menos del 15%
+c) 33,8%
+d) 28%
+
+678.- Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿cuáles fueron las dos localizaciones de cáncer más frecuentes en Euskadi en el periodo 2015-2019, consideradas separadamente por sexo?
+a) Cáncer colorrectal y cáncer de pulmón.
+b) Cáncer de mama en mujeres y cáncer de próstata en hombres.
+c) Cáncer de páncreas y cáncer de pulmón.
+d) Leucemia y Linfoma de Hodgkin.
+
+679.- ¿Cuál de las siguientes es una de las aspiraciones definidas en la VISIÓN del Plan Oncológico Integral de Euskadi (POIE) 2025-2030?
+a) Mejorar la calidad de vida de las personas: de pacientes, supervivientes y de sus familiares y personas cuidadoras.
+b) Aumentar la cuota de mercado de Osakidetza en el sector oncológico privado.
+c) Garantizar la presencia equilibrada de ambos sexos en los órganos de gestión sanitaria.
+d) Establecer la telemedicina como la única forma de seguimiento oncológico.
+
+680.- La Misión del Plan Oncológico Integral de Euskadi (POIE) 2025-2030 busca generar valor a la ciudadanía vasca en términos de:
+a) Mayor financiación externa para I+D.
+b) Menores listas de espera y más personal asistencial.
+c) Mejores resultados en salud.
+d) Una mayor supervivencia a los 10 años en todos los tumores.
+
+681.- En el Plan Oncológico Integral de Euskadi (POIE) 2025-2030, la “Centralidad de la persona y humanización” como Principio Rector incluye la incorporación de la perspectiva de género y la atención a:
+a) Las necesidades de salud de las personas adultas de mediana edad exclusivamente.
+b) Las particularidades culturales, emocionales y sociales de cada paciente en todas las etapas de la enfermedad.
+c) La reducción drástica de costes en los servicios hoteleros de los centros hospitalarios.
+d) La digitalización total de los procesos de consentimiento informado sin opción presencial.
+
+682.- El Plan Oncológico Integral de Euskadi (POIE) 2025-2030 establece un marco de colaboración estable en investigación traslacional a través de:
+a) Los institutos de investigación sanitaria de Euskadi (Bioaraba, Biogipuzkoa, Biocruces Bizkaia) y de las universidades.
+b) La contratación exclusiva de laboratorios farmacéuticos multinacionales fuera de Europa.
+c) La creación de un centro de investigación único de titularidad totalmente privada.
+d) La supresión de los comités de ética en la investigación clínica para agilizar plazos.
+
+683.- Con el fin de optimizar el diagnóstico rápido, el POIE 2025-2030 prioriza la implantación de:
+a) Un sistema de autodiagnóstico mediante una aplicación móvil para toda la población.
+b) Circuitos de diagnóstico rápido coordinados entre atención primaria y los comités de tumores hospitalarios.
+c) La realización de biopsias quirúrgicas a cualquier sospecha menor sin pruebas de imagen previas.
+d) La externalización del servicio de anatomía patológica hacia centros médicos situados fuera de la CAPV.
+
+684.- Según lo dispuesto en el POIE 2025-2030, el tratamiento del dolor y el soporte continuado en el paciente oncológico:
+a) Se reservará en todo caso para la fase de cuidados paliativos terminales estrictos.
+b) Debe integrarse desde el momento inicial del diagnóstico y mantenerse de forma activa a lo largo de todo el proceso evolutivo.
+c) Será gestionado y pautado exclusivamente por el médico de atención primaria en el domicilio.
+d) Se limitará al uso de antiinflamatorios no esteroideos convencionales para evitar adicciones.
+
+685.- En la gestión de los recursos oncológicos, el POIE 2025-2030 impulsa la creación de:
+a) Unidades de hospitalización oncológica separadas por sexos y tramos de edad obligatoriamente.
+b) Comités de Tumores Multidisciplinares integrados e interconectados en red para garantizar equidad en las decisiones clínicas.
+c) Unidades de radioterapia en todos los centros de atención primaria de la comunidad.
+d) Un registro secreto de pacientes oncológicos de acceso restringido a la Dirección General.
+
+686.- El POIE 2025-2030 contempla un plan específico de formación continuada en oncología dirigido a:
+a) Exclusivamente a los médicos especialistas en oncología médica y radioterápica.
+b) Todo el personal sanitario implicado, incluyendo de forma prioritaria a los equipos de atención primaria y enfermería comunitaria.
+c) Los mandos intermedios y gestores económicos de las OSI exclusivamente.
+d) El personal voluntario de las asociaciones de pacientes sin vinculación laboral con Osakidetza.
+
+687.- El principio de sostenibilidad en el POIE 2025-2030 se fundamenta en:
+a) La reducción drástica del personal de enfermería en los servicios de día de oncología.
+b) La optimización de recursos a través de redes asistenciales eficientes, la compra centralizada de tecnología y la evaluación del valor terapéutico real.
+c) El cobro de un copago sobre los tratamientos de inmunoterapia biológica avanzada.
+d) La limitación en la renovación de los equipos de alta tecnología de radioterapia.
+
+688.- ¿Qué estrategia contempla el POIE 2025-2030 para el abordaje del cáncer infantil y de la adolescencia?
+a) Su derivación inmediata a hospitales infantiles fuera del territorio español.
+b) La concentración de la atención en unidades de oncología pediátrica especializadas y adaptadas que incluyan soporte integral psicológico y educativo.
+c) El tratamiento conjunto con pacientes adultos en las mismas salas de hospitalización para optimizar espacio.
+d) Limitar el soporte al ámbito estrictamente farmacológico sin intervención psicosocial.
+
+689.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, para que se autorice la compatibilidad en una actividad privada, el empleado público:
+a) Deberá poseer una antigüedad mínima de diez años en la administración.
+b) No podrá percibir un complemento específico o concepto retributivo equivalente que supere los límites establecidos por la normativa presupuestaria.
+c) Estará obligado a reducir su jornada de trabajo en el sector público a la mitad.
+d) Deberá contar con el informe favorable vinculante emitido por los representantes sindicales.
+
+690.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, las resoluciones de compatibilidad o incompatibilidad dictadas por las autoridades competentes:
+a) Serán estrictamente secretas para proteger el honor y la intimidad del solicitante.
+b) Serán notificadas al interesado y debidamente inscritas en el Registro de Personal correspondiente.
+c) Tendrán una validez temporal máxima e improrrogable de seis meses naturales.
+d) Podrán ser revocadas verbalmente por el jefe de servicio de forma inmediata.
+
+691.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, quienes accedan por cualquier título a un nuevo puesto del sector público que sea incompatible con el que vinieren desempeñando deberán:
+a) Ejercer ambos puestos simultáneamente hasta la finalización del año presupuestario en curso.
+b) Optar por uno de ellos dentro del plazo de toma de posesión, entendiéndose que renuncian al primero si no lo hicieren.
+c) Solicitar una excedencia forzosa inmediata en el puesto de nueva adjudicación.
+d) Ceder las retribuciones de uno de los puestos a fines de beneficencia pública.
+
+692.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, el ejercicio de una actividad incompatible por parte del personal empleado público constituye una falta disciplinaria que se califica como:
+a) Falta leve.
+b) Falta grave.
+c) Falta muy grave.
+d) Simple infracción administrativa sin trascendencia disciplinaria.  
+
+693.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿cuál de las siguientes actividades privadas NO requiere autorización previa de compatibilidad?
+a) La dirección de una empresa comercial dedicada a la venta de suministros médicos.
+b) El ejercicio libre de la abogacía en asuntos judiciales contra la administración de adscripción.
+c) La producción y creación literaria, artística, científica y técnica, así como las publicaciones derivadas de ellas, siempre que no se originen por una relación de empleo o prestación de servicios.
+d) La participación en el consejo de administración de una mutua colaboradora con la seguridad social.  
+
+694.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, no podrá autorizarse la compatibilidad para actividades privadas que:
+a) Se desarrollen en el mismo municipio donde el interesado reside de forma habitual.
+b) Estén relacionadas directamente con las competencias del departamento, organismo o entidad pública donde el empleado preste sus servicios.
+c) Se realicen en horario nocturno o durante los periodos oficiales de vacaciones.
+d) Generen unos ingresos económicos anuales inferiores al salario mínimo interprofesional.
+
+695.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, el personal que desempeñe un puesto de trabajo en el sector público en régimen de dedicación a tiempo parcial:
+a) Podrá obtener de forma automática la compatibilidad para cualquier otra actividad pública a jornada completa.
+b) Podrá ser autorizado a desempeñar otro puesto en el sector público, siempre que la suma de las jornadas no exceda de la máxima en las administraciones públicas y se respeten las limitaciones retributivas.
+c) Tiene prohibido terminantemente realizar cualquier actividad profesional en el sector privado.
+d) Queda exento del cumplimiento del régimen general de incompatibilidades regulado por esta ley.
+
+696.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, las retribuciones totales que puedan percibirse por la suma de puestos públicos compatibles:
+a) No tendrán límite alguno, siempre que se correspondan con horas de trabajo efectivamente realizadas.
+b) No podrán superar los límites máximos establecidos anualmente en las Leyes de Presupuestos Generales del Estado.
+c) Deberán ser reducidas en un 50% en el caso de personal funcionario interino.
+d) Se percibirán en una única cuenta corriente autorizada de carácter institucional.
+
+697.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, la percepción de retribuciones por un puesto de trabajo compatible en el sector público sin haber obtenido la previa y preceptiva autorización:
+a) Carece de relevancia si se regulariza la situación en el plazo de un año.
+b) Obliga a la devolución íntegra de las cantidades indebidamente percibidas, sin perjuicio de la responsabilidad disciplinaria que proceda.
+c) Puede dar lugar a responsabilidad disciplinaria.
+d) Solo se devuelve la remuneración percibida.
+
+698.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿qué actividades están exceptuadas del régimen general de incompatibilidades?
+a) Las actividades docentes o de investigación en determinados supuestos.
+b) Cualquier actividad privada.
+c) Solo actividades artísticas.
+d) Actividades comerciales propias sin límite.
+
+699.- Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, para que se autorice la compatibilidad para un segundo puesto público es necesario que:
+a) Sea en el mismo centro de trabajo.
+b) Sea la jornada completa.
+c) Sea en los supuestos tasados y no se modifique la jornada y horario del puesto principal.
+d) Lo apruebe el personal trabajador del servicio.
+
+700.- La finalidad principal de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas es:
+a) Regular las retribuciones del personal funcionario de carrera.
+b) Garantizar la objetividad e imparcialidad en el ejercicio de la función pública y la dedicación prioritaria al servicio público.
+c) Facilitar la contratación de personal temporal en régimen de interinidad.
+d) Establecer el catálogo de puestos de trabajo de la Administración General del Estado.
