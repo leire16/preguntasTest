@@ -1,115 +1,83 @@
 package ui.componentesExamen;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
+import java.awt.Component;
+import java.util.List;
 
-import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JPanel;
-import javax.swing.JRadioButton;
+
+import model.Respuesta;
 
 public class PanelRespuestas extends JPanel {
 
-    private ButtonGroup grupo;
-    private JRadioButton[] respuestas;
+    private final PanelRespuesta[] respuestas;
+    private final ButtonGroup grupo;
 
     public PanelRespuestas() {
-
-        setLayout(new BorderLayout());
-
-        setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createEtchedBorder(),
-                "Respuestas"));
-
+        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        grupo = new ButtonGroup();
+        respuestas = new PanelRespuesta[4];
         crearRespuestas();
-
     }
 
     private void crearRespuestas() {
-
-        JPanel panelCentral = new JPanel();
-        panelCentral.setLayout(new BoxLayout(panelCentral, BoxLayout.Y_AXIS));
-
-        grupo = new ButtonGroup();
-        respuestas = new JRadioButton[4];
-
-        char letra = 'A';
-
         for (int i = 0; i < respuestas.length; i++) {
+            respuestas[i] = new PanelRespuesta(grupo);
+            respuestas[i].setAlignmentX(Component.LEFT_ALIGNMENT);
+            add(respuestas[i]);
+            if (i < respuestas.length - 1) {
+                add(Box.createVerticalStrut(12));
 
-            JPanel fila = new JPanel(new BorderLayout());
-
-            respuestas[i] = new JRadioButton();
-
-            respuestas[i].setFont(new Font("Arial", Font.PLAIN, 17));
-            respuestas[i].setOpaque(false);
-            respuestas[i].setFocusPainted(false);
-
-            respuestas[i].setText(letra + ". Respuesta " + (i + 1));
-
-            grupo.add(respuestas[i]);
-
-            fila.add(respuestas[i], BorderLayout.CENTER);
-
-            panelCentral.add(fila);
-            panelCentral.add(Box.createVerticalStrut(12));
-
-            letra++;
-
+            }
         }
-
-        add(panelCentral, BorderLayout.NORTH);
-
     }
 
-    // =====================================================
+    // ===========================================
     // MÉTODOS PÚBLICOS
-    // =====================================================
+    // ===========================================
 
-    public void mostrarRespuestas(String[] opciones) {
-
-        char letra = 'A';
-
+    public void mostrarRespuestas(List<Respuesta> opciones) {
+        grupo.clearSelection();
         for (int i = 0; i < respuestas.length; i++) {
-
-            respuestas[i].setText(letra + ". " + opciones[i]);
-
-            letra++;
-
-        }
-
-    }
-
-    public int getRespuestaSeleccionada() {
-
-        for (int i = 0; i < respuestas.length; i++) {
-
-            if (respuestas[i].isSelected()) {
-                return i;
+            if (i < opciones.size()) {
+                char letra = (char) ('A' + i);
+                respuestas[i].setVisible(true);
+                respuestas[i].setRespuesta(
+                    letra,
+                    opciones.get(i));
+            } else {
+                respuestas[i].setVisible(false);
             }
 
         }
 
-        return -1;
+        revalidate();
+        repaint();
 
     }
 
-    public void seleccionarRespuesta(int indice) {
-
-        if (indice >= 0 && indice < respuestas.length) {
-
-            respuestas[indice].setSelected(true);
-
+    public Respuesta getRespuestaSeleccionada() {
+        for (PanelRespuesta respuesta : respuestas) {
+            if (respuesta.isSelected()) {
+                return respuesta.getRespuesta();
+            }
         }
-
+        return null;
     }
 
     public void limpiarSeleccion() {
-
         grupo.clearSelection();
-
     }
 
+    public PanelRespuesta getRespuesta(int indice) {
+        return respuestas[indice];
+    }
+  
+    public void setOnRespuestaSeleccionada(Runnable listener) {
+        for (PanelRespuesta respuesta : respuestas) {
+            respuesta.setOnSeleccionada(listener);
+        }
+    }
 }

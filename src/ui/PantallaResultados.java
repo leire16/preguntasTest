@@ -6,7 +6,10 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+import service.ResultadoPregunta;
+import service.ResultadoTest;
 import ui.componentesResultados.PanelBotonMenu;
+import ui.componentesResultados.PanelResultadoPregunta;
 import ui.componentesResultados.PanelResumenResultado;
 
 public class PantallaResultados extends JPanel {
@@ -98,6 +101,27 @@ public class PantallaResultados extends JPanel {
     public PanelResumenResultado getPanelResumen() {
 
         return panelResumen;
+
+    }
+
+    public void mostrarResultado(ResultadoTest resultado) {
+
+        limpiarListado();
+
+        panelResumen.mostrarResultado(resultado);
+
+        for (ResultadoPregunta resultadoPregunta : resultado.getPreguntas()) {
+
+            PanelResultadoPregunta panelResultadoPregunta = new PanelResultadoPregunta();
+
+            panelResultadoPregunta.mostrarResultadoPregunta(resultadoPregunta);
+
+            panelListadoPreguntas.add(panelResultadoPregunta);
+
+        }
+
+        revalidate();
+        repaint();
 
     }
 

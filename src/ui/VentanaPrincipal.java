@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 
 import model.Configuracion;
 import model.TipoTest;
+import service.ResultadoTest;
 import util.Constantes;
 
 public class VentanaPrincipal extends JFrame {
@@ -87,10 +88,11 @@ public class VentanaPrincipal extends JFrame {
 
     }
 
-    public void mostrarResultados() {
+    public void mostrarResultados(ResultadoTest resultado) {
 
-        cardLayout.show(contenedor, RESULTADOS);
+        pantallaResultados.mostrarResultado(resultado);
+
+        cardLayout.show(contenedor, "RESULTADOS");
 
     }
-
 }

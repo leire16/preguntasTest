@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+import model.Pregunta;
+
 public class PanelPregunta extends JPanel {
 
     private JTextArea txtPregunta;
@@ -50,9 +52,12 @@ public class PanelPregunta extends JPanel {
     // MÉTODOS PÚBLICOS
     // =====================================================
 
-    public void mostrarPregunta(String pregunta) {
+    public void mostrarPregunta(Pregunta pregunta, int numeroPregunta) {
 
-        txtPregunta.setText(pregunta);
+        actualizarTitulo(numeroPregunta);
+
+        txtPregunta.setText(pregunta.getEnunciado());
+
         txtPregunta.setCaretPosition(0);
 
     }

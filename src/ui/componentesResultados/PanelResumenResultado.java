@@ -7,6 +7,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import service.ResultadoTest;
 
 public class PanelResumenResultado extends JPanel {
 
@@ -76,15 +77,26 @@ public class PanelResumenResultado extends JPanel {
     public void actualizarResumen(int correctas,
                                   int incorrectas,
                                   double nota,
-                                  String tiempo) {
+                                  int tiempo) {
 
-        lblCorrectas.setText("✅ Correctas: " + correctas);
+        lblCorrectas.setText("Correctas: " + correctas);
 
-        lblIncorrectas.setText("❌ Incorrectas: " + incorrectas);
+        lblIncorrectas.setText("Incorrectas: " + incorrectas);
 
-        lblNota.setText(String.format("📊 Nota: %.2f%%", nota));
+        lblNota.setText(String.format("Nota: %.2f%%", nota));
 
-        lblTiempo.setText("⏱ Tiempo: " + tiempo);
+        lblTiempo.setText("Tiempo: " + tiempo + " segundos");
+
+    }
+ 
+    public void mostrarResultado(ResultadoTest resultado) {
+
+        actualizarResumen(
+                resultado.getAciertos(),
+                resultado.getFallos(),
+                resultado.getNota(),
+                resultado.getDuracionSegundos()
+        );
 
     }
 

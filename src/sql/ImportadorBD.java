@@ -2,6 +2,8 @@ package sql;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import database.ConexionSQLite;
 import model.Pregunta;
 import model.Respuesta;
 
@@ -11,7 +13,6 @@ import java.util.List;
 
 public class ImportadorBD {
 
-    private static final String URL = "jdbc:sqlite:src/sql/bd";
     private static final String JSON = "docs/preguntas.json";
 
     public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class ImportadorBD {
 
         try {
 
-            conn = DriverManager.getConnection(URL);
+            DriverManager.getConnection(ConexionSQLite.URL);
 
             ObjectMapper mapper = new ObjectMapper();
 

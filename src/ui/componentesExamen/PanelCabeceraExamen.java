@@ -86,12 +86,21 @@ public class PanelCabeceraExamen extends JPanel {
 
         lblPregunta.setText("Pregunta " + actual + " de " + total);
 
-        int porcentaje = (int) ((actual * 100.0) / total);
+    }
+  
+    public void actualizarProgreso(int respondidas, int total) {
+
+        int porcentaje = 0;
+
+        if (total > 0) {
+            porcentaje = (int) ((respondidas * 100.0) / total);
+        }
 
         barraProgreso.setValue(porcentaje);
+
         barraProgreso.setString(porcentaje + "%");
 
-    }
+}
 
     public void actualizarTiempo(String tiempo) {
 
@@ -104,6 +113,8 @@ public class PanelCabeceraExamen extends JPanel {
         actualizarTipoTest(configuracion.getTipoTest());
         System.out.println(configuracion.getNumeroPreguntasReales());
         actualizarPregunta(1, configuracion.getNumeroPreguntasReales());
+
+        actualizarProgreso(0, configuracion.getNumeroPreguntasReales());
 
         actualizarTiempo("00:00:00");
 

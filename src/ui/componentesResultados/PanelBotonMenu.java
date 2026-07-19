@@ -20,7 +20,7 @@ public class PanelBotonMenu extends JPanel {
 
     private void crearBoton() {
 
-        btnVolverMenu = new JButton("🏠 Volver al menú principal");
+        btnVolverMenu = new JButton("Menu Principal");
 
         btnVolverMenu.setFont(new Font("Arial", Font.BOLD, 15));
 

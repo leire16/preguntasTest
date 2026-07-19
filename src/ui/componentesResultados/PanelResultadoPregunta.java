@@ -11,6 +11,9 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import model.Respuesta;
+import service.ResultadoPregunta;
+
 public class PanelResultadoPregunta extends JPanel {
 
     private JLabel lblCabecera;
@@ -34,18 +37,23 @@ public class PanelResultadoPregunta extends JPanel {
 
     private void inicializarComponentes() {
 
-        lblCabecera = new JLabel("Pregunta 1");
+        lblCabecera = new JLabel();
 
-        lblCabecera.setFont(new Font("Arial", Font.BOLD, 16));
+        lblCabecera.setFont(
+                new Font("Arial", Font.BOLD, 16)
+        );
 
         lblEnunciado = new JLabel();
 
-        lblEnunciado.setFont(new Font("Arial", Font.PLAIN, 15));
+        lblEnunciado.setFont(
+                new Font("Arial", Font.PLAIN, 15)
+        );
 
         panelRespuestas = new JPanel();
 
-        panelRespuestas.setLayout(new BoxLayout(panelRespuestas,
-                BoxLayout.Y_AXIS));
+        panelRespuestas.setLayout(
+                new BoxLayout(panelRespuestas, BoxLayout.Y_AXIS)
+        );
 
     }
 
@@ -55,7 +63,9 @@ public class PanelResultadoPregunta extends JPanel {
 
         JPanel centro = new JPanel();
 
-        centro.setLayout(new BoxLayout(centro, BoxLayout.Y_AXIS));
+        centro.setLayout(
+                new BoxLayout(centro, BoxLayout.Y_AXIS)
+        );
 
         centro.add(lblEnunciado);
 
@@ -68,46 +78,133 @@ public class PanelResultadoPregunta extends JPanel {
     }
 
     // =====================================================
-    // MÉTODOS PÚBLICOS
+    // CARGAR RESULTADO DE UNA PREGUNTA
     // =====================================================
 
-    public void setCabecera(int numeroPregunta,
-                            boolean correcta) {
+    public void mostrarResultadoPregunta(ResultadoPregunta resultado) {
 
-        if (correcta) {
+        limpiarRespuestas();
 
-            lblCabecera.setText(
-                    "Pregunta " + numeroPregunta + "   ✅ Correcta");
+        boolean esCorrecta = resultado.isCorrecta();
+
+        // -------------------------------
+        // Cabecera
+        // -------------------------------
+
+        lblCabecera.setText(
+                "Pregunta "
+                + resultado.getPregunta().getNumeroOriginal()
+                + (esCorrecta
+                    ? "  - CORRECTA"
+                    : "  - INCORRECTA")
+        );
+
+        if (esCorrecta) {
+
+            lblCabecera.setForeground(
+                    new Color(0, 150, 0)
+            );
 
         } else {
 
-            lblCabecera.setText(
-                    "Pregunta " + numeroPregunta + "   ❌ Incorrecta");
+            lblCabecera.setForeground(
+                    Color.RED
+            );
 
         }
 
+        // -------------------------------
+        // Enunciado
+        // -------------------------------
+
+        lblEnunciado.setText(
+                "<html><b>"
+                + resultado.getPregunta().getEnunciado()
+                + "</b></html>"
+        );
+
+        // -------------------------------
+        // Respuestas
+        // -------------------------------
+
+        for (Respuesta respuesta : resultado.getPregunta().getRespuestas()) {
+
+            JLabel lblRespuesta = new JLabel(
+                    respuesta.getLetra()
+                    + ") "
+                    + respuesta.getTexto()
+            );
+
+            lblRespuesta.setAlignmentX(
+                    Component.LEFT_ALIGNMENT
+            );
+
+            // Respuesta correcta
+            if (respuesta.equals(resultado.getRespuestaCorrecta())) {
+
+                lblRespuesta.setText(
+                        "✔ "
+                        + lblRespuesta.getText()
+                );
+
+                lblRespuesta.setForeground(
+                        new Color(0, 150, 0)
+                );
+
+                lblRespuesta.setFont(
+                        lblRespuesta.getFont()
+                                .deriveFont(Font.BOLD)
+                );
+
+            }
+
+            // Respuesta elegida por usuario pero incorrecta
+            if (!esCorrecta
+                    && respuesta.equals(resultado.getRespuestaUsuario())) {
+
+                lblRespuesta.setText(
+                        "✘ "
+                        + lblRespuesta.getText()
+                );
+
+                lblRespuesta.setForeground(
+                        Color.RED
+                );
+
+
+                lblRespuesta.setFont(
+                        lblRespuesta.getFont()
+                                .deriveFont(Font.BOLD)
+                );
+
+            }
+
+            addRespuesta(lblRespuesta);
+
+        }
+
+        revalidate();
+
+        repaint();
+
     }
 
-    public void setEnunciado(String enunciado) {
-
-        lblEnunciado.setText("<html><b>" + enunciado + "</b></html>");
-
-    }
-
-    public void limpiarRespuestas() {
+    private void limpiarRespuestas() {
 
         panelRespuestas.removeAll();
 
     }
 
-    public void addRespuesta(JLabel respuesta) {
+    private void addRespuesta(JLabel respuesta) {
 
-        respuesta.setAlignmentX(Component.LEFT_ALIGNMENT);
+        respuesta.setAlignmentX(
+                Component.LEFT_ALIGNMENT
+        );
 
         panelRespuestas.add(respuesta);
 
-        panelRespuestas.add(Box.createVerticalStrut(5));
-
+        panelRespuestas.add(
+                Box.createVerticalStrut(5)
+        );
     }
-
 }

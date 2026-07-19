@@ -1,12 +1,21 @@
 package ui;
 
 import java.awt.BorderLayout;
+import java.util.List;
 
 import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.Timer;
 
 import model.Configuracion;
+import model.Pregunta;
+import model.Respuesta;
+import service.CorreccionService;
+import service.ResultadoTest;
+import service.TestService;
 import ui.componentesExamen.PanelCabeceraExamen;
 import ui.componentesExamen.PanelNavegacion;
 import ui.componentesExamen.PanelPregunta;
@@ -19,20 +28,39 @@ public class PantallaExamen extends JPanel {
     private PanelCabeceraExamen panelCabecera;
     private PanelPregunta panelPregunta;
     private PanelRespuestas panelRespuestas;
+    private JScrollPane scrollRespuestas;
     private PanelNavegacion panelNavegacion;
 
     private Timer cronometro;
     private int segundosTranscurridos;
+
+    // ==========================================
+    // LÓGICA DEL TEST
+    // ==========================================
+
+    private TestService testService;
+
+    private List<Pregunta> preguntas;
+
+    private Integer[] respuestasSeleccionadas;
+
+    private int indicePreguntaActual;
+
+    // ==========================================
 
     public PantallaExamen(VentanaPrincipal ventana) {
 
         this.ventana = ventana;
 
         setLayout(new BorderLayout(15, 15));
-        setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        setBorder(BorderFactory.createEmptyBorder(
+                20, 20, 20, 20));
 
         inicializarComponentes();
+
         colocarComponentes();
+
         configurarEventos();
 
     }
@@ -40,9 +68,23 @@ public class PantallaExamen extends JPanel {
     private void inicializarComponentes() {
 
         panelCabecera = new PanelCabeceraExamen();
+
         panelPregunta = new PanelPregunta();
+
         panelRespuestas = new PanelRespuestas();
+
+        scrollRespuestas = new JScrollPane(panelRespuestas);
+
+        scrollRespuestas.setBorder(null);
+
+        scrollRespuestas.setHorizontalScrollBarPolicy(
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        scrollRespuestas.getVerticalScrollBar().setUnitIncrement(18);
+
         panelNavegacion = new PanelNavegacion();
+
+        testService = new TestService();
 
     }
 
@@ -53,7 +95,8 @@ public class PantallaExamen extends JPanel {
         JPanel centro = new JPanel(new BorderLayout(20, 20));
 
         centro.add(panelPregunta, BorderLayout.NORTH);
-        centro.add(panelRespuestas, BorderLayout.CENTER);
+
+        centro.add(scrollRespuestas, BorderLayout.CENTER);
 
         add(centro, BorderLayout.CENTER);
 
@@ -61,19 +104,13 @@ public class PantallaExamen extends JPanel {
 
     }
 
-    private void configurarEventos() {
+       private void configurarEventos() {
 
-        panelNavegacion.getBtnAnterior().addActionListener(e -> {
+        panelNavegacion.getBtnAnterior().addActionListener(e ->
+                mostrarPreguntaAnterior());
 
-            mostrarPreguntaAnterior();
-
-        });
-
-        panelNavegacion.getBtnSiguiente().addActionListener(e -> {
-
-            pulsarBotonSiguiente();
-
-        });
+        panelNavegacion.getBtnSiguiente().addActionListener(e ->
+                pulsarBotonSiguiente());
 
     }
 
@@ -106,7 +143,9 @@ public class PantallaExamen extends JPanel {
     private void detenerCronometro() {
 
         if (cronometro != null) {
+
             cronometro.stop();
+
         }
 
     }
@@ -132,31 +171,200 @@ public class PantallaExamen extends JPanel {
 
         panelCabecera.inicializar(configuracion);
 
+        preguntas = testService.generarTest(configuracion);
+
+        respuestasSeleccionadas = new Integer[preguntas.size()];
+
+        indicePreguntaActual = 0;
+
+        // El listener se registra SOLO cuando ya existe el examen
+        panelRespuestas.setOnRespuestaSeleccionada(() -> {
+
+            guardarRespuestaActual();
+
+            panelCabecera.actualizarProgreso(
+                    contarRespondidas(),
+                    preguntas.size());
+
+            panelNavegacion.actualizarEstado(
+                    indicePreguntaActual + 1,
+                    preguntas.size(),
+                    todasRespondidas());
+
+        });
+
         iniciarCronometro();
 
-        // TODO
-        // cargar preguntas
-        // mostrar primera pregunta
+        mostrarPreguntaActual();
+
+    }
+
+    private void mostrarPreguntaActual() {
+
+        Pregunta pregunta = preguntas.get(indicePreguntaActual);
+
+        panelPregunta.mostrarPregunta(
+        pregunta,
+        indicePreguntaActual + 1);
+
+        panelRespuestas.mostrarRespuestas(
+                pregunta.getRespuestas());
+
+        restaurarRespuestaActual();
+
+        scrollRespuestas.getVerticalScrollBar().setValue(0);
+
+        panelCabecera.actualizarPregunta(
+                indicePreguntaActual + 1,
+                preguntas.size());
+
+        panelCabecera.actualizarProgreso(
+                contarRespondidas(),
+                preguntas.size());
+
+        panelNavegacion.actualizarEstado(
+                indicePreguntaActual + 1,
+                preguntas.size(),
+                todasRespondidas());
+
+    }
+
+    private void guardarRespuestaActual() {
+
+        if (respuestasSeleccionadas == null) {
+            return;
+        }
+
+        Respuesta respuesta =
+                panelRespuestas.getRespuestaSeleccionada();
+
+        if (respuesta == null) {
+            return;
+        }
+
+        respuestasSeleccionadas[indicePreguntaActual] =
+                respuesta.getId();
+    }
+
+    private void restaurarRespuestaActual() {
+
+        panelRespuestas.limpiarSeleccion();
+
+        if (respuestasSeleccionadas == null) {
+            return;
+        }
+
+        Integer respuestaGuardada =
+                respuestasSeleccionadas[indicePreguntaActual];
+
+        if (respuestaGuardada == null) {
+            return;
+        }
+
+        for (int i = 0; i < 4; i++) {
+
+            if (!panelRespuestas.getRespuesta(i).isVisible()) {
+                continue;
+            }
+
+            Respuesta respuesta =
+                    panelRespuestas.getRespuesta(i).getRespuesta();
+
+            if (respuesta.getId().equals(respuestaGuardada)) {
+
+                panelRespuestas.getRespuesta(i).setSelected(true);
+
+                break;
+
+            }
+
+        }
 
     }
 
     private void mostrarPreguntaAnterior() {
 
-        // TODO
+        guardarRespuestaActual();
+
+        if (indicePreguntaActual > 0) {
+
+            indicePreguntaActual--;
+
+            mostrarPreguntaActual();
+
+        }
 
     }
 
     private void mostrarPreguntaSiguiente() {
 
-        // TODO
+        guardarRespuestaActual();
+
+        if (indicePreguntaActual < preguntas.size() - 1) {
+
+            indicePreguntaActual++;
+
+            mostrarPreguntaActual();
+
+        }
 
     }
 
     private void pulsarBotonSiguiente() {
 
-        // TODO
-        // Si es la última -> finalizarExamen()
-        // Si no -> mostrarPreguntaSiguiente()
+        guardarRespuestaActual();
+
+        if (respuestasSeleccionadas[indicePreguntaActual] == null) {
+
+            JOptionPane.showMessageDialog(
+                    this,
+                    "Debes responder la pregunta antes de continuar.",
+                    "Pregunta sin responder",
+                    JOptionPane.WARNING_MESSAGE);
+
+            return;
+
+        }
+
+        if (indicePreguntaActual == preguntas.size() - 1) {
+
+            finalizarExamen();
+
+        } else {
+
+            mostrarPreguntaSiguiente();
+
+        }
+
+    }
+
+    private int contarRespondidas() {
+
+        if (respuestasSeleccionadas == null) {
+            return 0;
+        }
+
+        int total = 0;
+
+        for (Integer respuesta : respuestasSeleccionadas) {
+
+            if (respuesta != null) {
+                total++;
+            }
+
+        }
+
+        return total;
+
+    }
+
+    private boolean todasRespondidas() {
+
+        if (respuestasSeleccionadas == null) {
+            return false;
+        }
+
+        return contarRespondidas() == preguntas.size();
 
     }
 
@@ -164,10 +372,18 @@ public class PantallaExamen extends JPanel {
 
         detenerCronometro();
 
-        // TODO
-        // Calcular nota
-        // Mostrar resultados
+        guardarRespuestaActual();
 
+        CorreccionService correccionService = new CorreccionService();
+
+        ResultadoTest resultado =
+        correccionService.finalizarExamen(
+                preguntas,
+                respuestasSeleccionadas,
+                segundosTranscurridos);
+        // guardaremos la sesión en la BD
+
+        ventana.mostrarResultados(resultado);
     }
 
 }
