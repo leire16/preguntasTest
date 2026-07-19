@@ -307,6 +307,8 @@ public class PreguntaDao {
 
         int idPregunta = rs.getInt("id");
 
+        pregunta.setId(idPregunta);
+
         pregunta.setNumeroOriginal(
                 rs.getInt("numero_original"));
 

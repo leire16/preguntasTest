@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pregunta {
-
+    private int id;
     private int numeroOriginal;
     private int temaId;
     private String enunciado;
@@ -14,6 +14,13 @@ public class Pregunta {
     public Pregunta() {
     }
 
+    public Pregunta(int id, int numeroOriginal, int temaId, String enunciado) {
+        this.id = id;
+        this.numeroOriginal = numeroOriginal;
+        this.temaId = temaId;
+        this.enunciado = enunciado;
+    }
+ 
     public Pregunta(int numeroOriginal, int temaId, String enunciado) {
         this.numeroOriginal = numeroOriginal;
         this.temaId = temaId;
@@ -22,6 +29,14 @@ public class Pregunta {
 
     public int getNumeroOriginal() {
         return numeroOriginal;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setNumeroOriginal(int numeroOriginal) {

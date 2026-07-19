@@ -99,7 +99,7 @@ public class ConfiguracionTest extends JPanel {
 
         configuracion.setTipoTest(tipoTest);
 
-        if (tipoTest == TipoTest.TEMAS) {
+        if (tipoTest == TipoTest.TEMA) {
 
             if (panelTemas.hayTemasSeleccionados()) {
 
@@ -125,7 +125,7 @@ public class ConfiguracionTest extends JPanel {
 
         lblModo.setText("Modo: " + tipo.getDescripcion());
 
-        panelTemas.setVisible(tipo == TipoTest.TEMAS);
+        panelTemas.setVisible(tipo == TipoTest.TEMA);
 
         revalidate();
         repaint();

@@ -21,7 +21,7 @@ public class TestService {
     public List<Pregunta> generarTest(Configuracion configuracion) {
         List<Pregunta> preguntas;
         switch (configuracion.getTipoTest()) {
-            case TEMAS:
+            case TEMA:
                 preguntas = preguntaDao.obtenerPorTemas(
                         configuracion.getTemas());
                 break;
@@ -30,7 +30,7 @@ public class TestService {
                 preguntas = preguntaDao.obtenerTodas();
                 break;
 
-            case FALLADAS:
+            case REPASO:
                 preguntas = preguntaDao.obtenerFalladas();
                 break;
 

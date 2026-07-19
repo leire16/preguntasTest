@@ -3,9 +3,9 @@ package sql;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import database.ConexionSQLite;
 import model.Pregunta;
 import model.Respuesta;
+import util.Constantes;
 
 import java.io.File;
 import java.sql.*;
@@ -21,7 +21,7 @@ public class ImportadorBD {
 
         try {
 
-            DriverManager.getConnection(ConexionSQLite.URL);
+            DriverManager.getConnection(Constantes.RUTA_BD);
 
             ObjectMapper mapper = new ObjectMapper();
 

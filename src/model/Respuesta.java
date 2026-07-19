@@ -22,6 +22,15 @@ public class Respuesta {
         this.texto = texto;
         this.correcta = correcta;
     }
+ 
+    public Respuesta(
+                     String letra,
+                     String texto,
+                     boolean correcta) {
+        this.letra = letra;
+        this.texto = texto;
+        this.correcta = correcta;
+    }
 
     public Integer getId() {
         return id;

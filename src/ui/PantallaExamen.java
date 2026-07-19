@@ -14,6 +14,7 @@ import model.Configuracion;
 import model.Pregunta;
 import model.Respuesta;
 import service.CorreccionService;
+import service.GuardadoResultadoService;
 import service.ResultadoTest;
 import service.TestService;
 import ui.componentesExamen.PanelCabeceraExamen;
@@ -39,6 +40,8 @@ public class PantallaExamen extends JPanel {
     // ==========================================
 
     private TestService testService;
+
+    private Configuracion configuracionActual;
 
     private List<Pregunta> preguntas;
 
@@ -168,6 +171,8 @@ public class PantallaExamen extends JPanel {
     // ==================================================
 
     public void iniciarExamen(Configuracion configuracion) {
+
+        this.configuracionActual = configuracion;
 
         panelCabecera.inicializar(configuracion);
 
@@ -381,7 +386,23 @@ public class PantallaExamen extends JPanel {
                 preguntas,
                 respuestasSeleccionadas,
                 segundosTranscurridos);
-        // guardaremos la sesión en la BD
+
+        GuardadoResultadoService guardadoResultadoService = new GuardadoResultadoService();
+
+        int sesionId = guardadoResultadoService.guardarResultado(
+                configuracionActual,
+                preguntas.size(),
+                resultado);
+
+        if (sesionId == -1) {
+
+            JOptionPane.showMessageDialog(
+                    this,
+                    "No se ha podido guardar la sesión del test en la base de datos.",
+                    "Error al guardar",
+                    JOptionPane.ERROR_MESSAGE);
+
+        }
 
         ventana.mostrarResultados(resultado);
     }

@@ -29,18 +29,18 @@ public class MenuPrincipal extends JPanel {
         SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 28));
 
-        JButton btnTemas = new JButton("📚 " + TipoTest.TEMAS.getDescripcion());
+        JButton btnTemas = new JButton("📚 " + TipoTest.TEMA.getDescripcion());
         JButton btnCompleto = new JButton("🌍 " + TipoTest.COMPLETO.getDescripcion());
-        JButton btnFalladas = new JButton("❌ " + TipoTest.FALLADAS.getDescripcion());
+        JButton btnFalladas = new JButton("❌ " + TipoTest.REPASO.getDescripcion());
 
         btnTemas.addActionListener(e ->
-                ventana.mostrarConfiguracion(TipoTest.TEMAS));
+                ventana.mostrarConfiguracion(TipoTest.TEMA));
 
         btnCompleto.addActionListener(e ->
                 ventana.mostrarConfiguracion(TipoTest.COMPLETO));
 
         btnFalladas.addActionListener(e ->
-                ventana.mostrarConfiguracion(TipoTest.FALLADAS));
+                ventana.mostrarConfiguracion(TipoTest.REPASO));
 
         gbc.gridx = 0;
         gbc.gridy = 0;

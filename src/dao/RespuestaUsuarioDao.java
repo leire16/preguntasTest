@@ -23,7 +23,7 @@ public class RespuestaUsuarioDao {
                     pregunta_id,
                     respuesta_id,
                     respuesta_correcta_id,
-                    correcta
+                    es_correcta 
                 )
                 VALUES (?, ?, ?, ?, ?)
                 """;
@@ -100,7 +100,7 @@ public class RespuestaUsuarioDao {
                             rs.getInt("respuesta_correcta_id"));
 
                     respuesta.setCorrecta(
-                            rs.getInt("correcta") == 1);
+                            rs.getInt("es_correcta ") == 1);
 
                     respuestas.add(respuesta);
 
