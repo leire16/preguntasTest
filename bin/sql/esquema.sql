@@ -33,7 +33,7 @@ CREATE TABLE sesiones_test (
     num_preguntas       INTEGER NOT NULL,
     num_aciertos        INTEGER NOT NULL DEFAULT 0,
     num_fallos          INTEGER NOT NULL DEFAULT 0,
-    duracion_segundos   INTEGER NOT NULL DEFAULT 0,
+    duracion_segundos   INTEGER NOT NULL DEFAULT 0
 )
 
 
