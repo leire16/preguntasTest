@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ImportadorBD {
 
-    private static final String JSON = "docs/preguntas2.json";
+    private static final String JSON = "docs/preguntas3.json";
 
     public static void main(String[] args) {
 

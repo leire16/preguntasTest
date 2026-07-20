@@ -20,7 +20,7 @@ public class GeneradorJSON {
 
     private static final String ARCHIVO = "docs/texto_extraido.txt";
     private static final String ARCHIVO_RESPUESTAS = "docs/respuestas_correctas.txt";
-    private static final String SALIDA_JSON = "docs/preguntas2.json";
+    private static final String SALIDA_JSON = "docs/preguntas3.json";
 
     public static void main(String[] args) {
 
