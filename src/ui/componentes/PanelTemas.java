@@ -12,16 +12,26 @@ import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+import dao.TemaDao;
+import model.Tema;
 import util.Constantes;
 
 public class PanelTemas extends JPanel {
 
+    private final TemaDao temaDao;
+
+    private List<Tema> temasCargados;
     private JCheckBox[] checkTemas;
 
     private JButton btnSeleccionarTodos;
     private JButton btnDeseleccionarTodos;
 
+    private JPanel panelChecks;
+    private JScrollPane scroll;
+
     public PanelTemas() {
+
+        temaDao = new TemaDao();
 
         setLayout(new BorderLayout(10, 10));
 
@@ -30,7 +40,13 @@ public class PanelTemas extends JPanel {
                 "Temas"));
 
         crearBotones();
-        crearTemas();
+
+        panelChecks = new JPanel();
+        scroll = new JScrollPane(panelChecks);
+        scroll.setBorder(null);
+        scroll.getVerticalScrollBar().setUnitIncrement(16);
+
+        add(scroll, BorderLayout.CENTER);
 
     }
 
@@ -51,27 +67,52 @@ public class PanelTemas extends JPanel {
 
     }
 
-    private void crearTemas() {
+    /**
+     * Carga los temas desde la base de datos, filtrando según el tipo
+     * elegido en la pantalla anterior:
+     * - temaComunSeleccionado == true  -> solo el tema con id == ID_TEMA_COMUN
+     * - temaComunSeleccionado == false -> todos los temas EXCEPTO ID_TEMA_COMUN
+     */
+    public void cargarTemas(boolean temaComunSeleccionado) {
 
-        JPanel panelChecks = new JPanel();
-        panelChecks.setLayout(new GridLayout(Constantes.TOTAL_TEMAS, 1, 0, 8));
+        List<Tema> todos = temaDao.obtenerTodos();
 
-        checkTemas = new JCheckBox[Constantes.TOTAL_TEMAS];
+        temasCargados = new ArrayList<>();
 
-        for (int i = 0; i < Constantes.TOTAL_TEMAS; i++) {
+        for (Tema tema : todos) {
+
+            boolean esComun = tema.getId() == Constantes.ID_TEMA_COMUN;
+
+            if (temaComunSeleccionado == esComun) {
+                temasCargados.add(tema);
+            }
+
+        }
+
+        reconstruirCheckboxes();
+
+    }
+
+    private void reconstruirCheckboxes() {
+
+        panelChecks.removeAll();
+        panelChecks.setLayout(new GridLayout(temasCargados.size(), 1, 0, 8));
+
+        checkTemas = new JCheckBox[temasCargados.size()];
+
+        for (int i = 0; i < temasCargados.size(); i++) {
+
+            Tema tema = temasCargados.get(i);
 
             checkTemas[i] = new JCheckBox(
-                    (i + 1) + ". " + Constantes.TEMAS[i]);
+                    tema.getId() + ". " + tema.getNombre());
 
             panelChecks.add(checkTemas[i]);
 
         }
 
-        JScrollPane scroll = new JScrollPane(panelChecks);
-        scroll.setBorder(null);
-        scroll.getVerticalScrollBar().setUnitIncrement(16);
-
-        add(scroll, BorderLayout.CENTER);
+        panelChecks.revalidate();
+        panelChecks.repaint();
 
     }
 
@@ -83,7 +124,7 @@ public class PanelTemas extends JPanel {
 
             if (checkTemas[i].isSelected()) {
 
-                temas.add(i + 1);
+                temas.add(temasCargados.get(i).getId());
 
             }
 
@@ -97,9 +138,9 @@ public class PanelTemas extends JPanel {
 
         List<Integer> temas = new ArrayList<>();
 
-        for (int i = 1; i <= Constantes.TOTAL_TEMAS; i++) {
+        for (Tema tema : temasCargados) {
 
-            temas.add(i);
+            temas.add(tema.getId());
 
         }
 

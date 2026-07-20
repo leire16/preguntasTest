@@ -12,6 +12,7 @@ import util.Constantes;
 
 public class VentanaPrincipal extends JFrame {
 
+    public static final String TEMA = "TEMA";
     public static final String MENU = "MENU";
     public static final String CONFIGURACION = "CONFIGURACION";
     public static final String EXAMEN = "EXAMEN";
@@ -20,12 +21,15 @@ public class VentanaPrincipal extends JFrame {
     private CardLayout cardLayout;
     private JPanel contenedor;
 
+    private SeleccionTipoTema temaPrincipal;
     private MenuPrincipal menuPrincipal;
     private ConfiguracionTest configuracionTest;
 
     // Más adelante
     private PantallaExamen pantallaExamen;
     private PantallaResultados pantallaResultados;
+    
+    private boolean temaComunSeleccionado;
 
     public VentanaPrincipal() {
 
@@ -41,7 +45,7 @@ public class VentanaPrincipal extends JFrame {
 
         add(contenedor);
 
-        mostrarMenu();
+        mostrarTema(); // en vez de mostrarMenu();
 
         setVisible(true);
     }
@@ -51,6 +55,7 @@ public class VentanaPrincipal extends JFrame {
         cardLayout = new CardLayout();
         contenedor = new JPanel(cardLayout);
 
+        temaPrincipal = new SeleccionTipoTema(this);
         menuPrincipal = new MenuPrincipal(this);
         configuracionTest = new ConfiguracionTest(this);
         pantallaExamen = new PantallaExamen(this);
@@ -59,10 +64,17 @@ public class VentanaPrincipal extends JFrame {
     }
 
     private void registrarPantallas() {
+        contenedor.add(temaPrincipal, TEMA);
         contenedor.add(menuPrincipal, MENU);
         contenedor.add(configuracionTest, CONFIGURACION);
         contenedor.add(pantallaExamen, EXAMEN);
         contenedor.add(pantallaResultados, RESULTADOS);
+
+    }
+
+    public void mostrarTema() {
+
+        cardLayout.show(contenedor, TEMA);
 
     }
 
@@ -75,6 +87,7 @@ public class VentanaPrincipal extends JFrame {
     public void mostrarConfiguracion(TipoTest tipo) {
 
         configuracionTest.setTipoTest(tipo);
+        configuracionTest.setTemaComun(temaComunSeleccionado);
 
         cardLayout.show(contenedor, CONFIGURACION);
 
@@ -93,6 +106,14 @@ public class VentanaPrincipal extends JFrame {
         pantallaResultados.mostrarResultado(resultado);
 
         cardLayout.show(contenedor, "RESULTADOS");
+
+    }
+
+    public void confirmarSeleccionTipoTema(boolean esComun) {
+
+        this.temaComunSeleccionado = esComun;
+
+        mostrarMenu();
 
     }
 }

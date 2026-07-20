@@ -2,6 +2,7 @@ package ui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -15,6 +16,7 @@ import model.TipoTest;
 import ui.componentes.PanelBotones;
 import ui.componentes.PanelNumeroPreguntas;
 import ui.componentes.PanelTemas;
+import util.Constantes;
 
 public class ConfiguracionTest extends JPanel {
 
@@ -28,6 +30,7 @@ public class ConfiguracionTest extends JPanel {
     private PanelBotones panelBotones;
 
     private TipoTest tipoTest;
+    private boolean temaComun;
 
     public ConfiguracionTest(VentanaPrincipal ventana) {
 
@@ -101,7 +104,11 @@ public class ConfiguracionTest extends JPanel {
 
         if (tipoTest == TipoTest.TEMA) {
 
-            if (panelTemas.hayTemasSeleccionados()) {
+            if (temaComun) {
+
+                configuracion.setTemas(List.of(Constantes.ID_TEMA_COMUN));
+
+            } else if (panelTemas.hayTemasSeleccionados()) {
 
                 configuracion.setTemas(panelTemas.getTemasSeleccionados());
 
@@ -116,6 +123,18 @@ public class ConfiguracionTest extends JPanel {
         configuracion.setNumeroPreguntas(panelNumeroPreguntas.getNumeroPreguntas());
 
         return configuracion;
+
+    }
+
+    public void setTemaComun(boolean temaComun) {
+
+        this.temaComun = temaComun;
+
+        panelTemas.cargarTemas(temaComun);
+        panelTemas.setVisible(!temaComun);
+
+        revalidate();
+        repaint();
 
     }
 

@@ -11,6 +11,7 @@ public final class Constantes {
     // ------------------------
 
     public static final int TOTAL_TEMAS = 21;
+    public static final int ID_TEMA_COMUN = TOTAL_TEMAS; // 21
     public static final int TODAS_LAS_PREGUNTAS = -1;
     public static final int TOTAL_PREGUNTAS_BD = 500;
     public static final String TITULO_APP = "OPE Trainer";

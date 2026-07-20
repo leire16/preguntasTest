@@ -27,25 +27,32 @@ CREATE TABLE respuestas (
 
 -- 4. SESIONES DE TEST (cada vez que el usuario hace un test)
 CREATE TABLE sesiones_test (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    fecha         TEXT NOT NULL DEFAULT (datetime('now')),
-    tipo          TEXT NOT NULL CHECK (tipo IN ('TEMA','COMPLETO','REPASO')),
-    num_preguntas INTEGER NOT NULL,
-    num_aciertos  INTEGER NOT NULL DEFAULT 0,
-    num_fallos    INTEGER NOT NULL DEFAULT 0
-);
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    fecha               TEXT NOT NULL DEFAULT (datetime('now')),
+    tipo                TEXT NOT NULL CHECK (tipo IN ('TEMA','COMPLETO','REPASO')),
+    num_preguntas       INTEGER NOT NULL,
+    num_aciertos        INTEGER NOT NULL DEFAULT 0,
+    num_fallos          INTEGER NOT NULL DEFAULT 0,
+    duracion_segundos   INTEGER NOT NULL DEFAULT 0,
+)
+
 
 -- 5. DETALLE DE RESPUESTAS DADAS EN CADA SESIÓN
 CREATE TABLE respuestas_usuario (
-    id             INTEGER PRIMARY KEY AUTOINCREMENT,
-    sesion_id      INTEGER NOT NULL,
-    pregunta_id    INTEGER NOT NULL,
-    respuesta_id   INTEGER,           -- NULL si se dejó en blanco
-    es_correcta    INTEGER NOT NULL CHECK (es_correcta IN (0,1)),
+    id                      INTEGER PRIMARY KEY AUTOINCREMENT,
+    sesion_id               INTEGER NOT NULL,
+    pregunta_id             INTEGER NOT NULL,
+    -- Respuesta elegida por el usuario (NULL si no respondió)
+    respuesta_id            INTEGER,
+    -- Respuesta correcta de la pregunta
+    respuesta_correcta_id   INTEGER NOT NULL,
+    es_correcta             INTEGER NOT NULL CHECK (es_correcta IN (0,1)),
     FOREIGN KEY (sesion_id) REFERENCES sesiones_test(id) ON DELETE CASCADE,
     FOREIGN KEY (pregunta_id) REFERENCES preguntas(id),
-    FOREIGN KEY (respuesta_id) REFERENCES respuestas(id)
-);
+    FOREIGN KEY (respuesta_id) REFERENCES respuestas(id),
+    FOREIGN KEY (respuesta_correcta_id) REFERENCES respuestas(id)
+)
+
 
 -- 6. ESTADO DE CADA PREGUNTA (para el botón "Repaso ❌")
 CREATE TABLE estado_pregunta (
