@@ -72,7 +72,7 @@ public class PantallaResultados extends JPanel {
 
         panelBotonMenu.getBtnVolverMenu().addActionListener(e -> {
 
-            ventana.mostrarMenu();
+            ventana.mostrarTema();
 
         });
 
