@@ -22,7 +22,7 @@ public final class Constantes {
     public static final String TEXTO_TEST_COMPLETO = "Test completo";
     public static final String TEXTO_TEST_FALLADAS = "Repaso de preguntas falladas";
 
-    public static final String RUTA_BD = "jdbc:sqlite:src/main/resources/sql/bd3.db";
+    public static final String RUTA_BD = "jdbc:sqlite:src/main/resources/sql/bd4.db";
 
     public static final int[] OPCIONES_NUMERO_PREGUNTAS = { 5, 10, 25, 50, 100 };
 
