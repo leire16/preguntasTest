@@ -25,3 +25,7 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 comandos para ejecutar generadorJSON
 
 java -cp "bin;lib/*" sql.GeneradorJSON
+
+
+ejecutar el jar
+java -jar PreguntasTest-1.0.jar
