@@ -105,7 +105,6 @@ public class PantallaResultados extends JPanel {
     }
 
     public void mostrarResultado(ResultadoTest resultado) {
-
         limpiarListado();
 
         panelResumen.mostrarResultado(resultado);
@@ -122,6 +121,11 @@ public class PantallaResultados extends JPanel {
 
         revalidate();
         repaint();
+
+        // Volver siempre al principio del listado el scroll
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            scroll.getVerticalScrollBar().setValue(0);
+        });
 
     }
 

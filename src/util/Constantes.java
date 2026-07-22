@@ -17,7 +17,7 @@ public final class Constantes {
     public static final String TITULO_APP = "OPE Trainer";
 
     public static final int ANCHO_VENTANA = 900;
-    public static final int ALTO_VENTANA = 600;
+    public static final int ALTO_VENTANA = 750;
     public static final String TEXTO_TEST_TEMAS = "Test por temas";
     public static final String TEXTO_TEST_COMPLETO = "Test completo";
     public static final String TEXTO_TEST_FALLADAS = "Repaso de preguntas falladas";
