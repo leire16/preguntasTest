@@ -152,11 +152,11 @@ public class PreguntaDao {
     }
 
     /**
-     * Devuelve las preguntas falladas alguna vez.
+     * Devuelve las preguntas falladas de los temas indicados.
      */
-    public List<Pregunta> obtenerFalladas() {
+    public List<Pregunta> obtenerFalladas(List<Integer> temas) {
 
-        String sql = """
+        StringBuilder sql = new StringBuilder("""
                 SELECT
                     p.id,
                     p.numero_original,
@@ -166,10 +166,68 @@ public class PreguntaDao {
                 INNER JOIN estado_pregunta ep
                     ON ep.pregunta_id = p.id
                 WHERE ep.veces_fallada > 0
-                ORDER BY ep.veces_fallada DESC
-                """;
+                """);
 
-        return ejecutarConsulta(sql);
+        if (temas != null && !temas.isEmpty()) {
+
+            sql.append(" AND p.tema_id IN (");
+
+            for (int i = 0; i < temas.size(); i++) {
+
+                sql.append("?");
+
+                if (i < temas.size() - 1) {
+                    sql.append(",");
+                }
+
+            }
+
+            sql.append(")");
+
+        }
+
+        sql.append(" ORDER BY ep.veces_fallada DESC");
+
+        System.out.println(sql + " falladas");
+
+        List<Pregunta> preguntas = new ArrayList<>();
+
+        try (
+
+                Connection conn = ConexionSQLite.getConnection();
+
+                PreparedStatement ps =
+                        conn.prepareStatement(sql.toString())
+
+        ) {
+
+            if (temas != null && !temas.isEmpty()) {
+
+                for (int i = 0; i < temas.size(); i++) {
+
+                    ps.setInt(i + 1, temas.get(i));
+
+                }
+
+            }
+
+            try (ResultSet rs = ps.executeQuery()) {
+
+                while (rs.next()) {
+
+                    preguntas.add(crearPregunta(rs));
+
+                }
+
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+        return preguntas;
 
     }
 

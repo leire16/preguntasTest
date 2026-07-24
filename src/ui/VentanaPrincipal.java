@@ -113,6 +113,8 @@ public class VentanaPrincipal extends JFrame {
 
         this.temaComunSeleccionado = esComun;
 
+        menuPrincipal.setTemaComun(esComun);
+
         mostrarMenu();
 
     }

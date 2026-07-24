@@ -19,26 +19,31 @@ public class TestService {
      * Genera un examen según la configuración elegida.
      */
     public List<Pregunta> generarTest(Configuracion configuracion) {
+
         List<Pregunta> preguntas;
+
         switch (configuracion.getTipoTest()) {
+
             case TEMA:
                 preguntas = preguntaDao.obtenerPorTemas(
                         configuracion.getTemas());
                 break;
 
             case COMPLETO:
-                preguntas = preguntaDao.obtenerTodas();
+                // COMPLETO = todas las preguntas de los temas seleccionados
+                preguntas = preguntaDao.obtenerPorTemas(
+                        configuracion.getTemas());
                 break;
 
             case REPASO:
-                preguntas = preguntaDao.obtenerFalladas();
+                // REPASO = preguntas falladas de los temas seleccionados
+                preguntas = preguntaDao.obtenerFalladas(
+                        configuracion.getTemas());
                 break;
 
             default:
-
                 throw new IllegalArgumentException(
                         "Tipo de test no soportado.");
-
         }
 
         mezclarPreguntas(preguntas);
@@ -48,6 +53,7 @@ public class TestService {
                 configuracion.getNumeroPreguntasReales());
 
         mezclarRespuestas(preguntas);
+
         return preguntas;
     }
 
@@ -69,7 +75,6 @@ public class TestService {
             preguntas.subList(
                     numeroPreguntas,
                     preguntas.size()).clear();
-
         }
     }
 
@@ -79,9 +84,7 @@ public class TestService {
     private void mezclarRespuestas(List<Pregunta> preguntas) {
 
         for (Pregunta pregunta : preguntas) {
-            Collections.shuffle(
-                    pregunta.getRespuestas());
-
+            Collections.shuffle(pregunta.getRespuestas());
         }
     }
 }

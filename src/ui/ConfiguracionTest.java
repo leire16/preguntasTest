@@ -102,22 +102,20 @@ public class ConfiguracionTest extends JPanel {
 
         configuracion.setTipoTest(tipoTest);
 
-        if (tipoTest == TipoTest.TEMA) {
+        switch (tipoTest) {
 
-            if (temaComun) {
+            case TEMA:
+            case REPASO:
+                configuracion.setTemas(obtenerTemasSeleccionados());
+                break;
 
-                configuracion.setTemas(List.of(Constantes.ID_TEMA_COMUN));
-
-            } else if (panelTemas.hayTemasSeleccionados()) {
-
-                configuracion.setTemas(panelTemas.getTemasSeleccionados());
-
-            } else {
-
-                configuracion.setTemas(panelTemas.getTodosLosTemas());
-
-            }
-
+            case COMPLETO:
+                if (temaComun) {
+                    configuracion.setTemas(List.of(Constantes.ID_TEMA_COMUN));
+                } else {
+                    configuracion.setTemas(panelTemas.getTodosLosTemas());
+                }
+                break;
         }
 
         configuracion.setNumeroPreguntas(panelNumeroPreguntas.getNumeroPreguntas());
@@ -126,12 +124,25 @@ public class ConfiguracionTest extends JPanel {
 
     }
 
+    private List<Integer> obtenerTemasSeleccionados() {
+        if (temaComun) {
+            return List.of(Constantes.ID_TEMA_COMUN);
+        }
+
+        if (panelTemas.hayTemasSeleccionados()) {
+            return panelTemas.getTemasSeleccionados();
+        }
+
+        return panelTemas.getTodosLosTemas();
+    }
+
     public void setTemaComun(boolean temaComun) {
 
         this.temaComun = temaComun;
 
         panelTemas.cargarTemas(temaComun);
-        panelTemas.setVisible(!temaComun);
+
+        actualizarVisibilidadPanelTemas();
 
         revalidate();
         repaint();
@@ -144,11 +155,23 @@ public class ConfiguracionTest extends JPanel {
 
         lblModo.setText("Modo: " + tipo.getDescripcion());
 
-        panelTemas.setVisible(tipo == TipoTest.TEMA);
+        actualizarVisibilidadPanelTemas();
 
         revalidate();
         repaint();
 
+    }
+
+    private void actualizarVisibilidadPanelTemas() {
+
+        boolean mostrar =
+                !temaComun &&
+                (tipoTest == TipoTest.TEMA || tipoTest == TipoTest.REPASO);
+
+        panelTemas.setVisible(mostrar);
+
+        revalidate();
+        repaint();
     }
 
 }
