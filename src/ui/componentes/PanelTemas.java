@@ -11,6 +11,7 @@ import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
 
 import dao.TemaDao;
 import model.Tema;
@@ -29,6 +30,7 @@ public class PanelTemas extends JPanel {
     private JPanel panelChecks;
     private JScrollPane scroll;
 
+
     public PanelTemas() {
 
         temaDao = new TemaDao();
@@ -42,13 +44,14 @@ public class PanelTemas extends JPanel {
         crearBotones();
 
         panelChecks = new JPanel();
+
         scroll = new JScrollPane(panelChecks);
         scroll.setBorder(null);
         scroll.getVerticalScrollBar().setUnitIncrement(16);
 
         add(scroll, BorderLayout.CENTER);
-
     }
+
 
     private void crearBotones() {
 
@@ -64,14 +67,14 @@ public class PanelTemas extends JPanel {
         btnDeseleccionarTodos.addActionListener(e -> deseleccionarTodos());
 
         add(panelBotones, BorderLayout.NORTH);
-
     }
 
+
     /**
-     * Carga los temas desde la base de datos, filtrando según el tipo
-     * elegido en la pantalla anterior:
-     * - temaComunSeleccionado == true  -> solo el tema con id == ID_TEMA_COMUN
-     * - temaComunSeleccionado == false -> todos los temas EXCEPTO ID_TEMA_COMUN
+     * Carga los temas según el tipo seleccionado:
+     *
+     * true  -> solo temas comunes (IDs 21-39)
+     * false -> solo temas específicos (resto)
      */
     public void cargarTemas(boolean temaComunSeleccionado) {
 
@@ -79,64 +82,97 @@ public class PanelTemas extends JPanel {
 
         temasCargados = new ArrayList<>();
 
+        List<Integer> idsComunes = Constantes.idsTemaComun();
+
         for (Tema tema : todos) {
 
-            boolean esComun = tema.getId() == Constantes.ID_TEMA_COMUN;
+            boolean esComun = idsComunes.contains(tema.getId());
 
             if (temaComunSeleccionado == esComun) {
-                temasCargados.add(tema);
-            }
 
+                temasCargados.add(tema);
+
+            }
         }
 
         reconstruirCheckboxes();
-
     }
+
 
     private void reconstruirCheckboxes() {
 
         panelChecks.removeAll();
-        panelChecks.setLayout(new GridLayout(temasCargados.size(), 1, 0, 8));
+
+        if (temasCargados == null || temasCargados.isEmpty()) {
+
+            panelChecks.setLayout(new GridLayout(1, 1));
+
+            return;
+        }
+
+
+        panelChecks.setLayout(
+                new GridLayout(temasCargados.size(), 1, 0, 8)
+        );
+
 
         checkTemas = new JCheckBox[temasCargados.size()];
+
 
         for (int i = 0; i < temasCargados.size(); i++) {
 
             Tema tema = temasCargados.get(i);
 
             checkTemas[i] = new JCheckBox(
-                    tema.getId() + ". " + tema.getNombre());
+                    tema.getId() + ". " + tema.getNombre()
+            );
 
             panelChecks.add(checkTemas[i]);
-
         }
+
 
         panelChecks.revalidate();
         panelChecks.repaint();
 
+         // Volver siempre al inicio del scroll
+        SwingUtilities.invokeLater(() -> {
+            scroll.getVerticalScrollBar().setValue(0);
+        });
+
     }
+
 
     public List<Integer> getTemasSeleccionados() {
 
         List<Integer> temas = new ArrayList<>();
 
+        if (checkTemas == null) {
+            return temas;
+        }
+
+
         for (int i = 0; i < checkTemas.length; i++) {
 
             if (checkTemas[i].isSelected()) {
 
-                temas.add(temasCargados.get(i).getId());
-
+                temas.add(
+                    temasCargados.get(i).getId()
+                );
             }
-
         }
 
         return temas;
-
     }
+
 
     public List<Integer> getTodosLosTemas() {
 
         List<Integer> temas = new ArrayList<>();
+
+        if (temasCargados == null) {
+            return temas;
+        }
+
 
         for (Tema tema : temasCargados) {
 
@@ -145,43 +181,55 @@ public class PanelTemas extends JPanel {
         }
 
         return temas;
-
     }
 
+
     public boolean hayTemasSeleccionados() {
+
+        if (checkTemas == null) {
+            return false;
+        }
+
 
         for (JCheckBox check : checkTemas) {
 
             if (check.isSelected()) {
 
                 return true;
-
             }
-
         }
 
         return false;
-
     }
 
+
     public void seleccionarTodos() {
+
+        if (checkTemas == null) {
+            return;
+        }
+
 
         for (JCheckBox check : checkTemas) {
 
             check.setSelected(true);
 
         }
-
     }
 
+
     public void deseleccionarTodos() {
+
+        if (checkTemas == null) {
+            return;
+        }
+
 
         for (JCheckBox check : checkTemas) {
 
             check.setSelected(false);
 
         }
-
     }
 
 }

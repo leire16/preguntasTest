@@ -18,8 +18,6 @@ import util.Constantes;
 
 public class MenuPrincipal extends JPanel {
 
-    private JButton btnTemas;
-
     public MenuPrincipal(VentanaPrincipal ventana) {
 
         setLayout(new BorderLayout(15, 15));
@@ -43,9 +41,10 @@ public class MenuPrincipal extends JPanel {
                 SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 28));
 
-        btnTemas = new JButton("📚 " + TipoTest.TEMA.getDescripcion());
+        JButton btnTemas = new JButton("📚 " + TipoTest.TEMA.getDescripcion());
         JButton btnCompleto = new JButton("🌍 " + TipoTest.COMPLETO.getDescripcion());
         JButton btnRepaso = new JButton("❌ " + TipoTest.REPASO.getDescripcion());
+        JButton btnEstadisticas = new JButton("📊 Estadísticas");
 
         btnTemas.addActionListener(e ->
                 ventana.mostrarConfiguracion(TipoTest.TEMA));
@@ -55,6 +54,10 @@ public class MenuPrincipal extends JPanel {
 
         btnRepaso.addActionListener(e ->
                 ventana.mostrarConfiguracion(TipoTest.REPASO));
+
+        btnEstadisticas.addActionListener(e -> {
+            ventana.mostrarEstadisticas();
+        });
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -69,6 +72,9 @@ public class MenuPrincipal extends JPanel {
         gbc.gridy++;
         centro.add(btnRepaso, gbc);
 
+        gbc.gridy++;
+        centro.add(btnEstadisticas, gbc);
+
         add(centro, BorderLayout.CENTER);
 
     }
@@ -81,15 +87,6 @@ public class MenuPrincipal extends JPanel {
                 ventana.mostrarTema());
 
         add(panelVolver, BorderLayout.SOUTH);
-
-    }
-
-    public void setTemaComun(boolean temaComun) {
-
-        btnTemas.setVisible(!temaComun);
-
-        revalidate();
-        repaint();
 
     }
 

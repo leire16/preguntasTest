@@ -30,7 +30,7 @@ public class ConfiguracionTest extends JPanel {
     private PanelBotones panelBotones;
 
     private TipoTest tipoTest;
-    private boolean temaComun;
+    private boolean esTemarioComun;
 
     public ConfiguracionTest(VentanaPrincipal ventana) {
 
@@ -98,20 +98,23 @@ public class ConfiguracionTest extends JPanel {
 
     private Configuracion obtenerConfiguracion() {
 
+        if (tipoTest == null) {
+            throw new IllegalStateException("No se ha seleccionado el tipo de test");
+        }
+
         Configuracion configuracion = new Configuracion();
 
         configuracion.setTipoTest(tipoTest);
 
         switch (tipoTest) {
-
             case TEMA:
             case REPASO:
                 configuracion.setTemas(obtenerTemasSeleccionados());
                 break;
 
             case COMPLETO:
-                if (temaComun) {
-                    configuracion.setTemas(List.of(Constantes.ID_TEMA_COMUN));
+                if (esTemarioComun) {
+                    configuracion.setTemas(Constantes.idsTemaComun());
                 } else {
                     configuracion.setTemas(panelTemas.getTodosLosTemas());
                 }
@@ -125,9 +128,6 @@ public class ConfiguracionTest extends JPanel {
     }
 
     private List<Integer> obtenerTemasSeleccionados() {
-        if (temaComun) {
-            return List.of(Constantes.ID_TEMA_COMUN);
-        }
 
         if (panelTemas.hayTemasSeleccionados()) {
             return panelTemas.getTemasSeleccionados();
@@ -136,13 +136,11 @@ public class ConfiguracionTest extends JPanel {
         return panelTemas.getTodosLosTemas();
     }
 
-    public void setTemaComun(boolean temaComun) {
+    public void setTemaComun(boolean esTemarioComun) {
 
-        this.temaComun = temaComun;
+        this.esTemarioComun = esTemarioComun;
 
-        panelTemas.cargarTemas(temaComun);
-
-        actualizarVisibilidadPanelTemas();
+        panelTemas.cargarTemas(esTemarioComun);
 
         revalidate();
         repaint();
@@ -155,23 +153,9 @@ public class ConfiguracionTest extends JPanel {
 
         lblModo.setText("Modo: " + tipo.getDescripcion());
 
-        actualizarVisibilidadPanelTemas();
-
         revalidate();
         repaint();
 
-    }
-
-    private void actualizarVisibilidadPanelTemas() {
-
-        boolean mostrar =
-                !temaComun &&
-                (tipoTest == TipoTest.TEMA || tipoTest == TipoTest.REPASO);
-
-        panelTemas.setVisible(mostrar);
-
-        revalidate();
-        repaint();
     }
 
 }

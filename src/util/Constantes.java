@@ -1,5 +1,8 @@
 package util;
 
+import java.util.List;
+import java.util.stream.IntStream;
+
 public final class Constantes {
 
     private Constantes() {
@@ -10,8 +13,9 @@ public final class Constantes {
     // CONFIGURACIÓN GENERAL
     // ------------------------
 
-    public static final int TOTAL_TEMAS = 21;
-    public static final int ID_TEMA_COMUN = TOTAL_TEMAS; // 21
+    public static final int TOTAL_TEMAS = 39;
+    public static final int ID_INICIO_TEMA_COMUN = 21;
+    public static final int ID_FIN_TEMA_COMUN = 39;
     public static final int TODAS_LAS_PREGUNTAS = -1;
     public static final int TOTAL_PREGUNTAS_BD = 500;
     public static final String TITULO_APP = "OPE Trainer";
@@ -74,5 +78,11 @@ public final class Constantes {
 
             "Preguntas Comunes",
     };
+
+    public static List<Integer> idsTemaComun() {
+        return IntStream.rangeClosed(ID_INICIO_TEMA_COMUN, ID_FIN_TEMA_COMUN)
+                .boxed()
+                .toList();
+    }
 
 }

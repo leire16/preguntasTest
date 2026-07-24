@@ -1,10 +1,12 @@
 package ui;
 
 import java.awt.CardLayout;
+import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import dao.TemaDao;
 import model.Configuracion;
 import model.TipoTest;
 import service.ResultadoTest;
@@ -17,6 +19,7 @@ public class VentanaPrincipal extends JFrame {
     public static final String CONFIGURACION = "CONFIGURACION";
     public static final String EXAMEN = "EXAMEN";
     public static final String RESULTADOS = "RESULTADOS";
+    public static final String ESTADISTICAS = "ESTADISTICAS";
 
     private CardLayout cardLayout;
     private JPanel contenedor;
@@ -28,6 +31,7 @@ public class VentanaPrincipal extends JFrame {
     // Más adelante
     private PantallaExamen pantallaExamen;
     private PantallaResultados pantallaResultados;
+    private PantallaEstadisticas pantallaEstadisticas;
     
     private boolean temaComunSeleccionado;
 
@@ -60,6 +64,7 @@ public class VentanaPrincipal extends JFrame {
         configuracionTest = new ConfiguracionTest(this);
         pantallaExamen = new PantallaExamen(this);
         pantallaResultados = new PantallaResultados(this);
+        pantallaEstadisticas = new PantallaEstadisticas(this);
 
     }
 
@@ -69,7 +74,7 @@ public class VentanaPrincipal extends JFrame {
         contenedor.add(configuracionTest, CONFIGURACION);
         contenedor.add(pantallaExamen, EXAMEN);
         contenedor.add(pantallaResultados, RESULTADOS);
-
+        contenedor.add(pantallaEstadisticas, ESTADISTICAS);
     }
 
     public void mostrarTema() {
@@ -109,11 +114,28 @@ public class VentanaPrincipal extends JFrame {
 
     }
 
+    public void mostrarEstadisticas() {
+
+        Configuracion configuracion = new Configuracion();
+
+        if (temaComunSeleccionado) {
+            configuracion.setTemas(Constantes.idsTemaComun());
+
+        } else {
+            configuracion.setTemas(
+                    new TemaDao().obtenerIdsTemasEspecificos());
+
+        }
+
+        pantallaEstadisticas.cargarEstadisticas(configuracion);
+
+        cardLayout.show(contenedor, ESTADISTICAS);
+
+    }
+
     public void confirmarSeleccionTipoTema(boolean esComun) {
 
         this.temaComunSeleccionado = esComun;
-
-        menuPrincipal.setTemaComun(esComun);
 
         mostrarMenu();
 

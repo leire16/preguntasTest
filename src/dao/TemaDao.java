@@ -2,6 +2,7 @@ package dao;
 
 import database.ConexionSQLite;
 import model.Tema;
+import util.Constantes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -95,6 +96,48 @@ public class TemaDao {
         }
 
         return null;
+
+    }
+
+    /**
+     * Devuelve los ids de todos los temas específicos.
+     */
+    public List<Integer> obtenerIdsTemasEspecificos() {
+
+        String sql = """
+                SELECT id
+                FROM temas
+                WHERE id NOT BETWEEN ? AND ?
+                ORDER BY id
+                """;
+
+        List<Integer> temas = new ArrayList<>();
+
+        try (
+                Connection conn = ConexionSQLite.getConnection();
+                PreparedStatement ps = conn.prepareStatement(sql)
+        ) {
+
+            ps.setInt(1, Constantes.ID_INICIO_TEMA_COMUN);
+            ps.setInt(2, Constantes.ID_FIN_TEMA_COMUN);
+
+            try (ResultSet rs = ps.executeQuery()) {
+
+                while (rs.next()) {
+
+                    temas.add(rs.getInt("id"));
+
+                }
+
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+        return temas;
 
     }
 
