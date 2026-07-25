@@ -70,4 +70,17 @@ public class Estadisticas {
         this.rendimientoTemas = rendimientoTemas;
     }
 
+    private List<PreguntaDificil> preguntasMasFalladas;
+
+    public List<PreguntaDificil> getPreguntasMasFalladas() {
+        return preguntasMasFalladas;
+    }
+
+    public void setPreguntasMasFalladas(
+            List<PreguntaDificil> preguntasMasFalladas) {
+
+        this.preguntasMasFalladas = preguntasMasFalladas;
+
+    }
+
 }

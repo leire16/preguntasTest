@@ -1,8 +1,11 @@
 package service;
 
+import java.util.List;
+
 import dao.EstadisticasDao;
 import model.Configuracion;
 import model.Estadisticas;
+import model.PreguntaDificil;
 
 public class EstadisticasService {
 
@@ -20,6 +23,14 @@ public class EstadisticasService {
     public Estadisticas obtenerEstadisticas(Configuracion configuracion) {
 
         return estadisticasDao.obtenerEstadisticas(
+                configuracion.getTemas());
+
+    }
+
+    public List<PreguntaDificil> obtenerPreguntasMasFalladas(
+        Configuracion configuracion) {
+
+        return estadisticasDao.obtenerPreguntasMasFalladas(
                 configuracion.getTemas());
 
     }

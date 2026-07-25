@@ -2,6 +2,7 @@ package dao;
 
 import database.ConexionSQLite;
 import model.Estadisticas;
+import model.PreguntaDificil;
 import model.RendimientoTema;
 
 import java.sql.Connection;
@@ -30,6 +31,9 @@ public class EstadisticasDao {
 
         estadisticas.setRendimientoTemas(
                 obtenerRendimientoPorTema(temas));
+
+        estadisticas.setPreguntasMasFalladas(
+                obtenerPreguntasMasFalladas(temas));
 
         return estadisticas;
     }
@@ -206,10 +210,10 @@ public class EstadisticasDao {
     }
 
     /**
-     * Porcentaje de aciertos por cada tema.
+     * Devuelve el rendimiento de cada tema.
      */
     private List<RendimientoTema> obtenerRendimientoPorTema(
-        List<Integer> temas) {
+            List<Integer> temas) {
 
         List<RendimientoTema> rendimiento =
                 new ArrayList<>();
@@ -218,8 +222,9 @@ public class EstadisticasDao {
                 SELECT
                     t.id AS tema_id,
                     t.nombre AS nombre,
+                    COUNT(ru.id) AS respondidas,
                     SUM(CASE WHEN ru.es_correcta = 1 THEN 1 ELSE 0 END) AS aciertos,
-                    COUNT(ru.id) AS total
+                    SUM(CASE WHEN ru.es_correcta = 0 THEN 1 ELSE 0 END) AS falladas
                 FROM temas t
                 LEFT JOIN preguntas p
                     ON p.tema_id = t.id
@@ -228,32 +233,33 @@ public class EstadisticasDao {
                 WHERE t.id IN (
                 """);
 
-        añadirInterrogaciones(
-                sql,
-                temas.size());
+        añadirInterrogaciones(sql, temas.size());
 
         sql.append("""
                 )
-                GROUP BY t.id, t.nombre
-                ORDER BY t.id
+                GROUP BY
+                    t.id,
+                    t.nombre
+                ORDER BY
+                    t.id
                 """);
 
-        try(
+        try (
+
                 Connection conn =
                         ConexionSQLite.getConnection();
 
                 PreparedStatement ps =
                         conn.prepareStatement(
                                 sql.toString())
-        ){
 
-            rellenarParametros(
-                    ps,
-                    temas);
+        ) {
 
-            try(ResultSet rs = ps.executeQuery()) {
+            rellenarParametros(ps, temas);
 
-                while(rs.next()) {
+            try (ResultSet rs = ps.executeQuery()) {
+
+                while (rs.next()) {
 
                     int temaId =
                             rs.getInt("tema_id");
@@ -261,18 +267,21 @@ public class EstadisticasDao {
                     String nombre =
                             rs.getString("nombre");
 
-                    int aciertos =
+                    int respondidas =
+                            rs.getInt("respondidas");
+
+                    int acertadas =
                             rs.getInt("aciertos");
 
-                    int total =
-                            rs.getInt("total");
+                    int falladas =
+                            rs.getInt("falladas");
 
                     double porcentaje = 0;
 
-                    if(total > 0){
+                    if (respondidas > 0) {
 
                         porcentaje =
-                                aciertos * 100.0 / total;
+                                acertadas * 100.0 / respondidas;
 
                     }
 
@@ -280,18 +289,23 @@ public class EstadisticasDao {
                             new RendimientoTema(
                                     temaId,
                                     nombre,
+                                    respondidas,
+                                    acertadas,
+                                    falladas,
                                     porcentaje));
 
                 }
+
             }
 
-        }catch(Exception e){
+        } catch (Exception e) {
 
             e.printStackTrace();
 
         }
 
         return rendimiento;
+
     }
 
     // =======================================================
@@ -349,6 +363,100 @@ public class EstadisticasDao {
         sql.append(")");
 
         return sql.toString();
+    }
+
+    /**
+     * Devuelve las preguntas más falladas de los temas seleccionados.
+     */
+    public List<PreguntaDificil> obtenerPreguntasMasFalladas(
+            List<Integer> temas) {
+
+        List<PreguntaDificil> preguntas =
+                new ArrayList<>();
+
+        StringBuilder sql = new StringBuilder("""
+                SELECT
+                    p.id,
+                    p.numero_original,
+                    t.id AS tema_id,
+                    t.nombre,
+                    ep.veces_preguntada,
+                    ep.veces_fallada
+                FROM estado_pregunta ep
+                INNER JOIN preguntas p
+                    ON ep.pregunta_id = p.id
+                INNER JOIN temas t
+                    ON p.tema_id = t.id
+                WHERE p.tema_id IN (
+                """);
+
+        añadirInterrogaciones(sql, temas.size());
+
+        sql.append("""
+                )
+                AND ep.veces_preguntada > 0
+                ORDER BY
+                    ep.veces_fallada DESC,
+                    ep.veces_preguntada DESC
+                LIMIT 10
+                """);
+
+        try (
+
+                Connection conn =
+                        ConexionSQLite.getConnection();
+
+                PreparedStatement ps =
+                        conn.prepareStatement(
+                                sql.toString())
+
+        ) {
+
+            rellenarParametros(ps, temas);
+
+            try (ResultSet rs = ps.executeQuery()) {
+
+                while (rs.next()) {
+
+                    int vecesPreguntada =
+                            rs.getInt("veces_preguntada");
+
+                    int vecesFallada =
+                            rs.getInt("veces_fallada");
+
+                    double porcentaje = 0;
+
+                    if (vecesPreguntada > 0) {
+
+                        porcentaje =
+                                (vecesPreguntada - vecesFallada)
+                                        * 100.0
+                                        / vecesPreguntada;
+
+                    }
+
+                    preguntas.add(
+                            new PreguntaDificil(
+                                    rs.getInt("id"),
+                                    rs.getInt("numero_original"),
+                                    rs.getInt("tema_id"),
+                                    rs.getString("nombre"),
+                                    vecesPreguntada,
+                                    vecesFallada,
+                                    porcentaje));
+
+                }
+
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+        return preguntas;
+
     }
 
     // =======================================================

@@ -14,14 +14,18 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.JSplitPane;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
 import model.Configuracion;
 import model.Estadisticas;
+import model.PreguntaDificil;
 import model.RendimientoTema;
 import service.EstadisticasService;
 import ui.componentes.PanelBotonVolver;
+import ui.componentes.PanelPlegable;
+import ui.componentesEstadisticas.PanelPreguntaDificil;
 import ui.componentesEstadisticas.PanelRendimientoTema;
 import ui.componentesEstadisticas.TarjetaEstadistica;
 import ui.componentesResultados.PanelCirculoProgreso;
@@ -36,9 +40,13 @@ public class PantallaEstadisticas extends JPanel {
 
     private PanelCirculoProgreso circuloPorcentaje;
 
-    private JPanel panelTemas;
+    private PanelPlegable panelTemas;
     private JScrollPane scrollTemas;
     private JPanel panelListaTemas;
+
+    private PanelPlegable panelPreguntas;
+    private JPanel panelListaPreguntas;
+    private JScrollPane scrollPreguntas;
 
     public PantallaEstadisticas(VentanaPrincipal ventana) {
 
@@ -63,15 +71,19 @@ public class PantallaEstadisticas extends JPanel {
 
     private void crearCentro() {
 
-        JPanel centro =
-                new JPanel();
-
-        centro.setLayout(
-                new BoxLayout(
-                        centro,
-                        BoxLayout.Y_AXIS));
-
+        JPanel centro = new JPanel(new BorderLayout(0, 20));
         centro.setOpaque(false);
+
+        // ==========================================
+        // PANEL SUPERIOR
+        // ==========================================
+
+        JPanel panelSuperior = new JPanel();
+        panelSuperior.setOpaque(false);
+        panelSuperior.setLayout(
+                new BoxLayout(
+                        panelSuperior,
+                        BoxLayout.Y_AXIS));
 
         JLabel titulo =
                 new JLabel(
@@ -93,11 +105,10 @@ public class PantallaEstadisticas extends JPanel {
         titulo.setAlignmentX(
                 Component.CENTER_ALIGNMENT);
 
-        centro.add(titulo);
+        panelSuperior.add(titulo);
 
-        centro.add(
-                Box.createVerticalStrut(
-                        25));
+        panelSuperior.add(
+                Box.createVerticalStrut(25));
 
         JPanel panelResumen =
                 new JPanel(
@@ -109,8 +120,8 @@ public class PantallaEstadisticas extends JPanel {
 
         panelResumen.setMaximumSize(
                 new Dimension(
-                        850,
-                        150));
+                        Integer.MAX_VALUE,
+                        140));
 
         tarjetaTests =
                 new TarjetaEstadistica(
@@ -124,42 +135,44 @@ public class PantallaEstadisticas extends JPanel {
                 new TarjetaEstadistica(
                         "Preguntas distintas");
 
-        panelResumen.add(
-                tarjetaTests);
+        panelResumen.add(tarjetaTests);
+        panelResumen.add(tarjetaPreguntas);
+        panelResumen.add(tarjetaDistintas);
+        panelResumen.add(crearTarjetaPorcentaje());
 
-        panelResumen.add(
-                tarjetaPreguntas);
-
-        panelResumen.add(
-                tarjetaDistintas);
-
-        panelResumen.add(
-                crearTarjetaPorcentaje());
-
-        centro.add(panelResumen);
+        panelSuperior.add(panelResumen);
 
         centro.add(
-                Box.createVerticalStrut(
-                        30));
+                panelSuperior,
+                BorderLayout.NORTH);
+
+        // ==========================================
+        // PANEL CENTRAL
+        // ==========================================
 
         crearPanelTemas();
+        crearPanelPreguntas();
 
-        scrollTemas =
-                new JScrollPane(
-                        panelTemas);
+        JSplitPane split =
+                new JSplitPane(
+                        JSplitPane.VERTICAL_SPLIT,
+                        panelTemas,
+                        panelPreguntas);
 
-        scrollTemas.setPreferredSize(
-                new Dimension(
-                        700,
-                        250));
+        split.setResizeWeight(0.5);
+        split.setDividerSize(6);
+        split.setBorder(null);
+        split.setContinuousLayout(true);
 
         centro.add(
-                scrollTemas);
+                split,
+                BorderLayout.CENTER);
 
         add(
                 centro,
                 BorderLayout.CENTER);
-    }
+
+        }
 
     private JPanel crearTarjetaPorcentaje() {
 
@@ -208,27 +221,21 @@ public class PantallaEstadisticas extends JPanel {
         return panel;
     }
 
-    private void crearPanelTemas(){
+    private void crearPanelTemas() {
 
-        panelTemas =
-                new JPanel(
-                        new BorderLayout());
+        panelTemas = new PanelPlegable(
+                "Rendimiento por temas");
 
-        panelTemas.setBorder(
-                BorderFactory.createTitledBorder(
-                        "Rendimiento por temas"));
-
-        panelListaTemas =
-                new JPanel();
+        panelListaTemas = new JPanel();
 
         panelListaTemas.setLayout(
                 new BoxLayout(
                         panelListaTemas,
                         BoxLayout.Y_AXIS));
 
-        panelTemas.add(
-                panelListaTemas,
-                BorderLayout.CENTER);
+        panelTemas.getContenido().add(
+                panelListaTemas);
+
     }
 
     private void crearBotonVolver(
@@ -274,12 +281,11 @@ public class PantallaEstadisticas extends JPanel {
         panelTemas.setVisible(
                 !esComun);
 
-        scrollTemas.setVisible(
-                !esComun);
-
         if(!esComun){
             cargarRendimientoTemas(
                 estadisticas.getRendimientoTemas());
+             cargarPreguntasMasFalladas(
+                estadisticas.getPreguntasMasFalladas());
 
         }
     }
@@ -296,8 +302,12 @@ public class PantallaEstadisticas extends JPanel {
                         tema.getTemaId(),
                         tema.getNombre());
 
-            panel.setPorcentaje(
-                    tema.getPorcentaje());
+            
+                panel.actualizar(
+                        tema.getRespondidas(),
+                        tema.getAcertadas(),
+                        tema.getFalladas(),
+                        tema.getPorcentaje());
 
             panelListaTemas.add(
                     panel);
@@ -312,6 +322,61 @@ public class PantallaEstadisticas extends JPanel {
         SwingUtilities.invokeLater(() -> {
                 scrollTemas.getVerticalScrollBar().setValue(0);
         });
+
+    }
+
+    private void crearPanelPreguntas() {
+
+        panelPreguntas =
+                new PanelPlegable(
+                        "Preguntas más falladas");
+
+        panelListaPreguntas =
+                new JPanel();
+
+        panelListaPreguntas.setLayout(
+                new BoxLayout(
+                        panelListaPreguntas,
+                        BoxLayout.Y_AXIS));
+
+        scrollPreguntas =
+                new JScrollPane(
+                        panelListaPreguntas);
+
+        scrollPreguntas.setBorder(null);
+
+        panelPreguntas.getContenido().add(
+                scrollPreguntas);
+
+      }
+
+      private void cargarPreguntasMasFalladas(
+                List<PreguntaDificil> preguntas) {
+
+        panelListaPreguntas.removeAll();
+
+        for (PreguntaDificil pregunta : preguntas) {
+
+                PanelPreguntaDificil panel =
+                        new PanelPreguntaDificil(
+                                pregunta.getNumeroPregunta(),
+                                pregunta.getTemaId());
+
+                panel.actualizar(
+                        pregunta.getVecesPreguntada(),
+                        pregunta.getVecesFallada(),
+                        pregunta.getPorcentajeAciertos());
+
+                panelListaPreguntas.add(panel);
+                panelListaPreguntas.add(Box.createVerticalStrut(8));
+
+        }
+
+        panelListaPreguntas.revalidate();
+        panelListaTemas.repaint();
+
+        SwingUtilities.invokeLater(() ->
+                scrollPreguntas.getVerticalScrollBar().setValue(0));
 
     }
 }
