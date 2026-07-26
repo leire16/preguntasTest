@@ -1,7 +1,8 @@
 package ui.componentesEstadisticas;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
 
@@ -13,99 +14,127 @@ import javax.swing.SwingConstants;
 public class PanelPreguntaDificil extends JPanel {
 
     private JLabel lblPregunta;
-    private JLabel lblNivel;
-
+    private JLabel lblTema;
     private JLabel lblCorrectas;
     private JLabel lblFalladas;
     private JLabel lblPorcentaje;
+    private JLabel lblNivel;
+
+    public PanelPreguntaDificil() {
+
+        setLayout(new GridLayout(1, 6));
+
+        setMaximumSize(
+                new Dimension(
+                        Integer.MAX_VALUE,
+                        35));
+
+        setAlignmentX(Component.LEFT_ALIGNMENT);
+
+        setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createMatteBorder(
+                        0, 0, 1, 0,
+                        Color.GRAY),
+                BorderFactory.createEmptyBorder(
+                        6, 8, 6, 8)));
+
+        add(crearCabecera("Pregunta"));
+        add(crearCabecera("Tema"));
+        add(crearCabecera("Correctas"));
+        add(crearCabecera("Falladas"));
+        add(crearCabecera("%"));
+        add(crearCabecera("Nivel"));
+    }
 
     public PanelPreguntaDificil(
             int numeroPregunta,
             int temaId) {
 
-        setLayout(new BorderLayout(10, 5));
+        setLayout(new GridLayout(
+                1,
+                6));
 
-        setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(new Color(220, 220, 220)),
-                BorderFactory.createEmptyBorder(8, 10, 8, 10)));
+        setMaximumSize(
+                new Dimension(
+                        Integer.MAX_VALUE,
+                        35));
 
-        // ==========================
-        // Cabecera
-        // ==========================
+        setAlignmentX(
+                Component.LEFT_ALIGNMENT);
 
-        JPanel superior = new JPanel(new BorderLayout());
+        setBorder(
+                BorderFactory.createCompoundBorder(
+                        BorderFactory.createMatteBorder(
+                                0,
+                                0,
+                                1,
+                                0,
+                                new Color(
+                                        225,
+                                        225,
+                                        225)),
+                        BorderFactory.createEmptyBorder(
+                                6,
+                                8,
+                                6,
+                                8)));
 
-        superior.setOpaque(false);
+        lblPregunta = crearLabel(
+                "Pregunta " + numeroPregunta);
 
-        lblPregunta = new JLabel(
-                "Pregunta "
-                + numeroPregunta
-                + " - Tema "
-                + temaId);
+        lblTema = crearLabel(
+                "Tema " + temaId);
 
-        lblPregunta.setFont(
-                new Font(
-                        "Arial",
-                        Font.BOLD,
-                        14));
+        lblCorrectas = crearLabel("");
 
-        lblNivel = new JLabel();
+        lblCorrectas.setForeground(
+                new Color(
+                        46,
+                        204,
+                        113));
+
+        lblFalladas = crearLabel("");
+
+        lblFalladas.setForeground(
+                new Color(
+                        231,
+                        76,
+                        60));
+
+        lblPorcentaje = crearLabel("");
+
+        lblNivel = crearLabel("");
 
         lblNivel.setFont(
                 new Font(
                         "Arial",
                         Font.BOLD,
-                        14));
+                        13));
 
-        superior.add(
-                lblPregunta,
-                BorderLayout.WEST);
+        add(lblPregunta);
+        add(lblTema);
+        add(lblCorrectas);
+        add(lblFalladas);
+        add(lblPorcentaje);
+        add(lblNivel);
 
-        superior.add(
-                lblNivel,
-                BorderLayout.EAST);
+    }
 
-        add(
-                superior,
-                BorderLayout.NORTH);
+    private JLabel crearLabel(
+            String texto) {
 
-        // ==========================
-        // Datos
-        // ==========================
+        JLabel lbl =
+                new JLabel(
+                        texto,
+                        SwingConstants.CENTER);
 
-        JPanel inferior = new JPanel(
-                new GridLayout(1, 3));
+        lbl.setFont(
+                new Font(
+                        "Arial",
+                        Font.PLAIN,
+                        13));
 
-        inferior.setOpaque(false);
-
-        lblCorrectas = new JLabel(
-                "",
-                SwingConstants.CENTER);
-
-        lblFalladas = new JLabel(
-                "",
-                SwingConstants.CENTER);
-
-        lblPorcentaje = new JLabel(
-                "",
-                SwingConstants.CENTER);
-
-        lblCorrectas.setForeground(
-                new Color(46, 204, 113));
-
-        lblFalladas.setForeground(
-                new Color(231, 76, 60));
-
-        lblPorcentaje.setForeground(
-                new Color(52, 73, 94));
-
-        inferior.add(lblCorrectas);
-        inferior.add(lblFalladas);
-        inferior.add(lblPorcentaje);
-
-        add(
-                inferior,
-                BorderLayout.CENTER);
+        return lbl;
 
     }
 
@@ -115,50 +144,96 @@ public class PanelPreguntaDificil extends JPanel {
             double porcentaje) {
 
         int correctas =
-                vecesPreguntada - vecesFallada;
+                vecesPreguntada
+                - vecesFallada;
 
         lblCorrectas.setText(
-                "Correctas: " + correctas);
+                String.valueOf(
+                        correctas));
 
         lblFalladas.setText(
-                "Falladas: " + vecesFallada);
+                String.valueOf(
+                        vecesFallada));
 
         lblPorcentaje.setText(
                 String.format(
-                        "Acierto: %.1f%%",
+                        "%.1f%%",
                         porcentaje));
+
+        int valor =
+                (int) Math.round(
+                        porcentaje);
 
         Color color;
         String texto;
 
-        int valor =
-                (int) Math.round(porcentaje);
+        if(valor >= 85) {
 
-        if (valor >= 85) {
+            color =
+                    new Color(
+                            46,
+                            204,
+                            113);
 
-            color = new Color(46, 204, 113);
-            texto = "Dominada";
+            texto =
+                    "Dominada";
 
-        } else if (valor >= 70) {
+        } else if(valor >= 70) {
 
-            color = new Color(39, 174, 96);
-            texto = "Aceptable";
+            color =
+                    new Color(
+                            39,
+                            174,
+                            96);
 
-        } else if (valor >= 50) {
+            texto =
+                    "Aceptable";
 
-            color = new Color(241, 196, 15);
-            texto = "Difícil";
+        } else if(valor >= 50) {
+
+            color =
+                    new Color(
+                            241,
+                            196,
+                            15);
+
+            texto =
+                    "Difícil";
 
         } else {
 
-            color = new Color(231, 76, 60);
-            texto = "Muy difícil";
+            color =
+                    new Color(
+                            231,
+                            76,
+                            60);
+
+            texto =
+                    "Muy difícil";
 
         }
 
-        lblNivel.setForeground(color);
-        lblNivel.setText(texto);
+        lblNivel.setForeground(
+                color);
 
+        lblNivel.setText(
+                texto);
+
+    }
+
+    private JLabel crearCabecera(String texto) {
+
+        JLabel lbl = new JLabel(
+                texto,
+                SwingConstants.CENTER);
+
+        lbl.setFont(
+                new Font(
+                        "Arial",
+                        Font.BOLD,
+                        13));
+
+        return lbl;
     }
 
 }

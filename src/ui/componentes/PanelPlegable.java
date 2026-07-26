@@ -15,17 +15,26 @@ public class PanelPlegable extends JPanel {
     private boolean expandido = true;
 
     private final JLabel lblTitulo;
+    private final JLabel lblSubtitulo;
 
     private final JPanel contenido;
+    private final JPanel panelContenido;
+
     private final JScrollPane scroll;
 
     private final String titulo;
+
+    private Runnable listenerCambioEstado;
 
     public PanelPlegable(String titulo) {
 
         this.titulo = titulo;
 
         setLayout(new BorderLayout(0, 5));
+
+        // =====================================
+        // TÍTULO
+        // =====================================
 
         lblTitulo = new JLabel();
 
@@ -60,21 +69,56 @@ public class PanelPlegable extends JPanel {
         actualizarTitulo();
 
         lblTitulo.addMouseListener(
-                new java.awt.event.MouseAdapter() {
+        new java.awt.event.MouseAdapter() {
 
-                    @Override
-                    public void mouseClicked(
-                            java.awt.event.MouseEvent e) {
+            @Override
+            public void mouseClicked(
+                    java.awt.event.MouseEvent e) {
 
-                        alternar();
+                alternar();
 
-                    }
+            }
 
-                });
+        });
 
-        contenido = new JPanel();
+        // =====================================
+        // CONTENIDO
+        // =====================================
 
-        scroll = new JScrollPane(contenido);
+        contenido = new JPanel(
+                new BorderLayout());
+
+        lblSubtitulo = new JLabel();
+
+        lblSubtitulo.setFont(
+                new Font(
+                        "Arial",
+                        Font.PLAIN,
+                        14));
+
+        lblSubtitulo.setBorder(
+                BorderFactory.createEmptyBorder(
+                        6,
+                        10,
+                        6,
+                        10));
+
+        lblSubtitulo.setVisible(false);
+
+        contenido.add(
+                lblSubtitulo,
+                BorderLayout.NORTH);
+
+        panelContenido =
+                new JPanel();
+
+        contenido.add(
+                panelContenido,
+                BorderLayout.CENTER);
+
+        scroll =
+                new JScrollPane(
+                        contenido);
 
         scroll.setBorder(null);
 
@@ -90,7 +134,23 @@ public class PanelPlegable extends JPanel {
 
     public JPanel getContenido() {
 
-        return contenido;
+        return panelContenido;
+
+    }
+
+    public void setSubtitulo(String texto) {
+
+        if (texto == null || texto.isBlank()) {
+
+            lblSubtitulo.setVisible(false);
+
+        } else {
+
+            lblSubtitulo.setText(texto);
+
+            lblSubtitulo.setVisible(true);
+
+        }
 
     }
 
@@ -104,10 +164,16 @@ public class PanelPlegable extends JPanel {
 
         revalidate();
 
-        if(getParent() != null) {
+        if (getParent() != null) {
 
             getParent().revalidate();
             getParent().repaint();
+
+        }
+
+        if (listenerCambioEstado != null) {
+
+            listenerCambioEstado.run();
 
         }
 
@@ -115,7 +181,7 @@ public class PanelPlegable extends JPanel {
 
     public void expandir() {
 
-        if(!expandido) {
+        if (!expandido) {
 
             alternar();
 
@@ -125,7 +191,7 @@ public class PanelPlegable extends JPanel {
 
     public void contraer() {
 
-        if(expandido) {
+        if (expandido) {
 
             alternar();
 
@@ -143,7 +209,14 @@ public class PanelPlegable extends JPanel {
 
         lblTitulo.setText(
                 (expandido ? "▼ " : "► ")
-                + titulo);
+                        + titulo);
+
+    }
+
+    public void setListenerCambioEstado(
+            Runnable listener) {
+
+        listenerCambioEstado = listener;
 
     }
 
