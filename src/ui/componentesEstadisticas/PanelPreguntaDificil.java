@@ -167,49 +167,40 @@ public class PanelPreguntaDificil extends JPanel {
         Color color;
         String texto;
 
-        if(valor >= 85) {
+        if (valor >= 95) {
 
-            color =
-                    new Color(
-                            46,
-                            204,
-                            113);
+                color = new Color(39, 174, 96);
+                texto = "Perfecta";
 
-            texto =
-                    "Dominada";
+        } else if (valor >= 85) {
 
-        } else if(valor >= 70) {
+                color = new Color(46, 204, 113);
+                texto = "Dominada";
 
-            color =
-                    new Color(
-                            39,
-                            174,
-                            96);
+        } else if (valor >= 70) {
 
-            texto =
-                    "Aceptable";
+                color = new Color(102, 187, 106);
+                texto = "Aceptable";
 
-        } else if(valor >= 50) {
+        } else if (valor >= 50) {
 
-            color =
-                    new Color(
-                            241,
-                            196,
-                            15);
+                color = new Color(241, 196, 15);
+                texto = "Justa";
 
-            texto =
-                    "Difícil";
+        } else if (valor >= 30) {
+
+                color = new Color(230, 126, 34);
+                texto = "Difícil";
+
+        } else if (valor >= 10) {
+
+                color = new Color(231, 76, 60);
+                texto = "Muy difícil";
 
         } else {
 
-            color =
-                    new Color(
-                            231,
-                            76,
-                            60);
-
-            texto =
-                    "Muy difícil";
+                color = new Color(192, 57, 43);
+                texto = "Desastre";
 
         }
 

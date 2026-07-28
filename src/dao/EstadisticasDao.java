@@ -371,8 +371,7 @@ public class EstadisticasDao {
     public List<PreguntaDificil> obtenerPreguntasMasFalladas(
             List<Integer> temas) {
 
-        List<PreguntaDificil> preguntas =
-                new ArrayList<>();
+        List<PreguntaDificil> preguntas = new ArrayList<>();
 
         StringBuilder sql = new StringBuilder("""
                 SELECT
@@ -396,20 +395,14 @@ public class EstadisticasDao {
                 )
                 AND ep.veces_preguntada > 0
                 ORDER BY
-                    ep.veces_fallada DESC,
+                    (ep.veces_fallada * 1.0 / ep.veces_preguntada) DESC,
                     ep.veces_preguntada DESC
-                LIMIT 10
+                LIMIT 30
                 """);
 
         try (
-
-                Connection conn =
-                        ConexionSQLite.getConnection();
-
-                PreparedStatement ps =
-                        conn.prepareStatement(
-                                sql.toString())
-
+                Connection conn = ConexionSQLite.getConnection();
+                PreparedStatement ps = conn.prepareStatement(sql.toString())
         ) {
 
             rellenarParametros(ps, temas);
@@ -418,21 +411,15 @@ public class EstadisticasDao {
 
                 while (rs.next()) {
 
-                    int vecesPreguntada =
-                            rs.getInt("veces_preguntada");
-
-                    int vecesFallada =
-                            rs.getInt("veces_fallada");
+                    int vecesPreguntada = rs.getInt("veces_preguntada");
+                    int vecesFallada = rs.getInt("veces_fallada");
 
                     double porcentaje = 0;
 
                     if (vecesPreguntada > 0) {
-
-                        porcentaje =
-                                (vecesPreguntada - vecesFallada)
-                                        * 100.0
-                                        / vecesPreguntada;
-
+                        porcentaje = (vecesPreguntada - vecesFallada)
+                                * 100.0
+                                / vecesPreguntada;
                     }
 
                     preguntas.add(
@@ -444,19 +431,14 @@ public class EstadisticasDao {
                                     vecesPreguntada,
                                     vecesFallada,
                                     porcentaje));
-
                 }
-
             }
 
         } catch (Exception e) {
-
             e.printStackTrace();
-
         }
 
         return preguntas;
-
     }
 
     // =======================================================
