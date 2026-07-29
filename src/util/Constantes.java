@@ -50,23 +50,23 @@ public final class Constantes {
 
             "Gestión de proyectos software (PERT, riesgos, planificación, métricas...)",
 
-            "Sistemas Operativos",
-
-            "Administración de Linux",
-
-            "Administración de Windows Server",
-
-            "Virtualización y Cloud Computing",
-
-            "Seguridad informática y criptografía",
-
-            "Protección de datos, ENS, RGPD y legislación TIC",
-
             "ITIL y gestión de servicios TI",
 
             "Business Intelligence, Data Warehouse y Big Data",
 
             "Inteligencia Artificial y Machine Learning",
+
+            "Sistemas Operativos",
+
+            "Administración Linux",
+
+            "Administración Windows Server",
+
+            "Virtualización y Cloud Computing",
+
+            "Seguridad Informática y Criptografía",
+
+            "Protección de Datos, ENS, RGPD y Legislación TIC",
 
             "Desarrollo Web (HTML, CSS, JavaScript, APIs...)",
 
