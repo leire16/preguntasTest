@@ -1,7 +1,6 @@
 package ui;
 
 import java.awt.CardLayout;
-import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;

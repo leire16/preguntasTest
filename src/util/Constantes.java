@@ -54,27 +54,27 @@ public final class Constantes {
 
             "Business Intelligence, Data Warehouse y Big Data",
 
-            "Inteligencia Artificial y Machine Learning",
+            "Firma electrónica, certificados y servicios de confianza ",
 
-            "Sistemas Operativos",
+            "Protección de datos — RGPD y LOPDGDD",
 
-            "Administración Linux",
+            "ENS y seguridad de la información",
 
-            "Administración Windows Server",
+            "Criptografía y PKI",
 
-            "Virtualización y Cloud Computing",
+            "Ciberseguridad y gestión de riesgos",
 
-            "Seguridad Informática y Criptografía",
+            "SOA, microservicios y arquitecturas",
 
-            "Protección de Datos, ENS, RGPD y Legislación TIC",
+            "Cloud computing y virtualización",
 
-            "Desarrollo Web (HTML, CSS, JavaScript, APIs...)",
+            "Ciberseguridad aplicada",
 
-            "Programación (Java, C#, patrones, POO...)",
+            "Big Data y ecosistemas de datos",
 
-            "Arquitectura de computadores",
+            "Caso Osanet / sistemas Osakidetza",
 
-            "Repaso / Miscelánea de informática",
+            "Ejercicios prácticos y miscelánea",
 
             "Preguntas Comunes",
     };
