@@ -4,6 +4,7 @@ import database.ConexionSQLite;
 import model.Estadisticas;
 import model.PreguntaDificil;
 import model.RendimientoTema;
+import util.Constantes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -392,13 +393,15 @@ public class EstadisticasDao {
         añadirInterrogaciones(sql, temas.size());
 
         sql.append("""
-                )
-                AND ep.veces_preguntada > 0
-                ORDER BY
-                    (ep.veces_fallada * 1.0 / ep.veces_preguntada) DESC,
-                    ep.veces_preguntada DESC
-                LIMIT 30
-                """);
+            )
+            AND ep.veces_preguntada > 0
+            ORDER BY
+                (ep.veces_fallada * 1.0 / ep.veces_preguntada) DESC,
+                ep.veces_preguntada DESC
+            LIMIT
+            """);
+
+        sql.append(Constantes.LIMITE_PREGUNTAS_MAS_FALLADAS);
 
         try (
                 Connection conn = ConexionSQLite.getConnection();

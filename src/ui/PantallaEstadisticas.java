@@ -17,7 +17,6 @@ import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 
@@ -32,6 +31,7 @@ import ui.componentesEstadisticas.PanelPreguntaDificil;
 import ui.componentesEstadisticas.PanelRendimientoTema;
 import ui.componentesEstadisticas.TarjetaEstadistica;
 import ui.componentesResultados.PanelCirculoProgreso;
+import util.Constantes;
 
 public class PantallaEstadisticas extends JPanel {
 
@@ -434,7 +434,8 @@ public class PantallaEstadisticas extends JPanel {
                         "Preguntas más falladas");
         
         panelPreguntas.setSubtitulo(
-                "Mostrando las 10 preguntas con peor porcentaje de aciertos");
+                "Mostrando las " + Constantes.LIMITE_PREGUNTAS_MAS_FALLADAS
+                + " preguntas con peor porcentaje de aciertos");
 
         panelListaPreguntas =
                 new JPanel();

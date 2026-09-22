@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import model.Configuracion;
+import model.TipoTema;
 import model.TipoTest;
 import ui.componentes.PanelBotones;
 import ui.componentes.PanelNumeroPreguntas;
@@ -30,7 +31,7 @@ public class ConfiguracionTest extends JPanel {
     private PanelBotones panelBotones;
 
     private TipoTest tipoTest;
-    private boolean esTemarioComun;
+    private TipoTema tipoTema;  
 
     public ConfiguracionTest(VentanaPrincipal ventana) {
 
@@ -113,7 +114,7 @@ public class ConfiguracionTest extends JPanel {
                 break;
 
             case COMPLETO:
-                if (esTemarioComun) {
+                if (tipoTema == TipoTema.COMUN) {
                     configuracion.setTemas(Constantes.idsTemaComun());
                 } else {
                     configuracion.setTemas(panelTemas.getTodosLosTemas());
@@ -136,11 +137,11 @@ public class ConfiguracionTest extends JPanel {
         return panelTemas.getTodosLosTemas();
     }
 
-    public void setTemaComun(boolean esTemarioComun) {
+    public void setTipoTema(TipoTema tipoTema) {
 
-        this.esTemarioComun = esTemarioComun;
+        this.tipoTema = tipoTema;
 
-        panelTemas.cargarTemas(esTemarioComun);
+        panelTemas.cargarTemas(tipoTema);
 
         revalidate();
         repaint();

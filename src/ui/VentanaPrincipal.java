@@ -1,12 +1,15 @@
 package ui;
 
 import java.awt.CardLayout;
+import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import dao.TemaDao;
 import model.Configuracion;
+import model.Tema;
+import model.TipoTema;
 import model.TipoTest;
 import service.ResultadoTest;
 import util.Constantes;
@@ -32,7 +35,7 @@ public class VentanaPrincipal extends JFrame {
     private PantallaResultados pantallaResultados;
     private PantallaEstadisticas pantallaEstadisticas;
     
-    private boolean temaComunSeleccionado;
+    private TipoTema tipoTemaSeleccionado;
 
     public VentanaPrincipal() {
 
@@ -91,7 +94,7 @@ public class VentanaPrincipal extends JFrame {
     public void mostrarConfiguracion(TipoTest tipo) {
 
         configuracionTest.setTipoTest(tipo);
-        configuracionTest.setTemaComun(temaComunSeleccionado);
+        configuracionTest.setTipoTema(tipoTemaSeleccionado);
 
         cardLayout.show(contenedor, CONFIGURACION);
 
@@ -116,15 +119,7 @@ public class VentanaPrincipal extends JFrame {
     public void mostrarEstadisticas() {
 
         Configuracion configuracion = new Configuracion();
-
-        if (temaComunSeleccionado) {
-            configuracion.setTemas(Constantes.idsTemaComun());
-
-        } else {
-            configuracion.setTemas(
-                    new TemaDao().obtenerIdsTemasEspecificos());
-
-        }
+        configuracion.setTemas(obtenerTemasSegunTipo());
 
         pantallaEstadisticas.cargarEstadisticas(configuracion);
 
@@ -132,11 +127,41 @@ public class VentanaPrincipal extends JFrame {
 
     }
 
-    public void confirmarSeleccionTipoTema(boolean esComun) {
+    public void confirmarSeleccionTipoTema(TipoTema tipo) {
 
-        this.temaComunSeleccionado = esComun;
+        this.tipoTemaSeleccionado = tipo;
 
         mostrarMenu();
+
+    }
+
+    public void iniciarTestCompleto() {
+        Configuracion configuracion = new Configuracion();
+        configuracion.setTipoTest(TipoTest.COMPLETO);
+        configuracion.setTemas(obtenerTemasSegunTipo());
+        configuracion.setNumeroPreguntas(Constantes.TODAS_LAS_PREGUNTAS);
+
+        mostrarExamen(configuracion);
+
+    }
+
+    private List<Integer> obtenerTemasSegunTipo() {
+
+        switch (tipoTemaSeleccionado) {
+
+            case COMUN:
+                return Constantes.idsTemaComun();
+
+            case TODOS:
+                return new TemaDao().obtenerTodos()
+                        .stream()
+                        .map(Tema::getId)
+                        .toList();
+
+            case ESPECIFICO:
+            default:
+                return new TemaDao().obtenerIdsTemasEspecificos();
+        }
 
     }
 }

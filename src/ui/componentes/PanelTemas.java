@@ -15,6 +15,7 @@ import javax.swing.SwingUtilities;
 
 import dao.TemaDao;
 import model.Tema;
+import model.TipoTema;
 import util.Constantes;
 
 public class PanelTemas extends JPanel {
@@ -71,12 +72,9 @@ public class PanelTemas extends JPanel {
 
 
     /**
-     * Carga los temas según el tipo seleccionado:
-     *
-     * true  -> solo temas comunes (IDs 21-39)
-     * false -> solo temas específicos (resto)
+     * Carga los temas según el tipo seleccionado.
      */
-    public void cargarTemas(boolean temaComunSeleccionado) {
+    public void cargarTemas(TipoTema tipo) {
 
         List<Tema> todos = temaDao.obtenerTodos();
 
@@ -88,10 +86,14 @@ public class PanelTemas extends JPanel {
 
             boolean esComun = idsComunes.contains(tema.getId());
 
-            if (temaComunSeleccionado == esComun) {
+            boolean incluir = switch (tipo) {
+                case COMUN -> esComun;
+                case ESPECIFICO -> !esComun;
+                case TODOS -> true;
+            };
 
+            if (incluir) {
                 temasCargados.add(tema);
-
             }
         }
 

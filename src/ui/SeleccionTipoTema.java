@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+import model.TipoTema;
+
 public class SeleccionTipoTema extends JPanel {
 
     public SeleccionTipoTema(VentanaPrincipal ventana) {
@@ -25,12 +27,16 @@ public class SeleccionTipoTema extends JPanel {
 
         JButton btnEspecifico = new JButton("📖 Temas Específicos");
         JButton btnComun = new JButton("📌 Tema Común");
+        JButton btnTodo = new JButton("🌐 Todo");
 
         btnEspecifico.addActionListener(e ->
-                ventana.confirmarSeleccionTipoTema(false));
+            ventana.confirmarSeleccionTipoTema(TipoTema.ESPECIFICO));
 
         btnComun.addActionListener(e ->
-                ventana.confirmarSeleccionTipoTema(true));
+                ventana.confirmarSeleccionTipoTema(TipoTema.COMUN));
+
+        btnTodo.addActionListener(e ->
+                ventana.confirmarSeleccionTipoTema(TipoTema.TODOS));
 
         gbc.gridx = 0;
         gbc.gridy = 0;
@@ -41,6 +47,9 @@ public class SeleccionTipoTema extends JPanel {
 
         gbc.gridy++;
         add(btnComun, gbc);
+
+        gbc.gridy++;
+        add(btnTodo, gbc);
 
     }
 
