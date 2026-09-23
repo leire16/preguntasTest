@@ -49,9 +49,6 @@ public class MenuPrincipal extends JPanel {
         btnTemas.addActionListener(e ->
                 ventana.mostrarConfiguracion(TipoTest.TEMA));
 
-        // btnCompleto.addActionListener(e ->
-                // ventana.mostrarConfiguracion(TipoTest.COMPLETO));
-
         btnCompleto.addActionListener(e ->
             ventana.iniciarTestCompleto());
 

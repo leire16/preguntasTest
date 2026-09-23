@@ -24,7 +24,7 @@ public class PanelRendimientoTema extends JPanel {
     private JProgressBar barra;
 
     public PanelRendimientoTema(
-            int numeroTema,
+            String etiquetaTema,
             String nombre) {
 
         setLayout(new BorderLayout(10, 8));
@@ -38,7 +38,7 @@ public class PanelRendimientoTema extends JPanel {
         // ==========================
 
         lblNombre = new JLabel(
-                "Tema " + numeroTema + " - " + nombre);
+                etiquetaTema + " - " + nombre);
 
         lblNombre.setFont(new Font("Arial", Font.BOLD, 15));
 

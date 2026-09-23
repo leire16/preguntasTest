@@ -31,6 +31,8 @@ public class PanelTemas extends JPanel {
     private JPanel panelChecks;
     private JScrollPane scroll;
 
+    private TipoTema tipoActual;
+
 
     public PanelTemas() {
 
@@ -77,6 +79,8 @@ public class PanelTemas extends JPanel {
     public void cargarTemas(TipoTema tipo) {
 
         List<Tema> todos = temaDao.obtenerTodos();
+
+        this.tipoActual = tipo;
 
         temasCargados = new ArrayList<>();
 
@@ -126,7 +130,8 @@ public class PanelTemas extends JPanel {
             Tema tema = temasCargados.get(i);
 
             checkTemas[i] = new JCheckBox(
-                    tema.getId() + ". " + tema.getNombre()
+                    Constantes.etiquetaTema(tema.getId(), tipoActual == TipoTema.TODOS)
+                    + " - " + tema.getNombre()
             );
 
             panelChecks.add(checkTemas[i]);

@@ -55,7 +55,11 @@ public class Configuracion {
 
     private int calcularTotalPreguntas() {
 
-        return Constantes.TOTAL_PREGUNTAS_BD;
+        if (temas == null || temas.isEmpty()) {
+            return 0;
+        }
+
+        return new dao.PreguntaDao().contarPreguntas(temas);
 
     }
 

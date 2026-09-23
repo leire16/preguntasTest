@@ -48,7 +48,7 @@ public class PanelPreguntaDificil extends JPanel {
 
     public PanelPreguntaDificil(
             int numeroPregunta,
-            int temaId) {
+            String etiquetaTema) {
 
         setLayout(new GridLayout(
                 1,
@@ -82,8 +82,11 @@ public class PanelPreguntaDificil extends JPanel {
         lblPregunta = crearLabel(
                 "Pregunta " + numeroPregunta);
 
-        lblTema = crearLabel(
-                "Tema " + temaId);
+        lblTema = crearLabel(etiquetaTema);
+
+        if (etiquetaTema.startsWith("Tema C")) {
+        lblTema.setForeground(new Color(41, 128, 255)); // azul
+        }
 
         lblCorrectas = crearLabel("");
 

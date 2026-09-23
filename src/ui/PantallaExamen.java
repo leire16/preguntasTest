@@ -114,6 +114,8 @@ public class PantallaExamen extends JPanel {
 
         panelNavegacion.getBtnSiguiente().addActionListener(e ->
                 pulsarBotonSiguiente());
+        panelNavegacion.getBtnSalir().addActionListener(e ->
+                confirmarSalirAlMenu());
 
     }
 
@@ -405,6 +407,25 @@ public class PantallaExamen extends JPanel {
         }
 
         ventana.mostrarResultados(resultado);
+    }
+
+    private void confirmarSalirAlMenu() {
+
+        int opcion = JOptionPane.showConfirmDialog(
+                this,
+                "Si sales ahora perderás el progreso del test actual.\n¿Seguro que quieres salir?",
+                "Salir del examen",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+
+        if (opcion == JOptionPane.YES_OPTION) {
+
+            detenerCronometro();
+
+            ventana.mostrarMenu();
+
+        }
+
     }
 
 }

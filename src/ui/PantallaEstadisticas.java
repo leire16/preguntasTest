@@ -388,26 +388,26 @@ public class PantallaEstadisticas extends JPanel {
         panelTemas.setVisible(
                 !esComun);
 
-        if(!esComun){
-            cargarRendimientoTemas(
-                estadisticas.getRendimientoTemas());
-             cargarPreguntasMasFalladas(
-                estadisticas.getPreguntasMasFalladas());
+        boolean modoTodos = esModoTodos(configuracion.getTemas());
 
+        if (!esComun) {
+                cargarRendimientoTemas(estadisticas.getRendimientoTemas(), modoTodos);
+                cargarPreguntasMasFalladas(estadisticas.getPreguntasMasFalladas(), modoTodos);
         }
+
     }
 
     private void cargarRendimientoTemas(
-        List<RendimientoTema> rendimiento){
+        List<RendimientoTema> rendimiento, boolean modoTodos){
 
         panelListaTemas.removeAll();
 
         for(RendimientoTema tema : rendimiento){
 
             PanelRendimientoTema panel =
-                new PanelRendimientoTema(
-                        tema.getTemaId(),
-                        tema.getNombre());
+            new PanelRendimientoTema(
+                    Constantes.etiquetaTema(tema.getTemaId(), modoTodos),
+                    tema.getNombre());
 
             
                 panel.actualizar(
@@ -457,7 +457,7 @@ public class PantallaEstadisticas extends JPanel {
     }
 
     private void cargarPreguntasMasFalladas(
-        List<PreguntaDificil> preguntas) {
+        List<PreguntaDificil> preguntas, boolean modoTodos) {
 
         panelListaPreguntas.removeAll();
 
@@ -476,8 +476,8 @@ public class PantallaEstadisticas extends JPanel {
 
                 PanelPreguntaDificil panel =
                         new PanelPreguntaDificil(
-                                pregunta.getNumeroPregunta(),
-                                pregunta.getTemaId());
+                                Constantes.numeroPreguntaMostrado(pregunta.getNumeroPregunta()),
+                                Constantes.etiquetaTema(pregunta.getTemaId(), modoTodos));
 
                 panel.actualizar(
                         pregunta.getVecesPreguntada(),
@@ -496,5 +496,16 @@ public class PantallaEstadisticas extends JPanel {
                 scrollPreguntas.getVerticalScrollBar().setValue(0));
 
     }
+
+    private boolean esModoTodos(List<Integer> temas) {
+
+        List<Integer> comunes = Constantes.idsTemaComun();
+
+        boolean tieneComunes = temas.stream().anyMatch(comunes::contains);
+        boolean tieneEspecificos = temas.stream().anyMatch(t -> !comunes.contains(t));
+
+        return tieneComunes && tieneEspecificos;
+
+        }
 
 }

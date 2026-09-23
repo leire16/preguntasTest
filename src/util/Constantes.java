@@ -18,7 +18,6 @@ public final class Constantes {
     public static final int ID_FIN_TEMA_COMUN = 39;
     public static final int TODAS_LAS_PREGUNTAS = -1;
     public static final int TOTAL_PREGUNTAS_BD = 500;
-    public static final int TOTAL_PREGUNTAS_BD_TODO = 700;
     public static final String TITULO_APP = "OPE Trainer";
 
     public static final int LIMITE_PREGUNTAS_MAS_FALLADAS = 20;
@@ -34,7 +33,7 @@ public final class Constantes {
     public static final int[] OPCIONES_NUMERO_PREGUNTAS = { 5, 10, 25, 50, 100 };
 
     // ------------------------
-    // TEMAS DE LA OPE
+    // TEMAS DE LA OPE (para crear la bd)
     // ------------------------
 
     public static final String[] TEMAS = {
@@ -86,6 +85,34 @@ public final class Constantes {
         return IntStream.rangeClosed(ID_INICIO_TEMA_COMUN, ID_FIN_TEMA_COMUN)
                 .boxed()
                 .toList();
+    }
+
+    public static String etiquetaTema(int temaId, boolean marcarComun) {
+        List<Integer> comunes = idsTemaComun();
+
+        if (comunes.contains(temaId)) {
+            int numero = comunes.indexOf(temaId) + 1;
+
+            if (marcarComun) {
+                return "Tema C" + numero ;
+            }
+
+            return "Tema " + numero;
+
+        }
+
+        return "Tema " + temaId;
+
+    }
+
+    public static int numeroPreguntaMostrado(int numeroOriginal) {
+
+        if (numeroOriginal > TOTAL_PREGUNTAS_BD) {
+            return numeroOriginal - TOTAL_PREGUNTAS_BD;
+        }
+
+        return numeroOriginal;
+
     }
 
 }

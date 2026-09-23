@@ -1,6 +1,7 @@
 package ui.componentesExamen;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 import java.awt.Dimension;
 
 import javax.swing.JButton;
@@ -10,6 +11,7 @@ public class PanelNavegacion extends JPanel {
 
     private JButton btnAnterior;
     private JButton btnSiguiente;
+    private JButton btnSalir;
 
     public PanelNavegacion() {
 
@@ -23,14 +25,20 @@ public class PanelNavegacion extends JPanel {
 
         btnAnterior = new JButton("← Anterior");
         btnSiguiente = new JButton("Siguiente →");
+        btnSalir = new JButton("Salir al menú");
 
         btnAnterior.setPreferredSize(new Dimension(170, 45));
         btnSiguiente.setPreferredSize(new Dimension(170, 45));
+        btnSalir.setPreferredSize(new Dimension(170, 45));
 
         btnAnterior.setEnabled(false);
 
-        add(btnAnterior, BorderLayout.WEST);
-        add(btnSiguiente, BorderLayout.EAST);
+        JPanel panelderecha = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 0));
+        panelderecha.add(btnAnterior);
+        panelderecha.add(btnSiguiente);          // ← aquí se añade btnSalir
+
+        add(btnSalir, BorderLayout.WEST); // ← y aquí se añade panelIzquierda al panel principal
+        add(panelderecha, BorderLayout.EAST);
 
     }
 
@@ -45,6 +53,11 @@ public class PanelNavegacion extends JPanel {
     public JButton getBtnSiguiente() {
         return btnSiguiente;
     }
+
+    public JButton getBtnSalir() {
+        return btnSalir;
+    }
+
 
     // ===========================================
     // MÉTODOS PÚBLICOS
