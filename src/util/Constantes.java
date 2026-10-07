@@ -28,7 +28,7 @@ public final class Constantes {
     public static final String TEXTO_TEST_COMPLETO = "Test completo";
     public static final String TEXTO_TEST_FALLADAS = "Repaso de preguntas falladas";
 
-    public static final String RUTA_BD = "jdbc:sqlite:src/sql/bd4.db";
+    public static final String RUTA_BD = "jdbc:sqlite:src/sql/bd.db";
 
     public static final int[] OPCIONES_NUMERO_PREGUNTAS = { 5, 10, 25, 50, 100 };
 
@@ -94,7 +94,7 @@ public final class Constantes {
             int numero = comunes.indexOf(temaId) + 1;
 
             if (marcarComun) {
-                return "Tema C" + numero ;
+                return "Tema C" + numero;
             }
 
             return "Tema " + numero;

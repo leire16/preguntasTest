@@ -740,13 +740,13 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Transmisiones en banda base Ethernet 100Base-T.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "Transmisiones en banda base Ethernet 1000Base-T.",
-    "correcta" : true
+    "correcta" : false
   } ]
 }, {
   "id" : 0,
@@ -4484,13 +4484,13 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Preventivo.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Modificativo.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -5804,13 +5804,13 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Un conjunto de disposiciones especializadas (funciones y procesos) que permiten proporcionar valor a los clientes en forma de servicios.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Un medio de proporcionar valor a los clientes, facilitando los resultados que desean obtener, sin asumir toda la responsabilidad de los costes o riesgos.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -5858,7 +5858,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Proceso de gestión de la capacidad.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -5876,7 +5876,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "Proceso de gestión de activos de servicio y configuraciones.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -7304,13 +7304,13 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Los datos del/la representante legal inscrito en el Registro Mercantil, si lo hubiera.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Las respuestas a) y b) son correctas.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -7658,13 +7658,13 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Sello electrónico.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Firma electrónica.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -8798,7 +8798,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "La Comisión Sectorial de Administración Electrónica.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -8810,7 +8810,7 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "El Centro Criptológico Nacional.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -9128,7 +9128,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "La Comisión Sectorial de Administración Electrónica.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -9140,7 +9140,7 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "El Centro Criptológico Nacional.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -10088,13 +10088,13 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Preventiva.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Correctiva.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -10748,13 +10748,13 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Los equipos implicados en los sistemas a integrar deben hablar y ponerse de acuerdo sobre el formato de los datos necesario para el intercambio de información.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "En el lado tecnológico, el punto de comunicación para el envío y recepción de la mensajería debe ser la infraestructura SOA de la organización.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -10874,7 +10874,7 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "El enfoque Bottom up (de abajo arriba) es más indicada para nuevos sistemas y para nuevos requerimientos.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -10886,7 +10886,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "El enfoque Bottom up (de abajo arriba) intenta cambiar el patrón “petición-respuesta” por el de “proveedor-consumidor” mediante listas de suscripción.",
-    "correcta" : true
+    "correcta" : false
   } ]
 }, {
   "id" : 0,
@@ -11018,7 +11018,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Reduce el consumo de memoria.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -11030,7 +11030,7 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Resuelve los problemas del carácter monolítico de la aplicación.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -14438,7 +14438,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "El usuario/a corporativo/a podrá conectar su navegador sin problemas usando HTTPS. Sin embargo, el usuario/a externo/a recibirá un aviso indicando que no es posible autenticar al servidor; el navegador bloqueará la conexión con el mismo y no será posible continuar la navegación con ese sitio web.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -14456,7 +14456,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "El usuario/a corporativo/a podrá conectar su navegador sin problemas usando HTTPS. Sin embargo, el usuario/a externo/a recibirá un aviso indicando que no es posible autenticar al servidor. El navegador dará al usuario/a externo/a la posibilidad de comunicarse con el servidor a su cuenta y riesgo y la conexión estará cifrada.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -16940,13 +16940,13 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "La Dirección Médica del Ente.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "Ninguna de las anteriores.",
-    "correcta" : true
+    "correcta" : false
   } ]
 }, {
   "id" : 0,
@@ -20738,7 +20738,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Dentro de las 24 horas siguientes a la resolución.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -20756,7 +20756,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "La ley no establece un plazo específico para esta comunicación.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
