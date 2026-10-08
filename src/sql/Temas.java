@@ -2,13 +2,13 @@ package sql;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import model.Tema;
 import util.Constantes;
 
 public class Temas {
 
-    // Solo los rangos [inicio, fin] de cada tema, en el mismo orden que Constantes.TEMAS
+    // Solo los rangos [inicio, fin] de cada tema, en el mismo orden que
+    // Constantes.TEMAS
     private static final int[][] RANGOS = {
             { 1, 24 },
             { 25, 72 },
@@ -30,7 +30,26 @@ public class Temas {
             { 433, 456 },
             { 457, 480 },
             { 481, 500 },
-            { 501, 700 },
+            { 501, 510 },
+            { 511, 520 },
+            { 521, 535 },
+            { 536, 542 },
+            { 543, 565 },
+            { 566, 580 },
+            { 581, 588 },
+            { 589, 596 },
+            { 597, 604 },
+            { 605, 612 },
+            { 613, 620 },
+            { 621, 636 },
+            { 637, 650 },
+            { 651, 660 },
+            { 661, 668 },
+            { 669, 676 },
+            { 677, 684 },
+            { 685, 692 },
+            { 693, 700 }
+
     };
 
     public static final List<Tema> LISTA = construirLista();

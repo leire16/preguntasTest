@@ -78,7 +78,44 @@ public final class Constantes {
 
             "Ejercicios prácticos y miscelánea",
 
-            "Preguntas Comunes",
+            "Ordenación de las Profesiones Sanitarias (Ley 44/2003)",
+
+            "Cohesión y Calidad del Sistema Nacional de Salud (Ley 16/2003)",
+
+            "Estatuto Marco del Personal Estatutario (Ley 55/2003)",
+
+            "Ordenación Sanitaria de Euskadi (Ley 8/1997)",
+
+            "Organización del ente Osakidetza-Servicio Vasco de Salud",
+
+            "Organizaciones Sanitarias Integradas, OSI (Decreto 100/2018)",
+
+            "Derechos y Deberes de las personas en el sistema sanitario (Decreto 147/2015)",
+
+            "Autonomía del Paciente e Información Clínica (Ley 41/2002)",
+
+            "Voluntades Anticipadas (Ley 7/2002)",
+
+            "Protección de Datos Personales (LO 3/2018)",
+
+            "Igualdad de Mujeres y Hombres / Violencia Machista (Decreto Legislativo 1/2023)",
+
+            "Plan de Salud Euskadi 2030",
+
+            "Pacto Vasco de Salud (diagnóstico, valores, líneas estratégicas)",
+
+            "Estrategia de Seguridad del Paciente 20-30",
+
+            "II Plan para la Igualdad de Mujeres y Hombres en Osakidetza",
+
+            "III Plan de Normalización del Uso del Euskera",
+
+            "Plan Oncológico Integral de Euskadi, POIE",
+
+            "Regulación de la Eutanasia (LO 3/2021)",
+
+            "Incompatibilidades del Personal al Servicio de las Administraciones Públicas (Ley 53/1984)",
+
     };
 
     public static List<Integer> idsTemaComun() {
