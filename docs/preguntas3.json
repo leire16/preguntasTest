@@ -3818,7 +3818,7 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "El Equipo Scrum (Scrum Team).",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -3836,7 +3836,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "El Propietario del Producto (Product Owner).",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -4694,7 +4694,7 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "La secuencia de las cuatro clases de actividades en cada ciclo.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -4706,7 +4706,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "El progreso relativo en el desarrollo de las actividades de cada cuadrante.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -7310,13 +7310,13 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Las respuestas a) y b) son correctas.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "No tiene obligación de registrar información adicional más allá del NIF de la entidad.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -10088,13 +10088,13 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "Preventiva.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Correctiva.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -11114,7 +11114,7 @@
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Que cada microservicio puede estar desarrollado usando una tecnología diferente.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
@@ -11126,7 +11126,7 @@
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "Que los fallos en un microservicio no se propagan en la cadena de servicios.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -14000,13 +14000,13 @@
     "preguntaId" : null,
     "letra" : "c",
     "texto" : "Ambos pueden tener listas si el sistema lo necesita.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "d",
     "texto" : "No hay relación directa.",
-    "correcta" : false
+    "correcta" : true
   } ]
 }, {
   "id" : 0,
@@ -14888,13 +14888,13 @@
     "preguntaId" : null,
     "letra" : "a",
     "texto" : "OLTP.",
-    "correcta" : true
+    "correcta" : false
   }, {
     "id" : null,
     "preguntaId" : null,
     "letra" : "b",
     "texto" : "Apache Hadoop.",
-    "correcta" : false
+    "correcta" : true
   }, {
     "id" : null,
     "preguntaId" : null,
