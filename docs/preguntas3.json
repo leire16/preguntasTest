@@ -19919,1083 +19919,1298 @@
     "correcta" : true
   } ]
 }, {
-  "id" : 0,
-  "numeroOriginal" : 665,
-  "temaId" : 35,
-  "enunciado" : "Una de las Metas del II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028) es «Corresponsabilidad». ¿Cuál es el objetivo específico asociado a esta meta?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Reducir el porcentaje de hombres en puestos de dirección.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Reducir a la mitad la brecha de género en investigación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Reducir, al menos, en un 2 % la brecha de género existente en las medidas de conciliación para cuidados.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Aumentar el número de investigaciones con perspectiva de género interseccional en un 4 %.",
-    "correcta" : false
-  } ]
+  "id": 0,
+  "numeroOriginal": 665,
+  "temaId": 35,
+  "enunciado": "Una de las Metas del II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028) es “CORRESPONSABILIDAD”. ¿Cuál es el objetivo específico asociado a esta meta?",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Reducir el porcentaje de hombres en puestos de dirección.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Reducir a la mitad la brecha de género en investigación.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Reducir, al menos, en un 2% la brecha de género existente en las medidas de conciliación para cuidados.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Aumentar el número de investigaciones con perspectiva de género interseccional en un 4%.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 666,
+  "temaId": 35,
+  "enunciado": "¿Cuál fue el objetivo del I Plan de Igualdad, teniendo en cuenta su condición de primer plan estratégico de Osakidetza en esta materia?",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Consolidar los avances logrados y profundizar el proceso transformador.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Establecer unos cimientos sólidos para garantizar el cumplimiento de la legislación y la alineación a los marcos estratégicos.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Reducir la brecha salarial a la mitad en todas las categorías profesionales.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Lograr la aprobación por parte del Consejo de Dirección de Osakidetza en julio de 2025.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 667,
+  "temaId": 35,
+  "enunciado": "¿Cuál es la Meta 5 establecida en el II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028)?",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Reducir la brecha de género existente en las medidas de conciliación para cuidados.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Capacitación en Igualdad, garantizando la formación progresiva del personal.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Igualdad Salarial, con el objetivo de reducir a la mitad las categorías que tienen una brecha retributiva > 5%.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Investigación, aumentando el número de investigaciones con perspectiva de género.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 668,
+  "temaId": 35,
+  "enunciado": "En relación con la violencia machista contra las mujeres, el II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028) establece como línea de actuación prioritaria:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "El refuerzo de la prevención, la detección precoz y la mejora de la respuesta asistencial integrada desde el sistema de salud.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "La derivación inmediata de cualquier caso detectado a servicios jurídicos externos, sin intervención del personal sanitario.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "La creación de un registro anónimo donde las personas profesionales puedan denunciar conductas sin seguimiento posterior.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "La limitación de la atención asistencial únicamente a las consecuencias físicas derivadas de la violencia.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 669,
+  "temaId": 36,
+  "enunciado": "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 establece respecto a los mensajes audiovisuales que:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Deben emitirse en la lengua que decidan las personas responsables de las unidades que utilizan estos sistemas audiovisuales.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Deben emitirse en las dos lenguas oficiales, primero en castellano y luego en euskera.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Deben emitirse en las dos lenguas oficiales, primero en euskera y luego en castellano.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Deben emitirse en una de las dos lenguas oficiales.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 670,
+  "temaId": 36,
+  "enunciado": "De acuerdo con el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta correcta:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Por aplicación de la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales no puede constar en los datos personales de cada paciente de Osakidetza su idioma de preferencia para las comunicaciones con Osakidetza.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "El signo azul con la letra e indica que la persona paciente no tiene competencia para comunicarse en un idioma que no sea el euskera para las comunicaciones orales con Osakidetza.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "En los datos personales de cada paciente, se registrará su idioma de preferencia para las comunicaciones orales con Osakidetza.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "A las personas que elijan el euskera como lengua prioritaria en sus comunicaciones con Osakidetza solo se les deberá ofrecer servicios en euskera.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 671,
+  "temaId": 36,
+  "enunciado": "En atención al III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta correcta:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "“Aukeratu zeure hizkuntza/Elige tu lengua” es el lema de la campaña de activación del registro de la lengua preferente de cada paciente llevada a cabo en 2017.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Se atribuye a todas las direcciones y gerencias de Osakidetza la responsabilidad de realizar la campaña con el lema “Aukeratu zeure hizkuntza/Elige tu lengua”.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "“Aukeratu zeure hizkuntza/Elige tu lengua” es el lema de la campaña de activación del registro de la lengua preferente de cada paciente que realizará Osakidetza durante el primer año de planificación.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "“Aukeratu zeure hizkuntza/Elige tu lengua” es el lema de la campaña de activación del registro de la lengua preferente de cada paciente que realizará Osakidetza durante el tercer año de planificación.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 672,
+  "temaId": 36,
+  "enunciado": "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 contempla que tanto en los servicios de recepción y admisión, como en las unidades asistenciales y administrativas a toda la ciudadanía vascohablante debe garantizarse:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "La recepción en euskera.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "La recepción en euskera solo cuando la comunicación oral con pacientes y personas usuarias sea de modo presencial.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "La recepción en euskera solo cuando la comunicación con pacientes y personas usuarias sea telefónicamente.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "La recepción en euskera solo por las y los empleados que sepan en euskera.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 673,
+  "temaId": 36,
+  "enunciado": "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 establece que, en los escritos individualizados de respuesta a solicitudes y reclamaciones de pacientes o personas usuarias de Osakidetza se utilizará:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "La lengua utilizada por cada ciudadano o ciudadana.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Siempre el euskera como lengua preferente.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Siempre las dos lenguas oficiales independientemente de la lengua utilizada por cada ciudadano o ciudadana.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Ambas lenguas oficiales, siendo los escritos contestados primero en euskera y luego en castellano.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 674,
+  "temaId": 36,
+  "enunciado": "Siguiendo lo previsto en el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta que no es correcta:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Se pondrá a disposición del personal bilingüe que lo desee diferentes elementos identificativos portadores del círculo azul con la letra e, signo que invita a relacionarse en euskera.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "El signo azul y la letra e solo se utilizará para la identificación individual del personal bilingüe.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "En los centros de salud, consultorios y unidades hospitalarias, deberá estar colocado, de modo visible, el cartel que explica a las personas usuarias el significado del signo identificativo con la letra e.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Se estudiará introducir una variante del círculo azul con la letra e para el personal dispuesto a que le hablen en euskera pero que muestra dificultades para expresarse en ciertas situaciones.",
+      "correcta": false
+    }
+  ]
+},
+{
+  "id": 0,
+  "numeroOriginal": 675,
+  "temaId": 36,
+  "enunciado": "En atención a lo previsto en el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, en todos los centros de atención primaria ha de ponerse en marcha un procedimiento para que, en la medida de las posibilidades, se propongan servicios en euskera a las personas pacientes que hayan registrado esta lengua como preferente y que aún reciban los citados servicios en castellano. Señale a qué servicios se refiere el citado Plan:",
+  "respuestas": [
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "a",
+      "texto": "Medicina familiar, pediatría, enfermería y salud mental.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "b",
+      "texto": "Pediatría, medicina familiar y salud mental.",
+      "correcta": false
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "c",
+      "texto": "Medicina familiar, pediatría, enfermería y matrona.",
+      "correcta": true
+    },
+    {
+      "id": null,
+      "preguntaId": null,
+      "letra": "d",
+      "texto": "Todas las anteriores respuestas son correctas.",
+      "correcta": false
+    }
+  ]
 }, {
-  "id" : 0,
-  "numeroOriginal" : 666,
-  "temaId" : 35,
-  "enunciado" : "¿Cuál fue el objetivo del I Plan para la Igualdad de Mujeres y Hombres de Osakidetza, teniendo en cuenta que fue el primer plan estratégico de la organización en esta materia?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Consolidar los avances logrados y profundizar el proceso transformador.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Establecer unos cimientos sólidos para garantizar el cumplimiento de la legislación y la alineación con los marcos estratégicos.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Reducir la brecha salarial a la mitad en todas las categorías profesionales.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Lograr la aprobación por parte del Consejo de Dirección de Osakidetza en julio de 2025.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 667,
-  "temaId" : 35,
-  "enunciado" : "¿Cuál es la Meta 5 establecida en el II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028)?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Reducir la brecha de género existente en las medidas de conciliación para cuidados.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Capacitación en igualdad, garantizando la formación progresiva del personal.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Igualdad salarial, con el objetivo de reducir a la mitad las categorías con una brecha retributiva superior al 5 %.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Investigación, aumentando el número de investigaciones con perspectiva de género.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 668,
-  "temaId" : 35,
-  "enunciado" : "En relación con la violencia machista contra las mujeres, el II Plan para la Igualdad de Mujeres y Hombres en Osakidetza (2025-2028) establece como línea de actuación prioritaria:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "El refuerzo de la prevención, la detección precoz y la mejora de la respuesta asistencial integrada desde el sistema de salud.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "La derivación inmediata de cualquier caso detectado a servicios jurídicos externos, sin intervención del personal sanitario.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La creación de un registro anónimo donde las personas profesionales puedan denunciar conductas sin seguimiento posterior.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "La limitación de la atención asistencial únicamente a las consecuencias físicas derivadas de la violencia.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 669,
-  "temaId" : 36,
-  "enunciado" : "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 establece respecto a los mensajes audiovisuales que:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Deben emitirse en la lengua que decidan las personas responsables de las unidades que utilizan estos sistemas audiovisuales.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Deben emitirse en las dos lenguas oficiales, primero en castellano y después en euskera.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Deben emitirse en las dos lenguas oficiales, primero en euskera y después en castellano.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Deben emitirse únicamente en una de las dos lenguas oficiales.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 670,
-  "temaId" : 36,
-  "enunciado" : "De acuerdo con el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta correcta:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Por aplicación de la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales no puede constar en los datos personales de cada paciente su idioma de preferencia para las comunicaciones con Osakidetza.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "El signo azul con la letra «e» indica que la persona paciente únicamente puede comunicarse en euskera.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "En los datos personales de cada paciente se registrará su idioma de preferencia para las comunicaciones orales con Osakidetza.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "A las personas que elijan el euskera como lengua prioritaria solo se les deberán ofrecer servicios en euskera.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 671,
-  "temaId" : 36,
-  "enunciado" : "En atención al III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta correcta:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "«Aukeratu zeure hizkuntza / Elige tu lengua» es el lema de la campaña de activación del registro de la lengua preferente de cada paciente llevada a cabo en 2017.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Se atribuye a todas las direcciones y gerencias de Osakidetza la responsabilidad de realizar la campaña con ese lema.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "«Aukeratu zeure hizkuntza / Elige tu lengua» es el lema de la campaña que realizará Osakidetza durante el primer año de planificación.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "«Aukeratu zeure hizkuntza / Elige tu lengua» es el lema de la campaña que realizará Osakidetza durante el tercer año de planificación.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 672,
-  "temaId" : 36,
-  "enunciado" : "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 contempla que tanto en los servicios de recepción y admisión como en las unidades asistenciales y administrativas debe garantizarse a toda la ciudadanía vascohablante:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "La recepción en euskera.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "La recepción en euskera únicamente cuando la atención sea presencial.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La recepción en euskera únicamente cuando la atención sea telefónica.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "La recepción en euskera únicamente por el personal que conozca esta lengua.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 673,
-  "temaId" : 36,
-  "enunciado" : "El III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028 establece que, en los escritos individualizados de respuesta a solicitudes y reclamaciones de pacientes o personas usuarias, se utilizará:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "La lengua utilizada por cada ciudadano o ciudadana.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Siempre el euskera como lengua preferente.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Siempre las dos lenguas oficiales, con independencia de la lengua utilizada.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Ambas lenguas oficiales, contestando primero en euskera y después en castellano.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 674,
-  "temaId" : 36,
-  "enunciado" : "Siguiendo lo previsto en el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, señale la respuesta incorrecta:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Se pondrán a disposición del personal bilingüe diferentes elementos identificativos con el círculo azul y la letra «e».",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "El signo azul con la letra «e» solo se utilizará para la identificación individual del personal bilingüe.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "En los centros deberá colocarse un cartel visible explicando el significado del signo identificativo con la letra «e».",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Se estudiará introducir una variante del círculo azul con la letra «e» para el personal dispuesto a que le hablen en euskera pero que tenga dificultades para expresarse en determinadas situaciones.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 675,
-  "temaId" : 36,
-  "enunciado" : "En atención a lo previsto en el III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028, ¿en qué servicios de atención primaria debe implantarse un procedimiento para ofrecer, en la medida de lo posible, atención en euskera a las personas que hayan registrado esta lengua como preferente?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Medicina familiar, pediatría, enfermería y matrona.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Medicina familiar, pediatría, enfermería y salud mental.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Medicina familiar, pediatría, enfermería, matrona y salud mental.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Únicamente medicina familiar y pediatría.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 676,
-  "temaId" : 36,
-  "enunciado" : "Conforme al III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Los mensajes SMS dirigidos al personal o a personas candidatas se redactarán primero en castellano y después en euskera.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Los escritos individualizados dirigidos al personal deberán redactarse siempre en las dos lenguas oficiales.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Osakidetza garantizará que la información y los servicios ofrecidos al personal y a las personas candidatas mediante tecnologías de la comunicación estén disponibles en las dos lenguas oficiales.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Las comunicaciones no personalizadas dirigidas al personal se redactarán en las dos lenguas oficiales dando prioridad al castellano.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 677,
-  "temaId" : 37,
-  "enunciado" : "Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿qué relevancia tiene el cáncer como causa de mortalidad en Euskadi?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Constituye la primera causa de muerte y representa aproximadamente un tercio de los fallecimientos.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Es la segunda causa de muerte, por detrás de las enfermedades cardiovasculares.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Representa menos de una cuarta parte de todas las defunciones.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Su impacto en la mortalidad ha disminuido por debajo del 20 %.",
-    "correcta" : true
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 678,
-  "temaId" : 37,
-  "enunciado" : "Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿cuáles fueron las localizaciones de cáncer más frecuentes durante el periodo 2015-2019, consideradas por separado en mujeres y hombres?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Cáncer colorrectal y cáncer de pulmón.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Cáncer de mama en mujeres y cáncer de próstata en hombres.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Cáncer de páncreas y cáncer de pulmón.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Leucemia y linfoma de Hodgkin.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 679,
-  "temaId" : 37,
-  "enunciado" : "¿Cuál de las siguientes constituye una de las aspiraciones definidas en la visión del Plan Oncológico Integral de Euskadi (POIE) 2025-2030?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Mejorar la calidad de vida de pacientes, personas supervivientes, familiares y personas cuidadoras.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Incrementar la cuota de mercado de Osakidetza en el sector oncológico privado.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Garantizar la presencia equilibrada de ambos sexos en todos los órganos de gestión sanitaria.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Establecer la telemedicina como única modalidad de seguimiento oncológico.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 680,
-  "temaId" : 37,
-  "enunciado" : "La misión del Plan Oncológico Integral de Euskadi (POIE) 2025-2030 persigue generar valor para la ciudadanía vasca mediante:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Una mayor financiación externa para la investigación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Una reducción de las listas de espera y un incremento del personal asistencial.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La obtención de mejores resultados en salud.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Un aumento de la supervivencia a los diez años en todos los tumores.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 681,
-  "temaId" : 37,
-  "enunciado" : "En el Plan Oncológico Integral de Euskadi (POIE) 2025-2030, el principio rector de «Centralidad de la persona y humanización» incluye la incorporación de la perspectiva de género y la atención a:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "La telemonitorización avanzada.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "La diversidad.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "El personal profesional no implicado directamente.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Las redes sociales.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 682,
-  "temaId" : 37,
-  "enunciado" : "Según la evaluación del Plan Oncológico de Euskadi 2018-2023, una de las principales áreas de mejora identificadas fue:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "La excesiva visibilidad del plan entre profesionales sin implicación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "La necesidad de aumentar el número de comités de tumores.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La necesidad de reforzar la atención a colectivos específicos, como la infancia, las personas mayores y las personas largas supervivientes.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "La ausencia total de un modelo asistencial común.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 683,
-  "temaId" : 37,
-  "enunciado" : "Según el listado de acrónimos del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿qué significan las siglas PROMs?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Plan de Resultados Oncológicos y Metodología de Seguimiento.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Plan de Riesgos Ocupacionales en Medicina Sanitaria.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Programa de Rehabilitación Oncológica y Mejora de la Supervivencia.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Medidas de Resultados Reportadas por los y las Pacientes.",
-    "correcta" : true
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 684,
-  "temaId" : 37,
-  "enunciado" : "El Plan Oncológico Integral de Euskadi (POIE) 2025-2030 se alinea con el Plan de Salud de Euskadi 2030. ¿Cuál de las siguientes constituye una de las prioridades estratégicas de este último?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Crear una red de servicios privados de salud.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Aumentar la esperanza de vida hasta los 90 años.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Reducir la morbimortalidad evitable y disminuir las desigualdades en salud.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Eliminar completamente el cáncer infantil antes de 2030.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 685,
-  "temaId" : 38,
-  "enunciado" : "¿Cuál es el objeto fundamental de la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, según su artículo 1?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Regular los cuidados paliativos avanzados en el Sistema Nacional de Salud.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Modificar el Código Penal para despenalizar la asistencia al suicidio.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Regular el derecho de toda persona a solicitar y recibir la prestación de ayuda para morir y la obligación de las administraciones públicas de garantizarla.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Establecer el registro de voluntades anticipadas y testamentos vitales.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 686,
-  "temaId" : 38,
-  "enunciado" : "Conforme al artículo 5 de la Ley Orgánica 3/2021, de regulación de la eutanasia, ¿qué requisito relativo a la nacionalidad o residencia debe cumplir la persona solicitante?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Tener la nacionalidad española y residencia legal ininterrumpida durante al menos diez años.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Tener la nacionalidad española o residencia legal en España durante al menos cinco años.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Ser mayor de edad y tener la nacionalidad española, residencia legal en España o certificado de empadronamiento que acredite una permanencia superior a doce meses en territorio español.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Tener la nacionalidad española y residir en el mismo municipio durante los dos últimos años.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 687,
-  "temaId" : 38,
-  "enunciado" : "Según la Ley Orgánica 3/2021, de regulación de la eutanasia, ¿qué concepto se define como la administración directa a la persona paciente de una sustancia por parte del personal sanitario competente?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Suicidio médicamente asistido.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Sedación paliativa profunda.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Eutanasia.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Asistencia para morir.",
-    "correcta" : true
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 688,
-  "temaId" : 38,
-  "enunciado" : "Según el artículo 5 de la Ley Orgánica 3/2021, de regulación de la eutanasia, ¿qué condición debe padecer la persona solicitante para poder recibir la prestación de ayuda para morir?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Padecer una enfermedad incurable en fase terminal o un deterioro funcional grave.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Sufrir una enfermedad que limite gravemente su autonomía.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Padecer una enfermedad grave e incurable o un padecimiento grave, crónico e imposibilitante que origine un sufrimiento intolerable.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Sufrir un dolor físico o psíquico que no pueda ser tratado mediante cuidados paliativos.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 689,
-  "temaId" : 38,
-  "enunciado" : "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, una vez presentada la primera solicitud de prestación de ayuda para morir, ¿qué actuación debe realizar la persona médica responsable?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Mantener con la persona solicitante un proceso deliberativo sobre su diagnóstico, posibilidades terapéuticas y resultados esperables, así como sobre los posibles cuidados paliativos.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Esperar obligatoriamente quince días antes de mantener cualquier entrevista con la persona solicitante.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Remitir inmediatamente la solicitud a la Comisión de Garantía y Evaluación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Solicitar directamente el informe de la persona médica consultora antes de cualquier actuación.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 690,
-  "temaId" : 38,
-  "enunciado" : "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿qué derecho asiste al personal sanitario directamente implicado en la prestación de ayuda para morir?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Derecho a la reubicación en un puesto de trabajo diferente.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Derecho a un incremento retributivo por la complejidad de la prestación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Derecho a la objeción de conciencia.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Derecho a recibir asistencia jurídica de oficio.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 691,
-  "temaId" : 38,
-  "enunciado" : "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿qué se entiende por «padecimiento grave, crónico e imposibilitante»?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Aquel que implica la existencia de sufrimiento físico o psíquico constante e intolerable para quien lo padece.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Aquel que origina limitaciones que inciden directamente sobre la autonomía física y las actividades de la vida diaria, sin posibilidad de curación o mejoría apreciable.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La dependencia de otra persona para la realización de, al menos, dos actividades básicas de la vida diaria.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Una dolencia irreversible con un pronóstico de vida inferior a seis meses.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 692,
-  "temaId" : 38,
-  "enunciado" : "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿en qué plazo debe la persona médica responsable comunicar a la Comisión de Garantía y Evaluación la resolución favorable para su verificación?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Dentro de las 24 horas siguientes a la resolución.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Antes de que transcurra el día hábil siguiente a la resolución.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "En el plazo máximo de siete días desde la resolución favorable.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "La ley no establece un plazo específico para esta comunicación.",
-    "correcta" : true
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 693,
-  "temaId" : 39,
-  "enunciado" : "¿Cuál es el principio general establecido por la Ley 53/1984, de 26 de diciembre, de incompatibilidades del personal al servicio de las Administraciones Públicas?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "La libre acumulación de empleos públicos.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "La incompatibilidad para desempeñar más de un puesto en el sector público, salvo los supuestos legalmente previstos.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "La compatibilidad automática entre el empleo público y cualquier actividad privada.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "La compatibilidad únicamente en el ámbito sanitario.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 694,
-  "temaId" : 39,
-  "enunciado" : "Con carácter general, el personal comprendido en la Ley 53/1984, de 26 de diciembre, podrá desempeñar:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Dos puestos públicos si uno de ellos es a tiempo parcial.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Un segundo puesto público únicamente en los supuestos previstos por la ley y previa autorización cuando esta resulte exigible.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Cualquier actividad privada sin limitación.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Dos puestos públicos si pertenecen a distintas Administraciones.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 695,
-  "temaId" : 39,
-  "enunciado" : "Según la Ley 53/1984, de 26 de diciembre, ¿qué requisito resulta imprescindible para autorizar la compatibilidad con una actividad privada?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Que la actividad desarrollada sea de carácter sanitario.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Que no se supere la jornada ordinaria establecida.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Que no se comprometan la imparcialidad ni la independencia propias del empleo público.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Que lo autorice la jefatura inmediata sin necesidad de más trámites.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 696,
-  "temaId" : 39,
-  "enunciado" : "Según la Ley 53/1984, de 26 de diciembre, ¿puede percibirse más de una remuneración con cargo a los presupuestos públicos?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Sí, siempre que no se supere el salario mínimo interprofesional.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "No, salvo en los supuestos expresamente previstos en la ley.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Sí, sin limitación alguna.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Solo cuando procedan de distintas Administraciones autonómicas.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 697,
-  "temaId" : 39,
-  "enunciado" : "Según la Ley 53/1984, de 26 de diciembre, ¿qué consecuencia puede derivarse del desempeño de una actividad incompatible sin la correspondiente autorización?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Ninguna, siempre que se realice fuera del horario laboral.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Constituye únicamente una falta leve.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Puede dar lugar a responsabilidad disciplinaria.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Únicamente obliga a devolver las cantidades percibidas.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 698,
-  "temaId" : 39,
-  "enunciado" : "Según la Ley 53/1984, de 26 de diciembre, ¿qué actividades se encuentran exceptuadas del régimen general de incompatibilidades?",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Determinadas actividades docentes y de investigación en los supuestos previstos legalmente.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Cualquier actividad privada.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Exclusivamente las actividades artísticas.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Las actividades comerciales propias sin limitación.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 699,
-  "temaId" : 39,
-  "enunciado" : "Según la Ley 53/1984, de 26 de diciembre, para autorizar la compatibilidad con un segundo puesto público es necesario que:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Ambos puestos se desempeñen en el mismo centro de trabajo.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "El segundo puesto sea necesariamente a jornada completa.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Se trate de alguno de los supuestos legalmente previstos y que no se modifique la jornada ni el horario del puesto principal.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Lo apruebe el personal del servicio correspondiente.",
-    "correcta" : false
-  } ]
-}, {
-  "id" : 0,
-  "numeroOriginal" : 700,
-  "temaId" : 39,
-  "enunciado" : "La finalidad principal de la Ley 53/1984, de 26 de diciembre, de incompatibilidades del personal al servicio de las Administraciones Públicas es:",
-  "respuestas" : [ {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "a",
-    "texto" : "Incrementar los ingresos del personal al servicio de las Administraciones Públicas.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "b",
-    "texto" : "Garantizar la dedicación al servicio público y preservar la imparcialidad e independencia en el ejercicio de las funciones públicas.",
-    "correcta" : true
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "c",
-    "texto" : "Permitir la pluriactividad con carácter general.",
-    "correcta" : false
-  }, {
-    "id" : null,
-    "preguntaId" : null,
-    "letra" : "d",
-    "texto" : "Reducir el número de empleados públicos.",
-    "correcta" : false
-  } ]
-} ]
+    "id": 0,
+    "numeroOriginal": 676,
+    "temaId": 36,
+    "enunciado": "Conforme al III Plan de Normalización del Uso del Euskera en Osakidetza 2022-2028:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "En los casos de los mensajes SMS que se envían a los teléfonos móviles de personas trabajadoras o candidatas, estarán escritos en las dos lenguas oficiales, primero en castellano y luego en euskera.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Los escritos individualizados de respuesta a solicitudes y reclamaciones de las personas trabajadoras deberán redactarse en las dos lenguas oficiales.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Osakidetza ha de garantizar que la información y los servicios ofrecidos tanto al personal empleado como a personas candidatas a través de las tecnologías de la comunicación estén en las dos lenguas oficiales, con el fin de que cada persona haga uso de la lengua de su preferencia.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Las informaciones y comunicaciones no personalizadas dirigidas al personal deberán redactarse en las dos lenguas oficiales y se dará prioridad al castellano.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 677,
+    "temaId": 37,
+    "enunciado": "Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿de qué porcentaje de los fallecimientos en Euskadi fue responsable el cáncer en el año 2023?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "22,3%",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Menos del 15%",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "33,8%",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "28%",
+        "correcta": true
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 678,
+    "temaId": 37,
+    "enunciado": "Según el Resumen Ejecutivo del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿cuáles fueron las dos localizaciones de cáncer más frecuentes en Euskadi en el periodo 2015-2019, consideradas separadamente por sexo?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Cáncer colorrectal y cáncer de pulmón.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Cáncer de mama en mujeres y cáncer de próstata en hombres.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Cáncer de páncreas y cáncer de pulmón.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Leucemia y Linfoma de Hodgkin.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 679,
+    "temaId": 37,
+    "enunciado": "¿Cuál de las siguientes es una de las aspiraciones definidas en la VISIÓN del Plan Oncológico Integral de Euskadi (POIE) 2025-2030?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Mejorar la calidad de vida de las personas: de pacientes, supervivientes y de sus familiares y personas cuidadoras.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Aumentar la cuota de mercado de Osakidetza en el sector oncológico privado.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Garantizar la presencia equilibrada de ambos sexos en los órganos de gestión sanitaria.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Establecer la telemedicina como la única forma de seguimiento oncológico.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 680,
+    "temaId": 37,
+    "enunciado": "La Misión del Plan Oncológico Integral de Euskadi (POIE) 2025-2030 busca generar valor a la ciudadanía vasca en términos de:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Mayor financiación externa para I+D.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Menores listas de espera y más personal asistencial.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Mejores resultados en salud.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Una mayor supervivencia a los 10 años en todos los tumores.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 681,
+    "temaId": 37,
+    "enunciado": "En el Plan Oncológico Integral de Euskadi (POIE) 2025-2030, la “Centralidad de la persona y humanización” como Principio Rector incluye la incorporación de la perspectiva de género y la atención a:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "La telemonitorización avanzada.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "La diversidad.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "El personal profesional no implicado directamente.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Las redes sociales.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 682,
+    "temaId": 37,
+    "enunciado": "Teniendo en cuenta la introducción y el contexto del Plan Oncológico Integral de Euskadi 2025-2030. ¿Cuál fue una de las principales áreas de mejora identificadas en la evaluación del Plan Oncológico de Euskadi (POE) 2018-2023?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "La excesiva visibilidad del plan entre profesionales sin implicación.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "La necesidad de aumentar el número de Comités de Tumores.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "La necesidad de reforzar la atención a colectivos específicos (infancia, mayores, personas largas supervivientes).",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "La ausencia total de un modelo asistencial común.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 683,
+    "temaId": 37,
+    "enunciado": "Según el listado de acrónimos del Plan Oncológico Integral de Euskadi (POIE) 2025-2030, ¿a qué hacen referencia las siglas PROMs?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Plan de Resultados Oncológicos y Metodología de Seguimiento.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Plan de Riesgos Ocupacionales en Medicina Sanitaria.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Programa de Rehabilitación Oncológica y Mejora de la Supervivencia.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Medidas de Resultados Reportadas por los y las Pacientes.",
+        "correcta": true
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 684,
+    "temaId": 37,
+    "enunciado": "El Plan Oncológico Integral de Euskadi (POIE) 2025-2030 se alinea con el Plan de Salud de Euskadi 2030. ¿Cuál de las siguientes es una de las prioridades estratégicas de dicho Plan de Salud mencionadas en el documento?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Creación de una red de servicios privados de salud.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Aumentar la esperanza de vida a 90 años.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Reducir la morbimortalidad evitable y disminuir las desigualdades en salud",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Eliminación total del cáncer infantil antes de 2030.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 685,
+    "temaId": 38,
+    "enunciado": "¿Cuál es el objeto fundamental de la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, según su Artículo 1?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Regular los cuidados paliativos avanzados en el Sistema Nacional de Salud.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Modificar el Código Penal para despenalizar la asistencia al suicidio.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Regular el derecho de toda persona a solicitar y recibir la prestación de ayuda para morir y la obligación de las Administraciones de garantizarla.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Establecer el registro de las voluntades anticipadas y testamentos vitales.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 686,
+    "temaId": 38,
+    "enunciado": "Conforme al Artículo 5 de la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿qué requisito de nacionalidad se exige para poder recibir la prestación de ayuda para morir?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Tener la ciudadanía española con residencia legal ininterrumpida de al menos 10 años.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Tener la nacionalidad española o tener residencia legal en España de al menos 5 años.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Ser mayor de edad y tener la nacionalidad española, residencia legal o certificado de empadronamiento que acredite un tiempo de permanencia superior a 12 meses en territorio español.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Tener la nacionalidad española y residencia en el mismo municipio durante los últimos 2 años.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 687,
+    "temaId": 38,
+    "enunciado": "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿qué concepto define la ley como la \"administración directa a la persona paciente de una sustancia por parte del personal sanitario competente\"?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Suicidio médicamente asistido.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Sedación paliativa profunda.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Eutanasia.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Asistencia para morir.",
+        "correcta": true
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 688,
+    "temaId": 38,
+    "enunciado": "Según el Artículo 5 de la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿cuál es la condición que debe padecer la persona paciente para solicitar la prestación de ayuda para morir?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Padecer una enfermedad incurable en fase terminal o un deterioro funcional grave.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Sufrir una enfermedad que limite gravemente su autonomía.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Padecer una enfermedad grave e incurable o un padecimiento grave, crónico e imposibilitante, causantes de un sufrimiento intolerable.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Sufrir un dolor físico o psíquico que no puede ser tratado con paliativos.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 689,
+    "temaId": 38,
+    "enunciado": "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿cuál debe ser la periodicidad mínima con la que el personal facultativo responsable debe consultar a la persona paciente, una vez presentada la solicitud, para confirmar si mantiene su deseo?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Al menos cada 7 días.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Al menos cada 15 días, debiendo dejarse constancia en la historia clínica.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Al menos cada 30 días, si el procedimiento se extiende.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Una única vez antes de la prestación.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 690,
+    "temaId": 38,
+    "enunciado": "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿cuál es el derecho que asiste al personal sanitario directamente implicado en la prestación de ayuda para morir?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Derecho a la reubicación en un puesto de trabajo diferente.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Derecho a un incremento salarial por la complejidad de la prestación.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Derecho a la objeción de conciencia.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Derecho a recibir asistencia jurídica de oficio.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 691,
+    "temaId": 38,
+    "enunciado": "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿qué define como \"padecimiento grave, crónico e imposibilitante\"?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Aquel que implica la existencia de sufrimiento físico o psíquico constante.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Aquel que genera una limitación que incide directamente sobre la autonomía física y capacidad de expresar su voluntad de la persona paciente.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "La dependencia de otra persona para la realización de al menos dos actividades básicas de la vida diaria.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Una dolencia que ha sido declarada irreversible y con un pronóstico de vida inferior a seis meses.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 692,
+    "temaId": 38,
+    "enunciado": "Según la Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia, ¿cuál es el plazo que tiene la persona facultativa responsable para comunicar la resolución favorable a la Comisión de Garantía y Evaluación para su posterior verificación?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Dentro de las 24 horas siguientes a la resolución.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Dentro del día siguiente natural a la resolución.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "7 días desde la resolución favorable.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "No existe un plazo establecido para esta comunicación.",
+        "correcta": true
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 693,
+    "temaId": 39,
+    "enunciado": "¿Cuál es el principio general que establece la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "La libre acumulación de empleos públicos.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "La incompatibilidad para desempeñar más de un puesto en el sector público, salvo excepciones.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "La compatibilidad automática entre empleo público y privado.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "La compatibilidad solo en el ámbito sanitario.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 694,
+    "temaId": 39,
+    "enunciado": "Con carácter general, el personal comprendido en la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, podrá desempeñar:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Dos puestos públicos si uno es a tiempo parcial.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Un segundo puesto público únicamente con autorización previa y en los supuestos previstos por la Ley.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Cualquier actividad privada sin limitación.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Dos puestos públicos si pertenecen a distinta Administración.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 695,
+    "temaId": 39,
+    "enunciado": "Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿qué requisito es imprescindible para autorizar la compatibilidad con una actividad privada?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Que la actividad sea sanitaria.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Que no se supere la jornada ordinaria establecida.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Que no se comprometa la imparcialidad o independencia del personal público.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Que lo autorice la jefatura inmediata sin más trámites.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 696,
+    "temaId": 39,
+    "enunciado": "Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿puede percibirse más de una remuneración con cargo a los presupuestos públicos?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Sí, siempre que no superen el salario mínimo.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "No, salvo en los casos expresamente previstos en la Ley.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Sí, sin limitación alguna.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Solo si se trata de diferentes Administraciones autonómicas.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 697,
+    "temaId": 39,
+    "enunciado": "Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿qué ocurre si se desempeña una actividad incompatible sin autorización?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "No ocurre nada si es fuera del horario laboral.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Se considera falta leve.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Puede dar lugar a responsabilidad disciplinaria.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Solo se devuelve la remuneración percibida.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 698,
+    "temaId": 39,
+    "enunciado": "Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, ¿qué actividades están exceptuadas del régimen general de incompatibilidades?",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Las actividades docentes o de investigación en determinados supuestos.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Cualquier actividad privada.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Solo actividades artísticas.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Actividades comerciales propias sin límite.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 699,
+    "temaId": 39,
+    "enunciado": "Según la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, para que se autorice la compatibilidad para un segundo puesto público es necesario que:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Sea en el mismo centro de trabajo.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Sea la jornada completa.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Sea en los supuestos tasados y no se modifique la jornada y horario del puesto principal.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Lo apruebe el personal trabajador del servicio.",
+        "correcta": false
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "numeroOriginal": 700,
+    "temaId": 39,
+    "enunciado": "La finalidad principal de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, es:",
+    "respuestas": [
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "a",
+        "texto": "Incrementar los ingresos del personal público.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "b",
+        "texto": "Garantizar la dedicación y la imparcialidad en el servicio público.",
+        "correcta": true
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "c",
+        "texto": "Permitir la pluriactividad generalizada.",
+        "correcta": false
+      },
+      {
+        "id": null,
+        "preguntaId": null,
+        "letra": "d",
+        "texto": "Reducir el número de personal público.",
+        "correcta": false
+      }
+    ]
+  }
+]
